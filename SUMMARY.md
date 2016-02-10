@@ -2,5 +2,5 @@
 
 * [Introduction](README.md)
 * [First Chapter](submissions.md)
-   * Submission Types
+   * [Submission Types](submission_types.md)
 
