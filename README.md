@@ -8,6 +8,8 @@ The complete [release notes](ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt) for the c
 
 An [annotated sample GenBank record](/genbank/samplerecord/) for a _Saccharomyces cerevisiae_ gene demonstrates many of the features of the GenBank flat file format.
 
+Yes this is a hot preview.
+
 ## Access to GenBank
 
 There are several ways to search and retrieve data from GenBank.
