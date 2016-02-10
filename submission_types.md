@@ -4,7 +4,7 @@
 
 GenBank accepts mRNA or genomic sequence data directly determined by the submitter.  The submission must include information about the source organism and annotation provided by the submitter.  More details about adding annotation and sample files can be found in the [GenBank Submissions Handbook](http://www.ncbi.nlm.nih.gov/books/NBK53707/).  If you have any questions about the best method for submitting your data, please contact our user services group at: info@ncbi.nlm.nih.gov.
 
-The following data is not accepted by GenBank:
+The following data are not accepted by GenBank:
 
 *   Noncontiguous sequences
 *   Primer sequences
