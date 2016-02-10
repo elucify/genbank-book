@@ -1,6 +1,5 @@
+# How to submit data to GenBank
 
-<h1>
-How to submit data to GenBank</h1>
 <p>
 The most important source of new data for GenBank<sup>®</sup> is direct submissions from scientists. GenBank depends on its contributors to help keep the database as comprehensive, current, and accurate as possible. NCBI provides timely and accurate processing and biological review of new entries and updates to existing entries, and is ready to assist authors who have new data to submit.</p>
 <h3>
