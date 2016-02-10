@@ -1,5 +1,6 @@
 # GenBank Overview
 
+<div id="hook"/>
 
 GenBank <sup>®</sup> is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences ([_Nucleic Acids Research_, 2013 Jan;41(D1):D36-42](/pubmed/23193287)). GenBank is part of the [International Nucleotide Sequence Database Collaboration](/genbank/collab) , which comprises the DNA DataBank of Japan (DDBJ), the European Molecular Biology Laboratory (EMBL), and GenBank at NCBI. These three organizations exchange data on a daily basis.
 
@@ -13,7 +14,7 @@ There are several ways to search and retrieve data from GenBank.
 
 *   Search GenBank for sequence identifiers and annotations with [Entrez Nucleotide](/nucleotide/), which is divided into three divisions: [CoreNucleotide](/nuccore/) (the main collection), [dbEST](/nucest/) (Expressed Sequence Tags), and [dbGSS](/nucgss/) (Genome Survey Sequences).
 *   Search and align GenBank sequences to a query sequence using [BLAST](/blast) (Basic Local Alignment Search Tool). BLAST searches CoreNucleotide, dbEST, and dbGSS independently; see [BLAST info](/blast/producttable.shtml) for more information about the numerous BLAST databases.
-*   Search, link, and download sequences programatically using [NCBI e-utilities](/books/NBK25501/).
+*   Search, link, and download sequences programmatically using [NCBI e-utilities](/books/NBK25501/).
 *   The ASN.1 and flatfile formats are available at NCBI's anonymous FTP server: [ftp://ftp.ncbi.nlm.nih.gov/ncbi-asn1](ftp://ftp.ncbi.nlm.nih.gov/ncbi-asn1) and [ftp://ftp.ncbi.nlm.nih.gov/genbank .](ftp://ftp.ncbi.nlm.nih.gov/genbank)
 
 ## GenBank Data Usage
