@@ -2,7 +2,7 @@
 
 ## Standard Sequences
 
-GenBank accepts mRNA or genomic sequence data directly determined by the submitter.  The submission must include information about the source organism and annotation provided by the submitter.  More details about adding annotation and sample files can be found in the [GenBank Submissions Handbook](http://www.ncbi.nlm.nih.gov/books/NBK53707/).  If you have any questions about the best method for submitting your data, please contact our user services group at: info@ncbi.nlm.nih.gov.
+GenBank accepts mRNA or genomic sequence data directly determined by the submitter. The submission must include information about the source organism and annotation provided by the submitter. More details about adding annotation and sample files can be found in the [GenBank Submissions Handbook](http://www.ncbi.nlm.nih.gov/books/NBK53707/). If you have any questions about the best method for submitting your data, please contact our user services group at: info@ncbi.nlm.nih.gov.
 
 The following data are not accepted by GenBank:
 
@@ -35,8 +35,8 @@ Genomic sequence read-overlap contig sequences and assemblies from ongoing Whole
 
 ## Transcriptome Shotgun Assembly (TSA) Sequences
 
-Transcriptomic sequence read-overlap contig sequences computationally assembled  from primary data submitted to [dbEST](http://www.ncbi.nlm.nih.gov/dbEST/how_to_submit.html), the [Sequence Read Archive (SRA)](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=show&f=concepts&m=doc&s=concepts), or the [Trace Archive](http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?) can be submitted to TSA.  Detailed submission instructions can be found on the [TSA](/genbank/TSA) submission guide.
+Transcriptomic sequence read-overlap contig sequences computationally assembled from primary data submitted to [dbEST](http://www.ncbi.nlm.nih.gov/dbEST/how_to_submit.html), the [Sequence Read Archive (SRA)](http://www.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?cmd=show&f=concepts&m=doc&s=concepts), or the [Trace Archive](http://www.ncbi.nlm.nih.gov/Traces/trace.cgi?) can be submitted to TSA. Detailed submission instructions can be found on the [TSA](/genbank/TSA) submission guide.
 
 ## Third Party Annotations (TPA)
 
-The TPA (Third Party Annotation) database accepts third party annotation of genomic sequences or computationally derived/assembled sequences. TPA submissions must include sequence data that is already represented in GenBank, and the analysis upon which the annotations are based must appear in a peer-reviewed scientific journal.   Detailed requirements and submission instructions can be found on the [TPA](/genbank/tpa) submission guide.
+The TPA (Third Party Annotation) database accepts third party annotation of genomic sequences or computationally derived/assembled sequences. TPA submissions must include sequence data that is already represented in GenBank, and the analysis upon which the annotations are based must appear in a peer-reviewed scientific journal. Detailed requirements and submission instructions can be found on the [TPA](/genbank/tpa) submission guide.
