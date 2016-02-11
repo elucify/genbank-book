@@ -1,2 +1,21 @@
+
 # WGS Resources
 
+*   [WGS](wgs.md)
+*   [WGS Project List](http://www.ncbi.nlm.nih.gov/Traces/wgs)
+*   [WGS Submission Guide](wgs.submit.md)
+*   [Update Genome Records](wgs_update.md)
+*   [FAQ](wgsfaq.md)
+*   [tbl2asn](tbl2asn2.md)
+*   [Create Submission Template](http://www.ncbi.nlm.nih.gov/WebSub/template.cgi)
+*   [BioProject](http://www.ncbi.nlm.nih.gov/bioproject)
+*   [Eukaryotic Annotation Guide](eukaryotic_genome_submission.md)
+*   [Prokaryotic Annotation Guide](genomesubmit.md)
+*   [Discrepancy Report](asndisc.md)
+*   [WGS Example Files](examples.wgs.md)
+*   [Assembly Submission Guide](http://www.ncbi.nlm.nih.gov/assembly/docs/submission/)
+*   [AGP Format](http://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)
+*   [WGS Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/wgs/)
+*   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
+*   [Metagenome Submission Guide](metagenome.md)
+*   [Structured Comment](structuredcomment)
