@@ -1,7 +1,7 @@
 
 # WGS Resources
 
-*   [WGS](wgs.md)
+*   [Whole Genome Shotgun Submissions](wgs.md)
 *   [WGS Project List](http://www.ncbi.nlm.nih.gov/Traces/wgs)
 *   [WGS Submission Guide](wgs.submit.md)
 *   [Update Genome Records](wgs_update.md)
