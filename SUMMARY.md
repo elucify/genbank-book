@@ -18,7 +18,7 @@
 * [Whole Genome Shotgun](wgs.md)
    * [WGS Submission Guide](wgs.submit.md)
    * [Discrepancy Report](asndisc.md)
-   * WGS Resources
+   * [WGS Resources](wgs_resources.md)
 * [HTGs](htgs.md)
    * [Submit HTGs](htgs/subinfo.md)
    * [HTGs FAQ](htgs/faq.md)
