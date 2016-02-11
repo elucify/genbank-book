@@ -1,4 +1,3 @@
-
 # Common Discrepancy Reports
 
 ### Introduction
@@ -12,14 +11,12 @@ For more information about annotation requirements, be sure to read the appropri
 *   [Prokaryotic Genome Guidelines](/~/genomesubmit)
 *   [Eukaryotic Genome Guidelines](/~/eukaryotic_genome_submission)
 
-.
-
 You may be interested to know that NCBI has a publicly available [Prokaryotic Genomes Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genomes/static/Pipeline.html) . This pipeline generates files that are ready for submission to GenBank, although the submitter is welcome to edit them before submission to GenBank.
 
 ### Common Discrepancy Report Categories
 
-<pre>MISSING_GENES
-  -every CDS, rRNA, tRNA and ncRNA must have a gene feature with a locus_tag.  This report 
+``MISSING_GENES`` --
+  every CDS, rRNA, tRNA and ncRNA must have a gene feature with a ``locus_tag``.  This report 
   may also occur if the gene is present, but the nucleotide spans do not completely 
   contain the corresponding feature.
 
@@ -30,7 +27,7 @@ EXTRA_GENES
     contain a frameshift"
 
 BAD_LOCUS_TAG_FORMAT
-  -The correct format for a locus_tag is prefix_uniqueID  (i.e. ABC_0001).   For more 
+  -The correct format for a locus_tag is *``prefix_uniqueID``*  (i.e. ABC_0001).   For more 
     information about locus_tags, see http://www.ncbi.nlm.nih.gov/genomes/lltp.cgi  
     If you haven't already, register your project and a locus_tag prefix here: 
     http://www.ncbi.nlm.nih.gov/genomes/mpfsubmission.cgi. 
