@@ -27,33 +27,20 @@ See [Evaluating the output](#Evaluatingtheoutput) for information about the outp
 
 ### Using tbl2asn
 
-To run the discrepancy report using tbl2asn, include the argument -Z with the name of the output file. For example, a typical command would look like this:
+To run the discrepancy report using ``tbl2asn``, include the argument ``-Z`` with the name of the output file. For example, a typical command would look like this:
 
-<div>
+```tbl2asn -p path_to_fsa_files -t template -M n -Z discrep```
 
-<dl>
+```
+    -p    Path to Files [String] 
+    -t    Template File [File In] 
+    -M n  Combines flags for genomes submissions (replaces -a s -V v; invokes FATAL calls when \
+          -Z discrep is included). 
+    -Z    Discrepancy Report Output File [File Out]
+```
 
-<dd>**tbl2asn -p path_to_fsa_files -t template -M n -Z discrep**</dd>
+For more information, see the [tbl2asn instructions](/~/tbl2asn2) . Examine the contents of the output file, discrep: [Evaluating the output](#Evaluatingtheoutput)</dt>
 
-</dl>
-
-</div>
-
-<dl>
-
-<dd>
-
-<pre>-p    Path to Files [String] 
-        -t    Template File [File In] 
-        -M n  Combines flags for genomes submissions (replaces -a s -V v; invokes FATAL calls when -Z discrep is included). 
-        -Z    Discrepancy Report Output File [File Out]
-</pre>
-
-</dd>
-
-<dt>For more information, see the [tbl2asn instructions](/~/tbl2asn2) . Examine the contents of the output file, discrep: [Evaluating the output](#Evaluatingtheoutput)</dt>
-
-<dd>
 
 ### Using asndisc
 
@@ -76,19 +63,14 @@ This is the recommended usage for files created using tbl2asn or Sequin:
         -P t  Include FATAL tags in output
 </pre>
 
-</dd>
-
-</dl>
 
 For example the following commandline will run asndisc with expanded reports on all of the .sqn files in the directory named DIR and will put the output in a file named discrep:
 
-<div>**asndisc -p DIR/ -x .sqn -o discrep -X ALL -P t**</div>
+```asndisc -p DIR/ -x .sqn -o discrep -X ALL -P t```
 
-</dd>
+NOTE: this command will produce the same discrep output file as the tbl2asn commandline "tbl2asn -p path_to_fsa_files -t template -M n -Z discrep "
 
-<dd>NOTE: this command will produce the same discrep output file as the tbl2asn commandline "tbl2asn -p path_to_fsa_files -t template -M n -Z discrep "</dd>
-
-<dd>Examine the contents of the output file, discrep: [Evaluating the output](#Evaluatingtheoutput)
+Examine the contents of the output file, ``discrep``: [Evaluating the output](#Evaluatingtheoutput)
 
 ### Evaluating the output
 
