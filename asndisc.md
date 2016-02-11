@@ -39,7 +39,7 @@ To run the discrepancy report using ``tbl2asn``, include the argument ``-Z`` wit
     -Z    Discrepancy Report Output File [File Out]
 ```
 
-For more information, see the [tbl2asn instructions](/~/tbl2asn2) . Examine the contents of the output file, discrep: [Evaluating the output](#Evaluatingtheoutput)</dt>
+For more information, see the [tbl2asn instructions](/~/tbl2asn2) . Examine the contents of the output file, discrep: [Evaluating the output](#Evaluatingtheoutput)
 
 
 ### Using asndisc
@@ -50,19 +50,15 @@ asndisc examines all the files with a common suffix in a directory and collates 
 
 This is the recommended usage for files created using tbl2asn or Sequin:
 
-<div>asndisc -p path_to_files -x .file_suffix -o output_file -X ALL -P t</div>
+```asndisc -p path_to_files -x .file_suffix -o output_file -X ALL -P t```
 
-<dl>
-
-<dd>
-
-<pre>-p    Path to Files [String] 
-        -x    File Selection Substring [String] 
-        -o    Single Output File [File Out]
-        -X    Expand Report Categories (comma-delimited list of test names or ALL)
-        -P t  Include FATAL tags in output
-</pre>
-
+```
+  -p    Path to Files [String] 
+  -x    File Selection Substring [String] 
+  -o    Single Output File [File Out]
+  -X    Expand Report Categories (comma-delimited list of test names or ALL)
+  -P t  Include FATAL tags in output
+```
 
 For example the following commandline will run asndisc with expanded reports on all of the .sqn files in the directory named DIR and will put the output in a file named discrep:
 
@@ -118,9 +114,9 @@ LIST of FATAL categories in asndisc v2.0:
 *   DISC_BACTERIAL_PARTIAL_NONEXTENDABLE_PROBLEMS*
 *   MISSING_GENOMEASSEMBLY_COMMENTS**
 
-* Only FATAL for prokaryotes. However, the report appears with the FATAL tag when the files don't include the full taxonomy lookup (which often doesn't happen until processing here), so we've kept it as FATAL so that submitters see the error and can decide whether it's relevant for that particular submission or not.
+\* Only FATAL for prokaryotes. However, the report appears with the FATAL tag when the files don't include the full taxonomy lookup (which often doesn't happen until processing here), so we've kept it as FATAL so that submitters see the error and can decide whether it's relevant for that particular submission or not.
 
-** Only FATAL with the -P s asndisc argument (or tbl2asn -M p -Z discrep).
+\*\* Only FATAL with the -P s asndisc argument (or tbl2asn -M p -Z discrep).
 
 These three categories are suspicious but weren't marked as FATAL because the situation is sometimes valid. They will always require confirmation from the submitter that they are biologically correct. These are categories that find CDS and/or RNAs overlapping or contained within each other:
 
@@ -131,8 +127,6 @@ These three categories are suspicious but weren't marked as FATAL because the si
 See explanations of some [common discrepancy report categories](/~/asndisc.examples).
 
 Here is a summary of the analysis of a submission, performed with the default settings of asndisc:
-
-Summary
 
 *   DISC_SOURCE_QUALS_ASNDISC:strain (all present, all same)
 *   DISC_SOURCE_QUALS_ASNDISC:taxname (all present, all same)
@@ -164,7 +158,7 @@ Summary
 *   FATAL: SHOW_HYPOTHETICAL_CDS_HAVING_GENE_NAME:1 hypothetical coding regions have a gene name
 *   DISC_QUALITY_SCORES:Quality scores are missing on all sequences.
 
-Since this was a eukaryotic organism with introns, the "features have joined locations" is expected. Similarly, since the submitters have UTR information for some mRNAs, those mRNAs (and, therefore, their genes) will extend beyond their CDS, generating "features have inconsistent gene locations" reports. However, the other reports need to be investigated to determine whether they indicate a real problem with the annotation. For example, EC numbers need to be fielded in the EC_number qualifier, unless they are within a note about similarity to another protein. However, since that function looks for #.#.#.# in product names and notes, non-EC numbers that have that format will appear in that report. Similarly, short introns may be an indication that artificial introns were inserted to correct a frameshift, which is not biologically valid.
+Since this was a eukaryotic organism with introns, the ```features have joined locations``` is expected. Similarly, since the submitters have UTR information for some mRNAs, those mRNAs (and, therefore, their genes) will extend beyond their CDS, generating "features have inconsistent gene locations" reports. However, the other reports need to be investigated to determine whether they indicate a real problem with the annotation. For example, EC numbers need to be fielded in the EC_number qualifier, unless they are within a note about similarity to another protein. However, since that function looks for #.#.#.# in product names and notes, non-EC numbers that have that format will appear in that report. Similarly, short introns may be an indication that artificial introns were inserted to correct a frameshift, which is not biologically valid.
 
 OVERLAPPING_CDS indicates that two CDS overlap and have similar product names, suggesting that they may represent a frameshifted gene that is annotated in two separate genes. [Since ABC-type transporter genes often overlap, they are not reported.] If these genes are not translated as two separate proteins, then they should be annotated as a single gene with a /pseudo qualifier to indicate the gene is non-functional. The product name would be entered in the gene_description and a brief note describing the problem ("frameshift") added. If the situation is unclear and you want to keep the two genes in draft annotation, then a note can be added to each CDS, "overlaps another CDS with the same product name", as a flag to database users. This note can be added automatically when the .sqn files are made, using the "-c b" argument of tbl2asn.
 
@@ -176,39 +170,24 @@ With regards to the DISC_QUALITY_SCORES output, we encourage all submitters to p
 
 After you've run the Discrepancy Report and fixed the problem annotation, let us know when you submit your genome about reports that you think can be ignored and why. If you are not certain whether a particular test is important for your genome, please ask us.
 
-</dd>
-
-</dl>
-
-</div>
-
-</div>
-
-<div id="shared-content-1" nid="1465">
-
-<div class="rightnav">
 
 ## WGS Resources
 
-*   [About WGS](/~/wgs)
+*   [About WGS](wgs.md)
 *   [WGS Project List](http://www.ncbi.nlm.nih.gov/Traces/wgs)
-*   [WGS Submission Guide](/~/wgs.submit)
-*   [Update Genome Records](/~/wgs_update)
-*   [FAQ](/~/wgsfaq)
-*   [tbl2asn](/~/tbl2asn2)
+*   [WGS Submission Guide](wgs.submit.md)
+*   [Update Genome Records](wgs_update.md)
+*   [FAQ](wgsfaq.md)
+*   [tbl2asn](tbl2asn2.md)
 *   [Create Submission Template](http://www.ncbi.nlm.nih.gov/WebSub/template.cgi)
 *   [BioProject](http://www.ncbi.nlm.nih.gov/bioproject)
-*   [Eukaryotic Annotation Guide](/~/eukaryotic_genome_submission)
-*   [Prokaryotic Annotation Guide](/~/genomesubmit)
-*   [Discrepancy Report](/~/asndisc)
-*   [WGS Example Files](/~/examples.wgs)
+*   [Eukaryotic Annotation Guide](eukaryotic_genome_submission.md)
+*   [Prokaryotic Annotation Guide](genomesubmit.md)
+*   [Discrepancy Report](asndisc.md)
+*   [WGS Example Files](examples.wgs.md)
 *   [Assembly Submission Guide](http://www.ncbi.nlm.nih.gov/assembly/docs/submission/)
 *   [AGP Format](http://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)
 *   [WGS Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/wgs/)
 *   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
-*   [Metagenome Submission Guide](/~/metagenome)
-*   [Structured Comment](/~/structuredcomment)
-
-</div>
-
-</div>
+*   [Metagenome Submission Guide](metagenome.md)
+*   [Structured Comment](structuredcomment.md)
