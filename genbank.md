@@ -1,12 +1,13 @@
+
 # GenBank Overview
 
 ## What is GenBank?
 
-GenBank <sup>®</sup> is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences ([_Nucleic Acids Research_, 2013 Jan;41(D1):D36-42](/pubmed/23193287)). GenBank is part of the [International Nucleotide Sequence Database Collaboration](/genbank/collab) , which comprises the DNA DataBank of Japan (DDBJ), the European Molecular Biology Laboratory (EMBL), and GenBank at NCBI. These three organizations exchange data on a daily basis.
+GenBank <sup>®</sup> is the NIH genetic sequence database, an annotated collection of all publicly available DNA sequences ([_Nucleic Acids Research_, 2013 Jan;41(D1):D36-42](/pubmed/23193287)).  GenBank is part of the [International Nucleotide Sequence Database Collaboration](/~/collab) , which comprises the DNA DataBank of Japan (DDBJ), the European Molecular Biology Laboratory (EMBL), and GenBank at NCBI. These three organizations exchange data on a daily basis.
 
-The complete [release notes](ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt) for the current version of GenBank are available on the NCBI ftp site. A new release is made every two months. GenBank growth [statistics](/genbank/statistics) for both the traditional GenBank divisions and the WGS division are available from each release.
+The complete [release notes](ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt) for the current version of GenBank are available on the NCBI ftp site. A new release is made every two months.  GenBank growth [statistics](/~/statistics) for both the traditional GenBank divisions and the WGS division are available from each release.
 
-An [annotated sample GenBank record](/genbank/samplerecord/) for a _Saccharomyces cerevisiae_ gene demonstrates many of the features of the GenBank flat file format.
+An [annotated sample GenBank record](/~/samplerecord/) for a _Saccharomyces cerevisiae_ gene demonstrates many of the features of the GenBank flat file format.
 
 ## Access to GenBank
 
@@ -32,3 +33,22 @@ If you are submitting human sequences to GenBank, do not include any data that c
 [Disclaimer](/About/disclaimer.html)
 
 [Privacy statement](http://www.nlm.nih.gov/privacy.html)
+
+
+
+
+
+<div id="shared-content-1" nid="1092">
+
+<div class="rightnav">
+
+## GenBank Resources
+
+*   [GenBank Home](/~/)
+*   [Submission Types](/~/submit_types)
+*   [Submission Tools](/~/submit)
+*   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
+*   [Update GenBank Records](/~/update)
+
+
+
