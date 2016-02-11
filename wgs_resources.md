@@ -5,7 +5,7 @@
 *   [WGS Project List](http://www.ncbi.nlm.nih.gov/Traces/wgs)
 *   [WGS Submission Guide](wgs.submit.md)
 *   [Update Genome Records](wgs_update.md)
-*   [FAQ](wgsfaq.md)
+*   [WGS FAQ](wgsfaq.md)
 *   [tbl2asn](tbl2asn2.md)
 *   [Create Submission Template](http://www.ncbi.nlm.nih.gov/WebSub/template.cgi)
 *   [BioProject](http://www.ncbi.nlm.nih.gov/bioproject)
