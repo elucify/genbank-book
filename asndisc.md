@@ -190,4 +190,4 @@ After you've run the Discrepancy Report and fixed the problem annotation, let us
 *   [WGS Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/wgs/)
 *   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
 *   [Metagenome Submission Guide](metagenome.md)
-*   [Structured Comment](structuredcomment.md)
+*   [Structured Comment](structuredcomment)
