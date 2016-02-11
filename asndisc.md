@@ -34,7 +34,7 @@ To run the discrepancy report using ``tbl2asn``, include the argument ``-Z`` wit
 ```
     -p    Path to Files [String] 
     -t    Template File [File In] 
-    -M n  Combines flags for genomes submissions (replaces -a s -V v; invokes FATAL calls when \
+    -M n  Combines flags for genomes submissions (replaces -a s -V v; invokes FATAL calls when 
           -Z discrep is included). 
     -Z    Discrepancy Report Output File [File Out]
 ```
