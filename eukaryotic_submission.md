@@ -355,6 +355,5 @@ Technical assistance is available through the following email aliases:
 [genomes@ncbi.nlm.nih.gov](mailto:genomes@ncbi.nlm.nih.gov ) for questions about transcriptome and genome assemblies  
 [info@ncbi.nlm.nih.gov](mailto:info@ncbi.nlm.nih.gov ) for other general questions related to submission
 
-</div>
 
-</div>
+

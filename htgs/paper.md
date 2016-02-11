@@ -55,9 +55,9 @@ Schuler, G. D., J. A. Epstein, H. Ohkawa and J. A. Kans (1996). "Entrez: molecul
 
 Zhang, J. and T. L. Madden (1997). "PowerBLAST: a new network BLAST application for interactive or automated sequence analysis and annotation." <u>Genome Res</u> 7: 649-656\.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1331">
 
@@ -70,6 +70,5 @@ Zhang, J. and T. L. Madden (1997). "PowerBLAST: a new network BLAST application 
 *   [Processing HTGs](/~/htgs/processing)
 *   [](/~/htgs/processing)[HTGs FAQ](/~/htgs/faq)
 
-</div>
 
-</div>
+

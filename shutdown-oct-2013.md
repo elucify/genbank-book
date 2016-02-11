@@ -9,6 +9,5 @@
 
 *   **If you decide to submit sequences to DDBJ or ENA that were previously submitted to GenBank**, please send an email to [gb-admin@ncbi.nlm.nih.gov](mailto:gb-admin@ncbi.nlm.nih.gov), so that we can delete the duplicate submission that is here.
 
-</div>
 
-</div>
+

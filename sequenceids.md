@@ -193,7 +193,7 @@ For example, here is the [sequence revision history of Reference Sequence Human 
 
 </table>
 
-</div>
+
 
 <div class="col six_col last">
 
@@ -369,7 +369,7 @@ For example, here is the [sequence revision history of Reference Sequence Human 
 
 </table>
 
-</div>
+
 
 Note that the gi number doesn't change every time the record is modified. Only changes to the sequence data trigger assignment of a new gi; minor updates are tracked, but don't change the gi or version number. But note that every time the gi changes, the version number is incremented.
 
@@ -398,6 +398,5 @@ Since December 1999 (GenBank release 115.0):
 
 For more information, see section 3.4.7 ("VERSION") of the [current GenBank release notes](ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt).
 
-</div>
 
-</div>
+

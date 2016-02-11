@@ -9,9 +9,9 @@ The Barcode of Life is a project to create a public collection of reference sequ
 
 The NCBI provides a web-based [Barcode Submission Tool](http://www.ncbi.nlm.nih.gov/WebSub/index.cgi?tool=barcode) (BarSTool) that can be used to submit sets of Barcode sequences to [GenBank](/~/). In addition to the sequence data, the Barcode Submission Tool collects other information to help identify the sequence's source organism and to support the accuracy of the sequence. This information includes, but is not limited to, the following: specimen voucher, geographic location, collection date, primer data, and trace files. Submitters are prompted for this information to ensure that each Barcode record is complete at the time of submission.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1458">
 
@@ -29,6 +29,5 @@ The NCBI provides a web-based [Barcode Submission Tool](http://www.ncbi.nlm.nih.
 *   [The Tree of Life Web Project](http://tolweb.org/tree/phylogeny.html)
 *   [Census of Marine Life](http://www.coml.org/)
 
-</div>
 
-</div>
+

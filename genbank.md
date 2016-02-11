@@ -34,9 +34,9 @@ If you are submitting human sequences to GenBank, do not include any data that c
 
 [Privacy statement](http://www.nlm.nih.gov/privacy.html)
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1092">
 
@@ -50,6 +50,5 @@ If you are submitting human sequences to GenBank, do not include any data that c
 *   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
 *   [Update GenBank Records](/~/update)
 
-</div>
 
-</div>
+

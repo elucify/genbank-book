@@ -122,9 +122,9 @@ See [Update Genome Resources](http://www.ncbi.nlm.nih.gov/genbank/wgs_update)
 *   Complete organellar and viral genomes. They should be submitted as regular GenBank records.  See [GenBank Submissions](http://www.ncbi.nlm.nih.gov/genbank/) for more information on how to submit these types if sequences. If the organelle belongs to an already submitted WGS genome, then include the WGS accession and BioProject and BioSample identifiers (PRJNAxxxxxx and SAMNxxxxxx, respectively) in the Comments box during submission.
 *   [Complete genomes](/~/genomesubmit), with each of the chromosomes in single sequences should be submitted to GenBank as a complete genome via [GenomesMacroSend](http://www.ncbi.nlm.nih.gov/projects/GenomeSubmit/genome_submit.cgi). The most common complete genomes are bacteria, archaea and fungi. Complete genomes are defined for GenBank as the chromosomes, although any plasmids that are isolated with the chromosomes should be submitted too. As of July 2013, these sequences are allowed to contain gaps and are not required to include annotation. However, submitters need to know what kinds of gaps and linkage evidence are present, as described in [Gapped Format for Genome Submissions](/~/wgs_gapped). For information about annotating genomes, see the [prokaryotic annotation guide](/~/genomesubmit_annotation) or [eukaryotic annotation guide](/~/eukaryotic_genome_submission).
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1465">
 
@@ -151,6 +151,5 @@ See [Update Genome Resources](http://www.ncbi.nlm.nih.gov/genbank/wgs_update)
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
 
-</div>
 
-</div>
+

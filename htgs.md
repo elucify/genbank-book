@@ -81,9 +81,9 @@ Sequences are prepared for submission by using NCBI's software tools Sequin or t
 
 An additional source of information about the HTG submission process, [Frequently Asked Questions](/~/htgs/faq)(FAQs), may help speed your submission by outlining some specific examples. If you need more information, please contact [info@ncbi.nlm.nih.gov](mailto:info@ncbi.nlm.nih.gov) for additional help.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1331">
 
@@ -96,6 +96,5 @@ An additional source of information about the HTG submission process, [Frequentl
 *   [Processing HTGs](/~/htgs/processing)
 *   [](/~/htgs/processing)[HTGs FAQ](/~/htgs/faq)
 
-</div>
 
-</div>
+

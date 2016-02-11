@@ -220,9 +220,9 @@ GenBank divisions are divided into two general categories and were described in 
 **Phase 2** sequences are unfinished, ordered, and can contain one or more gaps.  
 **Phase 3** sequences are high quality finished sequences that do not contain gaps.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1331">
 
@@ -235,6 +235,5 @@ GenBank divisions are divided into two general categories and were described in 
 *   [Processing HTGs](/~/htgs/processing)
 *   [](/~/htgs/processing)[HTGs FAQ](/~/htgs/faq)
 
-</div>
 
-</div>
+

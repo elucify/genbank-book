@@ -326,6 +326,5 @@ Details:
 
 </pre>
 
-</div>
 
-</div>
+

@@ -190,9 +190,9 @@ All annotations present in an HTG record use and apply the same rules that are p
                              /db_xref="dbSTS:05783"
             </pre>
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1331">
 
@@ -205,6 +205,5 @@ All annotations present in an HTG record use and apply the same rules that are p
 *   [Processing HTGs](/~/htgs/processing)
 *   [](/~/htgs/processing)[HTGs FAQ](/~/htgs/faq)
 
-</div>
 
-</div>
+

@@ -202,6 +202,5 @@ It is good to load the output of fa2htgs into Sequin and validate the record. Th
 
 When you are finished with the submission, deposit it on your FTP account under the "SEQSUBMIT" directory. Our software will look for it there every day, validate the center and sequence name ids, check whether the record is an update, and write a report that you can pick up the next day. Further information about how HTG records are processed is available from [www.ncbi.nlm.nih.gov/HTGS/processing.html](processing.html).
 
-</div>
 
-</div>
+

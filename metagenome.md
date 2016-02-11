@@ -105,9 +105,9 @@ Once we receive your metagenome submission(s), a member of our staff will conduc
 
 You can choose to have your metagenome project and sequence submission(s) released immediately or to be kept confidential until a certain date or publication of the work, whichever is first. If you wish your metagenome project to be held until publication, we ask that you provide us with the expected publication date and also notify us in a timely manner of the upcoming publication and the relevant citation details. This will allow us to coordinate the release of your metagenome project and sequence submission(s) with the appearance of the paper. Please provide at least two weeks notice of any upcoming publication.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1402">
 
@@ -124,6 +124,5 @@ You can choose to have your metagenome project and sequence submission(s) releas
 *   [Structured Comment Guide](/~/structuredcomment)
 *   [Genomic Standards Consortium](http://gensc.org/)
 
-</div>
 
-</div>
+

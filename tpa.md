@@ -82,9 +82,9 @@ Sequence can be submitted to the TPA database through either BankIt or Sequin:
     *   Annotation that has arisen from an automated tool, such as GeneMark, tRNA scan or ORF finder, where no further evidence, experimental or otherwise, is presented for the annotation.
     *   Annotation from in vivo, in vitro, or in silico experimentation that will not be submitted for publication in a peer-reviewed journal.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1308">
 
@@ -97,6 +97,5 @@ Sequence can be submitted to the TPA database through either BankIt or Sequin:
 *   [TPA-Experimental](/~/TPA-Exp)
 *   [TPA-Inferential](/~/TPA-Inf)
 
-</div>
 
-</div>
+

@@ -662,9 +662,9 @@ If the bound moiety is unknown or if the sequence is a leader sequence, annotate
 
 misc_feature and misc_binding features do not have an associated gene feature. If it is desired to tag these features with a locus_tag-like identifier, then include that value in the note, separated from other information by a semi-colon and space.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1469">
 
@@ -678,6 +678,5 @@ misc_feature and misc_binding features do not have an associated gene feature. I
 *   [GenomesMacroSend](http://www.ncbi.nlm.nih.gov/projects/GenomeSubmit/genome_submit.cgi)
 *   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
 
-</div>
 
-</div>
+

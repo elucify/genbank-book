@@ -214,9 +214,9 @@ _Explanation_: Uncultured or environmental sources should have clone
 
 _Suggestion_: Provide unique (non-identical) clone names for your sequences. A clone name is typically an alpha-numeric identifier used to track the sample in your laboratory. The clone name is not the organism name and it is not the name of the gene you are working on. An example of two unique clone names are xyz1-123 and xyz2-567.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1092">
 
@@ -230,6 +230,5 @@ _Suggestion_: Provide unique (non-identical) clone names for your sequences. A c
 *   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
 *   [Update GenBank Records](/~/update)
 
-</div>
 
-</div>
+

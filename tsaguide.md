@@ -181,9 +181,9 @@ The required qualifiers for the assembly_gap feature are:
 
     </table>
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1470">
 
@@ -202,6 +202,5 @@ The required qualifiers for the assembly_gap feature are:
 *   [WGS/TSA Browser](http://www.ncbi.nlm.nih.gov/Traces/wgs/?term=tsa)
 *   [SRA](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi)
 
-</div>
 
-</div>
+

@@ -154,9 +154,9 @@ The resulting flatfile looks like this:
                      /translation="M...."
  </pre>
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1469">
 
@@ -170,6 +170,5 @@ The resulting flatfile looks like this:
 *   [GenomesMacroSend](http://www.ncbi.nlm.nih.gov/projects/GenomeSubmit/genome_submit.cgi)
 *   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
 
-</div>
 
-</div>
+

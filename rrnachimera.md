@@ -1,5 +1,5 @@
 
-<div>
+
 
 # Chimera Detection in 16S rRNA Sequences at NCBI
 
@@ -11,11 +11,11 @@ A number of tools are available to detect chimeric sequences. NCBI uses [Uchime]
 
 Accurate representations of biological diversity are not possible with data containing chimeras and other artifacts. The entire community must work together to prevent these artifact sequences from polluting the public databases.
 
-</div>
 
-</div>
 
-</div>
+
+
+
 
 <div id="shared-content-1" nid="1092">
 
@@ -29,6 +29,5 @@ Accurate representations of biological diversity are not possible with data cont
 *   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
 *   [Update GenBank Records](/~/update)
 
-</div>
 
-</div>
+

@@ -2492,9 +2492,9 @@ Zebrafish Information Network
 
 </table>
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1163">
 
@@ -2510,4 +2510,4 @@ Zebrafish Information Network
 
 ### [GenBank](/~/)
 
-*   [Submission](/~/submit)*   [Sequence Retrival](http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide)</div>
+*   [Submission](/~/submit)*   [Sequence Retrival](http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide)

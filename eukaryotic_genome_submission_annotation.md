@@ -722,9 +722,9 @@ GO (Gene Ontology) terms can be included in genomes in order to describe protein
 
 The value field is separated by vertical bars '|' into a descriptive string, the GO identifier (leading zeroes are retained), and optionally a PubMed ID and one or more evidence codes. The evidence code is the fourth token, so include blank fields, as necessary (eg the last qualifier has no PubMed ID so the third field is blank).
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1465">
 
@@ -751,6 +751,5 @@ The value field is separated by vertical bars '|' into a descriptive string, the
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
 
-</div>
 
-</div>
+

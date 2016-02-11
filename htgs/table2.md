@@ -509,6 +509,5 @@ emall, emnew, epat
 
 <span><u>Abbreviations</u>: month, a rolling month database consisting of nucleotide or protein sequences added to nr in the last 28 days; nr, a "non-redundant" nucleotide (or protein) database of all sequences excluding ESTs, STSs, GSSs and HTGs; emnew, new EMBL entries since latest release; emall, all EMBL entries, latest release + new (Other FASTA database acronyms are derived from the EMBL division to which they correspond).</span>
 
-</div>
 
-</div>
+

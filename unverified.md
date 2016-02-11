@@ -49,9 +49,9 @@ For annotation updates:
 
 Note that the BLAST analysis and alignment data must be of high quality and cover the entire length of the provided sequence.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1092">
 
@@ -65,6 +65,5 @@ Note that the BLAST analysis and alignment data must be of high quality and cove
 *   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
 *   [Update GenBank Records](/~/update)
 
-</div>
 
-</div>
+

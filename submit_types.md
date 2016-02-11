@@ -42,9 +42,9 @@ Transcriptomic sequence read-overlap contig sequences computationally assembled�
 
 The TPA (Third Party Annotation) database accepts third party annotation of genomic sequences or computationally derived/assembled sequences. TPA submissions must include sequence data that is already represented in GenBank, and the analysis upon which the annotations are based must appear in a peer-reviewed scientific journal.   Detailed requirements and submission instructions can be found on the [TPA](/~/tpa) submission guide.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1092">
 
@@ -58,6 +58,5 @@ The TPA (Third Party Annotation) database accepts third party annotation of geno
 *   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
 *   [Update GenBank Records](/~/update)
 
-</div>
 
-</div>
+

@@ -181,7 +181,7 @@ REFERENCE   3  (bases 1 to 5028)
 
 The LOCUS field contains a number of different data elements, including locus name, sequence length, molecule type, GenBank division, and modification date. Each element is described below.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -197,7 +197,7 @@ The [RefSeq](/refseq/) database of reference sequences assigns formal locus name
 
 Entrez Search Field: Accession Number [ACCN] Search Tip : It is better to search for the actual accession number rather than the locus name, because the accessions are stable and locus names can change.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -207,7 +207,7 @@ Number of nucleotide base pairs (or amino acid residues) in the sequence record.
 
 Entrez Search Field : Sequence Length [SLEN] Search Tips : (1) To retrieve records within a range of lengths, use the colon as the range operator, e.g., 2500:2600[SLEN]. (2) To retrieve all sequences shorter than a certain number, use 2 as the lower bound, e.g., 2:100[SLEN]. (3) To retrieve all sequences longer than a certain number, use a series of 9's as the upper bound, e.g., 325000:99999999[SLEN].
 
-</div>
+
 
 <div class="cms-section">
 
@@ -217,7 +217,7 @@ The type of molecule that was sequenced. In this example, the molecule type is [
 
 Each GenBank record must contain contiguous sequence data from a single molecule type. The various [molecule types](https://www.ncbi.nlm.nih.gov/Sequin//sequin.hlp.html#SpecifyMolecule) are described in the Sequin documentation and can include genomic DNA, genomic RNA, precursor RNA, mRNA (cDNA), ribosomal RNA, transfer RNA, small nuclear RNA, and small cytoplasmic RNA.
 
-Entrez Search Field : Properties [PROP] Search Tip : Search term should be in the format: biomol_genomic, biomol_mRNA, etc. For more examples, view the Properties field in the Index mode.</div>
+Entrez Search Field : Properties [PROP] Search Tip : Search term should be in the format: biomol_genomic, biomol_mRNA, etc. For more examples, view the Properties field in the Index mode.
 
 <div class="cms-section">
 
@@ -250,7 +250,7 @@ Some of the divisions contain sequences from specific groups of organisms, where
 
 Entrez Search Field : Properties [PROP] Search Tip : Search term should be in the format: gbdiv_pri, gbdiv_est, etc. For more examples, view the Properties field in the Index mode. For example, to eliminate all sequences from a particular division, such as all ESTs, you can use a Boolean query formatted such as: human[ORGN] NOT gbdiv_est[PROP] For the reasons noted above, do not use GenBank divisions to retrieve all sequences from a specific organism. Instead, use the [NCBI Taxonomy Browser](/Taxonomy/Browser/wwwtax.cgi).
 
-</div>
+
 
 <div class="cms-section">
 
@@ -260,7 +260,7 @@ The date in the LOCUS field is the date of last modification. The sample record 
 
 Entrez Search Field : Modification Date [MDAT] Search Tips : (1) Enter search term in the format: yyyy/mm/dd, e.g., 1999/07/25\. (2) To retrieve records modified between two dates, use the colon as a range operator, e.g., 1999/07/25:1999/07/31[MDAT]. (3) You can use the Publication Date [PDAT] field of Entrez to limit search results by the date on which records were added to the Entrez system. Publication date can be in the form of a range, just like the Modification Date.
 
-</div>
+
 
 ### [DEFINITION](#DefinitionA)
 
@@ -288,7 +288,7 @@ NC_123456   chromosomes
 
 Entrez Search Field: Accession [ACCN] Search Tip : The letters in the accession number can be written in upper- or lowercase. RefSeq accessions must contain an underscore bar between the letters and the numbers, e.g., NM_002111.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -304,7 +304,7 @@ To find out about the revision history of a sequence, see [GenBank Sequence Revi
 
 Entrez Search Field: use the default setting of "All Fields"
 
-</div>
+
 
 <div class="cms-section">
 
@@ -320,7 +320,7 @@ Read more about [GenBank Sequence Revision History](/~/sequencerevisionhistory/)
 
 Entrez Search Field: use the default setting of "All Fields"
 
-</div>
+
 
 <div class="cms-section">
 
@@ -332,7 +332,7 @@ The Keywords field is present in sequence records primarily for historical reaso
 
 Entrez Search Field: Keyword [KYWD] Search Tip : Because keywords are not present in many records, it is best not to search that field. Instead, search All Fields [ALL], the Text Word [WORD] field, or the Title Word [TITL] field, for progressively narrower retrieval.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -342,7 +342,7 @@ Free-format information including an abbreviated form of the organism name, some
 
 Entrez Search Field: Organism [ORGN] Search Tip : For some organisms that have well-established common names, such as baker's yeast, mouse, and human, a search for the common name will yield the same results as a search for the scientific name, e.g., a search for "baker's yeast" in the organism field retrieves the same number of documents as "Saccharomyces cerevisiae". This is true because the Organism field is connected to the [NCBI Taxonomy Database](/taxonomy/), which contains cross-references between common names, scientific names, and synonyms for organisms represented in the Sequence databases.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -352,7 +352,7 @@ The formal scientific name for the source organism (genus and species, where app
 
 Entrez Search Field: Organism [ORGN] Search Tip : You can search the Organism field by any node in the taxonomic hierarchy, e.g., you can search for the term "Saccharomyces cerevisiae", "Saccharomycetales", "Ascomycota", etc. to retrieve all the sequences from organisms in a particular taxon.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -368,7 +368,7 @@ The last citation in the REFERENCE field usually contains information about the 
 
 Entrez Search Field: The various subfields under References are searchable in the Entrez search fields noted below.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -378,7 +378,7 @@ List of authors in the order in which they appear in the cited article.
 
 Entrez Search Field: Author [AUTH] Search Tip : Enter author names in the form: Lastname AB (without periods after the initials). Initials can be omitted. Truncation can also be used to retrieve all names that begin with a character string, e.g., Richards* or Boguski M*.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -390,7 +390,7 @@ Sometimes the words "Direct Submission" instead of an article title. This is usu
 
 Entrez Search Field: Text Word [WORD] Note: For sequence records, the Title Word [TITL] field of Entrez searches the [Definition Line](#DefinitionB), not the titles of references listed in the record. Therefore, use the Text Word field to search the titles of references (and other text-containing fields). Search Tip : If a search for a specific term does not retrieve the desired records, try other terms that authors might have used, such synonyms, full spellings, or abbreviations. The 'related records' (or 'neighbors') function of Entrez also allows you to broaden your search by retrieving records with similar sequences, regardless of the descriptive terms used by the submitters.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -400,7 +400,7 @@ MEDLINE abbreviation of the journal name. (Full spellings can be obtained from t
 
 Entrez Search Field: Journal Name [JOUR] Search Tip : Journal names can be entered as either the full spelling or the MEDLINE abbreviation. You can search the Journal Name field in the Index mode to see the index for that field, and to select one or more journal names for inclusion in your search.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -412,7 +412,7 @@ References that include PubMed IDs contain links from the sequence record to the
 
 Entrez Search Field: It is not possible to search the Nucleotide or Protein sequence databases by PubMed ID. However, you can search the PubMed (literature) database of Entrez for the PubMed ID, and then link to the associated sequence records.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -426,7 +426,7 @@ The date in the Journal subfield is the date on which the author prepared the su
 
 Entrez Search Field: Use the Author Field [AUTH] if searching for the author name. Use All Fields [ALL] if searching for an element of the author's address (e.g., Yale University). Note, however, that retrieved records might contain the institution name in a field such as Comment, rather than in the Direct Submission reference, so you might get some false hits. Search Tip : It is sometimes helpful to search for both the full spelling and an abbreviation, e.g., "Washington University" OR "WashU", because the spelling used by authors might vary.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -447,7 +447,7 @@ The sample record shown here only includes a small number of features (source, C
 
 Entrez Search Field: Feature Key [FKEY] Search Tip : To scroll through the list of available features, view the Feature Key field in Index mode. You can then select one or more features from the index to include in your query. For example, you can limit your search to records that contain both primer_bind and promoter features.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -461,7 +461,7 @@ Use the [Sequence Length](#SequenceLengthB) [SLEN] field to search by length and
 
 Because map location is written as free text and can be represented in a number of ways (e.g., chromosome number, cytogenetic location, marker name, physical map location), it is not directly searchable in the Entrez Nucleotide or Protein databases. However, there are a number of resources that allow you to browse and/or search the [maps of various genomes](/guide/genomes-maps/).
 
-</div>
+
 
 <div class="cms-section">
 
@@ -471,7 +471,7 @@ A stable unique identification number for the taxon of the source oganism. A tax
 
 Entrez Search Field: The Taxonomy ID number is not searchable in the Organism search field of Entrez but is searchable in the [Taxonomy Browser](/taxonomy/).
 
-Note: The [/db_xref qualifier](#TaxonA) is one of many that can be applied to various features. A complete list is available in [Appendix IV: Summary of qualifiers for feature keys](//www.insdc.org/documents/feature_table.html#7.4) of the [DDBJ/EMBL/GenBank Feature Table](//www.insdc.org/documents/feature_table.html), and in section 3.4.12.3 of the GenBank [release notes](ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt). [Appendix III: Feature keys reference](/projects/collab/FT/index#7.3) shows which qualifiers can be used with specific features (see [alphabetical list](//www.insdc.org/documents/feature_table.html#7.3.2) ).</div>
+Note: The [/db_xref qualifier](#TaxonA) is one of many that can be applied to various features. A complete list is available in [Appendix IV: Summary of qualifiers for feature keys](//www.insdc.org/documents/feature_table.html#7.4) of the [DDBJ/EMBL/GenBank Feature Table](//www.insdc.org/documents/feature_table.html), and in section 3.4.12.3 of the GenBank [release notes](ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt). [Appendix III: Feature keys reference](/projects/collab/FT/index#7.3) shows which qualifiers can be used with specific features (see [alphabetical list](//www.insdc.org/documents/feature_table.html#7.3.2) ).
 
 <div class="cms-section">
 
@@ -483,7 +483,7 @@ Submitters are also encouraged to annotate the mRNA feature, which includes the 
 
 Entrez Search Field: Feature Key [FKEY] Search Tip : You can use this field to limit your search to records that contain a particular feature, such as CDS. To scroll through the list of available features, view the Feature Key field in Index mode. A complete list of features is also available from the resources noted [above](#FeaturesB).
 
-</div>
+
 
 <div class="cms-section">
 
@@ -496,7 +496,7 @@ Base span of the biological feature indicated to the left, in this case, a CDS f
 3.  The `>`symbol indicates partial on the 3' end. Example: `4821..5028>`. The feature extends from base 4821 through base 5028 and is partial on the 3' end
 4.  `complement(range)`indicates that the feature is on the complementary strand. Example: `complement(3300..4037)`. The feature extends from base 3300 through base 4037 but is actually on the complementary strand. It is therefore read in the opposite direction on the reverse complement sequence. (For an example, see [the third CDS feature](#ComplementA) in the sample record shown on this page. In this case, the amino acid translation is generated by taking the reverse complement of bases 3300 to 4037 and reading that reverse complement sequence in its 5' to 3' direction.)
 
-</div>
+
 
 <div class="cms-section">
 
@@ -508,7 +508,7 @@ The accession.version format of protein sequence identification numbers was impl
 
 Entrez Search Field: use the default setting of "All Fields"
 
-</div>
+
 
 <div class="cms-section">
 
@@ -522,7 +522,7 @@ More details about sequence identification numbers and the difference between GI
 
 Entrez Search Field: use the default setting of "All Fields"
 
-</div>
+
 
 <div class="cms-section">
 
@@ -532,7 +532,7 @@ The amino acid translation corresponding to the nucleotide coding sequence ( [CD
 
 Entrez Search Field: It is not possible to search the translation subfield using Entrez. If you want use a string of amino acids as a query to retrieve similar protein sequences, use [BLAST](/blast/) instead.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -542,7 +542,7 @@ A region of biological interest identified as a gene and for which a name has be
 
 Entrez Search Field: Feature Key [FKEY] Search Tip : You can use this field to limit your search to records that contain a particular feature, such as a gene. To scroll through the list of available features, view the Feature Key field in Index mode. A complete list of features is also available from the resources noted [above](#FeaturesB).
 
-</div>
+
 
 <div class="cms-section">
 
@@ -550,7 +550,7 @@ Entrez Search Field: Feature Key [FKEY] Search Tip : You can use this field to l
 
 Indicates that the feature is located on the complementary strand.
 
-</div>
+
 
 <div class="cms-section">
 
@@ -564,7 +564,7 @@ Examples of other records that show a variety of biological features; a graphic 
 
 A complete list of features is available from the resources noted [above](#FeaturesB).
 
-</div>
+
 
 <div class="cms-section">
 
@@ -574,8 +574,7 @@ The ORIGIN may be left blank, may appear as "Unreported," or may give a local po
 
 The sequence data begin on the line immediately below ORIGIN. To view or download the sequence data in [FASTA format](/blast/blastcgihelp.shtml), append `?format=fasta`to the record's URL; for example, [/nucleotide/U49845?format=fasta&report=text](/nucleotide/U49845?format=fasta&report=text).
 
-</div>
 
-</div>
 
-</div>
+
+

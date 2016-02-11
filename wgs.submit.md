@@ -122,7 +122,7 @@ AGP files provide the ordering and orientation information to construct supercon
 
 ###### <a class="jig-ncbitoggler">see details</a>
 
-<div>See this page for the [AGP format](http://www.ncbi.nlm.nih.gov/projects/genome/assembly/agp/AGP_Specification.shtml) .
+See this page for the [AGP format](http://www.ncbi.nlm.nih.gov/projects/genome/assembly/agp/AGP_Specification.shtml) .
 
 Some specific requests are:
 
@@ -136,7 +136,7 @@ Some specific requests are:
 
 You can validate the basic format of your AGP file on this web page, [http://www.ncbi.nlm.nih.gov/projects/genome/assembly/agp/agp_validate.cgi](http://www.ncbi.nlm.nih.gov/projects/genome/assembly/agp/agp_validate.cgi).  In addition, the standalone commandline program, [agp_validate](http://www.ncbi.nlm.nih.gov/projects/genome/assembly/agp/AGP_Validation.shtml) is available by anonymous [FTP](ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/agp_validate/) to validate the AGP file more extensively yourself. The -help option details the arguments and commandline format.
 
-</div>
+
 
 #### Assembly Information Files
 
@@ -146,7 +146,7 @@ Submissions in the original submission portal (before Feb. 3, 2014) will need th
 
 ###### <a class="jig-ncbitoggler">see details</a>
 
-<div>
+
 
 **Contigs only (no AGP file), but some contigs are the complete chromosome or plasmid:** Submit .sqn file(s) from tbl2asn plus a 4-column comma-separated chr/plasmid description file of ContigID,chromosome/plasmid name,Location,Type. The columns of the file are:
 
@@ -202,7 +202,7 @@ mito,MT
 scf1,chr  
 scf10,pBR322
 
-</div>
+
 
 *   #### Submit your files
 
@@ -214,7 +214,7 @@ scf10,pBR322
 
     ###### <a class="jig-ncbitoggler">including this information:</a>
 
-    <div>
+    
 
     *   BioProjectID (PRJNAxxxxx) from BioProject DB, or create one during this submission because you have not yet created one
     *   BioSampleID (SAMNxxxxx) from BioSample, or create one during this submission because you have not yet created one
@@ -229,7 +229,7 @@ scf10,pBR322
         *   Genome Coverage: eg, 12x
         *   Sequencing Technologies: eg, ABI 3730; 454 GS-FLX Titanium; Illumina GAIIx
 
-    </div>
+    
 
     The submission will be given a 'SUB' temporary identifier which you can use in correspondence before an accession number is assigned to the genome submission.
 
@@ -261,9 +261,9 @@ scf10,pBR322
 
 Requests for annotation by the [Prokaryotic Genomes Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/) is a step during submission of the genome to GenBank. Prepare a regular GenBank WGS submission and request PGAP annotation during the submission process by clicking on the box "Annotate this prokaryotic genome in the NCBI Prokaryotic Annotation Pipeline before being <label for="id_prokaryote_source-annotate_prokaryotic_genome">released".  </label> A fasta submission in the new updated submission portal would be simplest. You may edit the files before final submission, though this is not required and is generally not recommended, as it will slow processing and may introduce problems that you would need to fix before submitting the edited file.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1465">
 
@@ -290,6 +290,5 @@ Requests for annotation by the [Prokaryotic Genomes Annotation Pipeline](http://
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
 
-</div>
 
-</div>
+

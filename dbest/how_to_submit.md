@@ -1,109 +1,109 @@
 
 ## <span>Submitting sequences to dbEST</span>
 
-<div>
 
-<div><span><span>Please</span> </span>ensure that your submissions follow these sequence quality and file formatting guidelines:</div>
 
-</div>
+<span><span>Please</span> </span>ensure that your submissions follow these sequence quality and file formatting guidelines:
 
-<div>**<span><span>Sequence Quality and Content:</span></span>**</div>
 
-<div><span>[1] Please submit only single-pass sequences (no next-gen sequences, raw or assembled)</span></div>
 
-<div><span>[2] Remove: vector, linker, adaptor, mitochondrial, ribosomal, and contaminant sequences</span></div>
+**<span><span>Sequence Quality and Content:</span></span>**
 
-<div><span>[3] Use VecScreen to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)</span></div>
+<span>[1] Please submit only single-pass sequences (no next-gen sequences, raw or assembled)</span>
 
-<div><span>[http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)</span></div>
+<span>[2] Remove: vector, linker, adaptor, mitochondrial, ribosomal, and contaminant sequences</span>
 
-<div><span>[4] Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.</span></div>
+<span>[3] Use VecScreen to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)</span>
 
-<div><span>[5] Remove any low quality sequences.  These have high number of N's and/or long stretches of polynucleotides throughout. </span></div>
+<span>[http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)</span>
 
-<div><span>Examples of low quality sequences:</span></div>
+<span>[4] Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.</span>
 
-<div><span>SEQUENCE:</span></div>
+<span>[5] Remove any low quality sequences.  These have high number of N's and/or long stretches of polynucleotides throughout. </span>
 
-<div><span>AAAAAAAAAAAAAAAAAAAAACCCCCCCCCCCCCCCCCCCCCCTTTTTTGGGGGG</span></div>
+<span>Examples of low quality sequences:</span>
 
-<div><span>SEQUENCE:</span></div>
+<span>SEQUENCE:</span>
 
-<div><span>TNNCANNNNGNNNGGNNCNNANNNNNTGCNNNNNNTTNNAANNGCAANNNNTG</span></div>
+<span>AAAAAAAAAAAAAAAAAAAAACCCCCCCCCCCCCCCCCCCCCCTTTTTTGGGGGG</span>
 
-<div><span>**File Formatting:**</span></div>
+<span>SEQUENCE:</span>
 
-<div><span>[6] Please send your submission as two text files:</span></div>
+<span>TNNCANNNNGNNNGGNNCNNANNNNNTGCNNNNNNTTNNAANNGCAANNNNTG</span>
 
-<div><span>     plc.txt   contains publication, library, and contact files</span></div>
+<span>**File Formatting:**</span>
 
-<div><span>     est.txt   contains all EST submissions</span></div>
+<span>[6] Please send your submission as two text files:</span>
 
-<div><span>[7] Ensure that all EST# are unique</span></div>
+<span>     plc.txt   contains publication, library, and contact files</span>
 
-<div><span>[8] EST file CITATION must exactly match Pub file TITLE</span></div>
+<span>     est.txt   contains all EST submissions</span>
 
-<div><span>[9] EST file LIBRARY must exactly match Lib file NAME</span></div>
+<span>[7] Ensure that all EST# are unique</span>
 
-<div><span>[10] EST file CONT_NAME must exactly match Cont file NAME</span></div>
+<span>[8] EST file CITATION must exactly match Pub file TITLE</span>
 
-<div><span>[11] PUT_ID field should not contain organism, hypothetical protein, unknown, or similar information</span></div>
+<span>[9] EST file LIBRARY must exactly match Lib file NAME</span>
 
-<div><span>[12] Use only standard 26 letters of the English alphabet (no accent marks, umlauts, etc.)</span></div>
+<span>[10] EST file CONT_NAME must exactly match Cont file NAME</span>
 
-<div><span>[13] The following represents the basic structure for each file:</span></div>
+<span>[11] PUT_ID field should not contain organism, hypothetical protein, unknown, or similar information</span>
 
-<div>TYPE: Pub</div>
+<span>[12] Use only standard 26 letters of the English alphabet (no accent marks, umlauts, etc.)</span>
 
-<div>TITLE:</div>
+<span>[13] The following represents the basic structure for each file:</span>
 
-<div>AUTHORS: Lastname,I.I.; Lastname,I.; Lastname,I.I.; etc…</div>
+TYPE: Pub
 
-<div>YEAR:</div>
+TITLE:
 
-<div>STATUS:</div>
+AUTHORS: Lastname,I.I.; Lastname,I.; Lastname,I.I.; etc…
 
-<div>||</div>
+YEAR:
 
-<div>TYPE: Lib</div>
+STATUS:
 
-<div>NAME:</div>
+||
 
-<div>ORGANISM:</div>
+TYPE: Lib
 
-<div>DESCR:</div>
+NAME:
 
-<div>||</div>
+ORGANISM:
 
-<div>TYPE: Cont</div>
+DESCR:
 
-<div>NAME:</div>
+||
 
-<div>EMAIL:</div>
+TYPE: Cont
 
-<div>LAB:</div>
+NAME:
 
-<div>INST:</div>
+EMAIL:
 
-<div>ADDR:</div>
+LAB:
 
-<div>||</div>
+INST:
 
-<div>TYPE: EST</div>
+ADDR:
 
-<div>STATUS: New</div>
+||
 
-<div>CONT_NAME:</div>
+TYPE: EST
 
-<div>CITATION:</div>
+STATUS: New
 
-<div>LIBRARY:</div>
+CONT_NAME:
 
-<div>PUBLIC:</div>
+CITATION:
 
-<div>SEQUENCE:</div>
+LIBRARY:
 
-<div>||</div>
+PUBLIC:
+
+SEQUENCE:
+
+||
 
 ### <span>Data submission file types</span>
 
@@ -532,6 +532,5 @@ sequence
     TAG_TISSUE: contains the tissue that the tagged library was made from e.g. prostate in the above example.  
     TAG_SEQ: contains the actual tag sequence you found in the EST read. If you didn't find one, put "None found" in this field - that will distinguish this case from one where the tag hasn't been searched for.
 
-</div>
 
-</div>
+

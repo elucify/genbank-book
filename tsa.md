@@ -68,9 +68,9 @@ Please contact [gb-admin@ncbi.nlm.nih.gov](mailto:gb-admin@ncbi.nlm.nih.gov) wit
 *   A single assembly from multiple organisms.
 *   Subsets of a transcriptome study unless it is part of a targeted study.  See the [TSA submission guide](/~/tsaguide) for more information about submitting a targeted study.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1470">
 
@@ -89,6 +89,5 @@ Please contact [gb-admin@ncbi.nlm.nih.gov](mailto:gb-admin@ncbi.nlm.nih.gov) wit
 *   [WGS/TSA Browser](http://www.ncbi.nlm.nih.gov/Traces/wgs/?term=tsa)
 *   [SRA](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi)
 
-</div>
 
-</div>
+

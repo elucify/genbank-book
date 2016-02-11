@@ -27,6 +27,5 @@ Search and align GenBank sequences to a query sequence using [BLAST](/blast) (Ba
 
 Search, link, and download sequences programatically using [NCBI e-utilities](http://www.ncbi.nlm.nih.gov/entrez/query/static/eutils_help.html).
 
-</div>
 
-</div>
+

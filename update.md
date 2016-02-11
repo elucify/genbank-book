@@ -104,9 +104,9 @@ If you are adding annotation to a record that has none, then send us the feature
 
 If you are updating many features of a record, let us know, and we can send you a tab-delimited 5-column [Feature table](http://www.ncbi.nlm.nih.gov/Sequin/table.html) with the current annotation for you to edit and return to us.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1092">
 
@@ -120,6 +120,5 @@ If you are updating many features of a record, let us know, and we can send you 
 *   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
 *   [Update GenBank Records](/~/update)
 
-</div>
 
-</div>
+

@@ -409,6 +409,5 @@ DDBJ, EMBL, GenBank
 
 </table>
 
-</div>
 
-</div>
+

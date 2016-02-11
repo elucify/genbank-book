@@ -292,9 +292,9 @@ _Suggestion_: In the source modifiers, use the source modifier “culture-collec
 
 Note that culture-collection should be used for microbial sequences, while specimen-voucher should be used for plants and animals only. Do not use specimen-voucher to describe host information for a microbial sequence submission.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1465">
 
@@ -321,6 +321,5 @@ Note that culture-collection should be used for microbial sequences, while speci
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
 
-</div>
 
-</div>
+

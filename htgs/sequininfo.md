@@ -120,9 +120,9 @@ On the Welcome to Sequin form, select "New FA2HTGS Submission" if you are submit
 
 When you are finished with the submission, deposit it on your [FTP account](/genbank/htgs/ftp) under the "SEQSUBMIT" directory. Our software will look for it there every day, validate the center and sequence_name id's, check if the record is an update, and write a report that you can pick up the next day. Further information about how HTG records are processed is available from [www.ncbi.nlm.nih.gov/HTGS/processing.html](/~/htgs/processing).
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1331">
 
@@ -135,6 +135,5 @@ When you are finished with the submission, deposit it on your [FTP account](/gen
 *   [Processing HTGs](/~/htgs/processing)
 *   [](/~/htgs/processing)[HTGs FAQ](/~/htgs/faq)
 
-</div>
 
-</div>
+

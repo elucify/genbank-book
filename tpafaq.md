@@ -75,9 +75,9 @@ For a sequence to move from TPA:inferential to TPA:experimental, wet-bench exper
 
 The NCBI RefSeq group does welcome expert comment, critique, and advice from others in the scientific community. There are many individuals and groups contributing to RefSeq on the organism, gene, or gene family level. If you are interested, please contact the NCBI RefSeq group at refseq-admin@ncbi.nlm.nih.gov or see [Refseq](http://www.ncbi.nlm.nih.gov/projects/RefSeq/process.html).
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1308">
 
@@ -90,6 +90,5 @@ The NCBI RefSeq group does welcome expert comment, critique, and advice from oth
 *   [TPA-Experimental](/~/TPA-Exp)
 *   [TPA-Inferential](/~/TPA-Inf)
 
-</div>
 
-</div>
+

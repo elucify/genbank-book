@@ -525,9 +525,9 @@ An example record that includes a properly formatted HIV structured comment is [
 
 Sequences with structured comments can be retrieved in Entrez by specifying the tag-value pair in double quotes, eg, “investigation_type bacteria_archaea”. This search in Entrez retrieves GenBank records with this tag-value pair in the structured comment. You can also search for each tag as a property in Entrez (eg, depth[prop]) in order to retrieve all records that have this indexed within the structured comment.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1402">
 
@@ -544,6 +544,5 @@ Sequences with structured comments can be retrieved in Entrez by specifying the 
 *   [Structured Comment Guide](/~/structuredcomment)
 *   [Genomic Standards Consortium](http://gensc.org/)
 
-</div>
 
-</div>
+

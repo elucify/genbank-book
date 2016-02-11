@@ -19,6 +19,5 @@
 *   Sequin
 *   BankIt
 
-</div>
 
-</div>
+

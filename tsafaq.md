@@ -57,9 +57,9 @@ No, each submission in portal should represent a single assembly and should have
 
 A Transcriptome Shotgun Assembly (TSA) BLAST database is now available. The sequences were initially included in nt but now have been segregated into a separate database. The TSA database is available from the BLAST home page under Basic BLAST at the nucleotide, tblastn, and tblastx links. These sequences are not available in nt.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1470">
 
@@ -78,6 +78,5 @@ A Transcriptome Shotgun Assembly (TSA) BLAST database is now available. The sequ
 *   [WGS/TSA Browser](http://www.ncbi.nlm.nih.gov/Traces/wgs/?term=tsa)
 *   [SRA](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi)
 
-</div>
 
-</div>
+

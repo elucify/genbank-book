@@ -189,9 +189,9 @@ complementary.tbl
 
 </pre>
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1465">
 
@@ -218,6 +218,5 @@ complementary.tbl
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
 
-</div>
 
-</div>
+

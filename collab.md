@@ -23,11 +23,11 @@ the [/db_xref](/~/collab/db_xref) qualifier allows the nucleotide databases to e
 
 ### The country Qualifier
 
-The [/country](/~/collab/country) country qualifier indicates the country of origin of a DNA sample. This qualifier uses a controlled vocabulary and format.</div>
+The [/country](/~/collab/country) country qualifier indicates the country of origin of a DNA sample. This qualifier uses a controlled vocabulary and format.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1163">
 
@@ -43,4 +43,4 @@ The [/country](/~/collab/country) country qualifier indicates the country of ori
 
 ### [GenBank](/~/)
 
-*   [Submission](/~/submit)*   [Sequence Retrival](http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide)</div>
+*   [Submission](/~/submit)*   [Sequence Retrival](http://www.ncbi.nlm.nih.gov/sites/entrez?db=nucleotide)

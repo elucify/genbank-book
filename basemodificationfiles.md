@@ -15,6 +15,5 @@ It would be beneficial to the scientific community if you were able to perform t
 
 Links to the public basemodification files can be found in this file on the FTP site, [ftp://ftp.ncbi.nlm.nih.gov/pub/supplementary_data/basemodification.csv](ftp://ftp.ncbi.nlm.nih.gov/pub/supplementary_data/basemodification.csv)
 
-</div>
 
-</div>
+

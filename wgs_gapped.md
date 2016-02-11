@@ -116,9 +116,9 @@ For more information about splitting CDS features, see either the [eukaryotic an
 
       strobe
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1465">
 
@@ -145,6 +145,5 @@ For more information about splitting CDS features, see either the [eukaryotic an
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
 
-</div>
 
-</div>
+

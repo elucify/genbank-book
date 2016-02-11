@@ -101,9 +101,9 @@ Once we have completed our review of your submission, we will prepare it for rel
 
 See [Update Genome Resources](//www.ncbi.nlm.nih.gov/genbank/wgs_update)
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1469">
 
@@ -117,6 +117,5 @@ See [Update Genome Resources](//www.ncbi.nlm.nih.gov/genbank/wgs_update)
 *   [GenomesMacroSend](http://www.ncbi.nlm.nih.gov/projects/GenomeSubmit/genome_submit.cgi)
 *   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
 
-</div>
 
-</div>
+

@@ -63,6 +63,6 @@ There are some options, which can be chosen according to which works best for th
 
 4\. tbl2asn can be run individually on a .fsa file by using -i file1.fsa (instead of -p path_to_files, which will read all the .fsa files in that directory)  
 
-</div>
 
-</div>
+
+

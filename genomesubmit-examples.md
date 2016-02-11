@@ -339,6 +339,5 @@ ORIGIN
 
 For an additional examples see GenBank Accession Number [CP000141](//www.ncbi.nlm.nih.gov/nuccore/CP000141?) .
 
-</div>
 
-</div>
+

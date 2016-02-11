@@ -40,9 +40,9 @@ All files placed on the FTP site are checked for a variety of possible errors. S
 
 ![htgsop](/core/assets/genbank/images/htgsop.gif)
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1331">
 
@@ -55,6 +55,5 @@ All files placed on the FTP site are checked for a variety of possible errors. S
 *   [Processing HTGs](/~/htgs/processing)
 *   [](/~/htgs/processing)[HTGs FAQ](/~/htgs/faq)
 
-</div>
 
-</div>
+

@@ -152,9 +152,9 @@ When your genome is released, we will supply you with a table that has each prot
 
 See the [WGS](/~/wgs#update) page for information about updating a WGS project.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1465">
 
@@ -181,6 +181,5 @@ See the [WGS](/~/wgs#update) page for information about updating a WGS project.
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
 
-</div>
 
-</div>
+

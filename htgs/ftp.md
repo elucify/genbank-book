@@ -45,6 +45,5 @@ use PASV mode
 
 Hostname > ftp-private.ncbi.nlm.nih.gov
 
-</div>
 
-</div>
+

@@ -151,6 +151,5 @@ a note. A few examples are:
 
 </pre>
 
-</div>
 
-</div>
+

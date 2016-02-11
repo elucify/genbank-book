@@ -1,111 +1,111 @@
 
 ## Submitting Sequences to dbGSS
 
-<div>Please ensure that your submissions follow these sequence quality and file formatting guidelines:</div>
+Please ensure that your submissions follow these sequence quality and file formatting guidelines:
 
-<div>**Sequence Quality and Content:**</div>
+**Sequence Quality and Content:**
 
-<div>[1] Please submit only single-pass sequences (no next-gen sequences, raw or assembled)</div>
+[1] Please submit only single-pass sequences (no next-gen sequences, raw or assembled)
 
-<div>[2] Remove: vector, linker, adaptor, mitochondrial, ribosomal, and contaminant sequences</div>
+[2] Remove: vector, linker, adaptor, mitochondrial, ribosomal, and contaminant sequences
 
-<div>[3] Use VecScreen to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)</div>
+[3] Use VecScreen to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)
 
-<div>[http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)</div>
+[http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)
 
-<div>[4] Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.</div>
+[4] Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.
 
-<div>[5] Remove any low quality sequences.  These have high number of N's and/or long stretches of polynucleotides throughout. </div>
+[5] Remove any low quality sequences.  These have high number of N's and/or long stretches of polynucleotides throughout. 
 
-<div>Examples of low quality sequences:</div>
+Examples of low quality sequences:
 
-<div>SEQUENCE:</div>
+SEQUENCE:
 
-<div>AAAAAAAAAAAAAAAATTTTTTTTTTTTTTTCCCCCCCCCCCCCCCCGGGGGGGGGGGGG</div>
+AAAAAAAAAAAAAAAATTTTTTTTTTTTTTTCCCCCCCCCCCCCCCCGGGGGGGGGGGGG
 
-<div>SEQUENCE:</div>
+SEQUENCE:
 
-<div>CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCTCCCCCCCCCCCCTCCCCCCCCCCCCCC</div>
+CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCTCCCCCCCCCCCCTCCCCCCCCCCCCCC
 
-<div>SEQUENCE:</div>
+SEQUENCE:
 
-<div>TNNCANNNNGNNNGGNNCNNANNNNNTGCNNNNNNTTNNAANNGCAANNNNTG</div>
+TNNCANNNNGNNNGGNNCNNANNNNNTGCNNNNNNTTNNAANNGCAANNNNTG
 
-<div>**File Formatting:**</div>
+**File Formatting:**
 
-<div>[6] Please send your submission as two text files:</div>
+[6] Please send your submission as two text files:
 
-<div>     plc.txt   contains publication, library, and contact files</div>
+     plc.txt   contains publication, library, and contact files
 
-<div>     gss.txt   contains all GSS submissions</div>
+     gss.txt   contains all GSS submissions
 
-<div>[7] Ensure that all GSS# are unique</div>
+[7] Ensure that all GSS# are unique
 
-<div>[8] GSS file CITATION must exactly match Pub file TITLE</div>
+[8] GSS file CITATION must exactly match Pub file TITLE
 
-<div>[9] GSS file LIBRARY must exactly match Lib file NAME</div>
+[9] GSS file LIBRARY must exactly match Lib file NAME
 
-<div>[10] GSS file CONT_NAME must exactly match Cont file NAME</div>
+[10] GSS file CONT_NAME must exactly match Cont file NAME
 
-<div>[11] Use only standard 26 letters of the English alphabet (no accent marks, umlauts, etc.)</div>
+[11] Use only standard 26 letters of the English alphabet (no accent marks, umlauts, etc.)
 
-<div>[12] PUT_ID field should not contain organism, hypothetical protein, unknown, or similar info</div>
+[12] PUT_ID field should not contain organism, hypothetical protein, unknown, or similar info
 
-<div>[13] The following represent the most common fields for each file:</div>
+[13] The following represent the most common fields for each file:
 
-<div>TYPE: Pub</div>
+TYPE: Pub
 
-<div>TITLE:</div>
+TITLE:
 
-<div>AUTHORS: Lastname,I.I.; Lastname,I.; Lastname,I.I.; etc…</div>
+AUTHORS: Lastname,I.I.; Lastname,I.; Lastname,I.I.; etc…
 
-<div>YEAR:</div>
+YEAR:
 
-<div>STATUS:</div>
+STATUS:
 
-<div>||</div>
+||
 
-<div>TYPE: Lib</div>
+TYPE: Lib
 
-<div>NAME:</div>
+NAME:
 
-<div>ORGANISM:</div>
+ORGANISM:
 
-<div>DESCR:</div>
+DESCR:
 
-<div>||</div>
+||
 
-<div>TYPE: Cont</div>
+TYPE: Cont
 
-<div>NAME:</div>
+NAME:
 
-<div>EMAIL:</div>
+EMAIL:
 
-<div>LAB:</div>
+LAB:
 
-<div>INST:</div>
+INST:
 
-<div>ADDR:</div>
+ADDR:
 
-<div>||</div>
+||
 
-<div>TYPE: GSS</div>
+TYPE: GSS
 
-<div>STATUS: New</div>
+STATUS: New
 
-<div>CONT_NAME:</div>
+CONT_NAME:
 
-<div>CITATION:</div>
+CITATION:
 
-<div>LIBRARY:</div>
+LIBRARY:
 
-<div>CLASS:</div>
+CLASS:
 
-<div>PUBLIC:</div>
+PUBLIC:
 
-<div>SEQUENCE:</div>
+SEQUENCE:
 
-<div>||</div>
+||
 
 GSSs by nature are usually submitted to GenBank and dbGSS as batches of dozens to thousands of entries, with a great deal of redundancy in the citation, submittor and library information. To improve the efficiency of the submission process for this type of data, we have designed a separate streamlined submission process and data format.
 
@@ -529,6 +529,5 @@ virtual transcript
 
 *   It is important that the strings in the following fields be completely identical:
 
-</div>
 
-</div>
+

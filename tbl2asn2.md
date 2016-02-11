@@ -200,7 +200,7 @@ Sample command line: -M n</td>
 *   isolate [isolate=CWS1]
 *   chromosome [chromosome=XVI]
 
-</div>
+
 
 <div style="margin-left: 2em">Other elements
 
@@ -211,7 +211,7 @@ Sample command line: -M n</td>
 *   protein name [protein=helicase] (if using -c)
 *   genetic code [gcode=4]
 
-</div>
+
 
 Here is the [list of source modifiers](http://www.ncbi.nlm.nih.gov/Sequin/modifiers.html) . See the [Tax Browser](/Taxonomy/Utils/wprintgc.cgi?mode=c) for the genetic code values.
 
@@ -291,6 +291,5 @@ Sc_16     Zea mays     A69Y       JH90.6-2x12
 
 To receive email notification about updates to tbl2asn, as well as a description of what is included in the update follow these [directions](/~/tbl2asn_announce) .
 
-</div>
 
-</div>
+

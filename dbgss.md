@@ -25,6 +25,5 @@ How to [submit data](/~/dbGSS/how_to_submit.html) to dbGSS.
 
 Information on the [current release](/~/dbGSS/dbGSS_summary.html).
 
-</div>
 
-</div>
+

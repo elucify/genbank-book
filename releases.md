@@ -1,5 +1,5 @@
 
-<div>
+
 
 ## GenBank Releases
 
@@ -28,8 +28,7 @@ NCBI's electronic mail address is: [info@ncbi.nlm.nih.gov](mailto:info@ncbi.nlm.
 ### FTP
 
 [GenBank FTP Release Notes Site](ftp://ftp.ncbi.nih.gov/genbank/release.notes/)  
-[GenBank FTP Site](ftp://ftp.ncbi.nih.gov/genbank/)</div>
+[GenBank FTP Site](ftp://ftp.ncbi.nih.gov/genbank/)
 
-</div>
 
-</div>
+

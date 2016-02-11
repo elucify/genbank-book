@@ -16,6 +16,5 @@ Some users who experience slow FTP transfers of large files might realize an imp
 
 For more complete details on what data are available, see [the current GenBank release notes](ftp://ftp.ncbi.nlm.nih.gov/genbank/gbrel.txt).
 
-</div>
 
-</div>
+

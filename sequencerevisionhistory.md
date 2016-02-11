@@ -16,6 +16,5 @@ If you follow the link for that earlier gi number, Entrez will display that vers
 
 Read more about [Sequence and Version Numbers](/~/sequenceids/).
 
-</div>
 
-</div>
+

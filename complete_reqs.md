@@ -74,9 +74,9 @@ When you submit a complete genome or complete chromosome, in addition to the .sq
 
 Even if you do not have the additional .pep or .rna files, set up your .tbl file with transcript_id and protein_id qualifiers, and include the -g argument when you run tbl2asn for complete genomes or complete chromosomes.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1465">
 
@@ -103,6 +103,5 @@ Even if you do not have the additional .pep or .rna files, set up your .tbl file
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
 
-</div>
 
-</div>
+

@@ -99,9 +99,9 @@ If you are modifying an existing protein (maybe just moving the start codon) the
 
 Please contact us at genomes@ncbi.nlm.nih.gov if you have questions about generating the submission files, or about details of annotation.
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1465">
 
@@ -128,6 +128,5 @@ Please contact us at genomes@ncbi.nlm.nih.gov if you have questions about genera
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
 
-</div>
 
-</div>
+

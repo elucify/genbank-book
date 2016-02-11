@@ -2482,6 +2482,5 @@ uncultured Streptomyces sp.                                                 1
 uncultured Xanthomonas sp.                                                  1
 </pre>
 
-</div>
 
-</div>
+

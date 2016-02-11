@@ -34,6 +34,5 @@ How to [submit data to dbEST](/genbank/dbEST/how_to_submit)
 
 [Number of ESTs](/genbank/dbEST/dbEST_summary) - dbEST summary by organism
 
-</div>
 
-</div>
+

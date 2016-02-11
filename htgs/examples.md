@@ -15,9 +15,9 @@ Examples:
 *   [Phase 2](//www.ncbi.nlm.nih.gov/nuccore/2182283)
 *   [Phase 3](//www.ncbi.nlm.nih.gov/nuccore/2204282)
 
-</div>
 
-</div>
+
+
 
 <div id="shared-content-1" nid="1331">
 
@@ -30,6 +30,5 @@ Examples:
 *   [Processing HTGs](/~/htgs/processing)
 *   [](/~/htgs/processing)[HTGs FAQ](/~/htgs/faq)
 
-</div>
 
-</div>
+

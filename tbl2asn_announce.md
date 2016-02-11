@@ -14,6 +14,5 @@ If you have trouble subscribing, send a message to [info@ncbi.nlm.nih.gov](mailt
 
 Please note that this is NOT a discussion list, simply a vehicle for NCBI staff members to inform Sequin users of changes that will occur.
 
-</div>
 
-</div>
+
