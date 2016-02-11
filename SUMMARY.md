@@ -15,7 +15,6 @@
    * [Prokaryotic Genome Annotation Guide](genomesubmit_annotation.md)
    * [Eukaryotic Genome Annotation Guide](eukaryotic_genome_submission_annotation.md)
    * [Annotation Examples](genomesubmit-Examples.md)
-* [WGS Submission Guide](wgs.submit.md)
 * [Whole Genome Shotgun](wgs.md)
    * [WGS Submission Guide](wgs.submit.md)
    * [Discrepancy Report](asndisc.md)
