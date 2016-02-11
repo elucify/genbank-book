@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="4158"> <meta name="revision-id" content="24587"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/sequenceids"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4158/edit"> <meta name="created" content="2014-10-07T11:16:50-04:00"> <meta name="modified" content="2014-11-19T08:37:43-05:00"> <meta name="publication-date" content="2014-10-07T11:14:00-04:00"> <meta name="author" content="mjohnson"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/sequenceids"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <link type="text/css" rel="stylesheet" href="/core/assets/genbank/css/genbank.css"> <title>Sequence IDs: Accessions and GI Numbers</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## Sequence Identifiers
 

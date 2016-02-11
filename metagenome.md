@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1379"> <meta name="revision-id" content="30153"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/metagenome"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1379/edit"> <meta name="created" content="2011-10-31T14:49:01-04:00"> <meta name="modified" content="2015-10-23T09:41:15-04:00"> <meta name="publication-date" content="2011-10-31T14:49:01-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/metagenome"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Metagenome Submission Guide</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Metagenome Submission Guide
 

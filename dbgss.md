@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="2809"> <meta name="revision-id" content="16539"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/dbgss"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/2809/edit"> <meta name="created" content="2013-04-19T13:18:37-04:00"> <meta name="modified" content="2013-08-01T10:24:07-04:00"> <meta name="publication-date" content="2013-04-19T13:13:00-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/dbgss"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>GSS</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## What is GSS?
 

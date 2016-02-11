@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1116"> <meta name="revision-id" content="20237"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/tbl2asn2"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1116/edit"> <meta name="created" content="2011-08-25T14:41:21-04:00"> <meta name="modified" content="2014-05-16T15:47:37-04:00"> <meta name="publication-date" content="2011-08-25T14:41:21-04:00"> <meta name="author" content="mjohnson"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/tbl2asn2"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>tbl2asn</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## What is tbl2asn?
 

@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="2736"> <meta name="revision-id" content="21126"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/dbest"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/2736/edit"> <meta name="created" content="2013-03-07T14:31:46-05:00"> <meta name="modified" content="2014-06-19T13:44:59-04:00"> <meta name="publication-date" content="2013-03-07T14:29:00-05:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/dbest"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>About_EST</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## What is dbEST?
 

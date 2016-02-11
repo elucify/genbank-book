@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1478"> <meta name="revision-id" content="28069"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/tsa"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1478/edit"> <meta name="created" content="2011-11-21T11:55:23-05:00"> <meta name="modified" content="2015-06-11T10:27:43-04:00"> <meta name="publication-date" content="2011-11-21T11:55:23-05:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/tsa"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Transcriptome Shotgun Assembly</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Transcriptome Shotgun Assembly Sequence Database
 

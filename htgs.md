@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1128"> <meta name="revision-id" content="28521"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/htgs"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1128/edit"> <meta name="created" content="2011-09-07T15:05:23-04:00"> <meta name="modified" content="2015-07-10T11:54:10-04:00"> <meta name="publication-date" content="2011-09-07T15:05:23-04:00"> <meta name="author" content="mjohnson"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/htgs"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>High-Throughput Genome Sequencing</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # High-Throughput Genomic Sequences
 

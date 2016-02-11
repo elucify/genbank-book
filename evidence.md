@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1378"> <meta name="revision-id" content="10288"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/evidence"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1378/edit"> <meta name="created" content="2011-10-31T14:17:50-04:00"> <meta name="modified" content="2012-08-27T09:27:43-04:00"> <meta name="publication-date" content="2011-10-31T14:17:50-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/evidence"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Evidence Qualifiers</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Evidence Qualifiers
 

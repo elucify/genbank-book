@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1442"> <meta name="revision-id" content="10286"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/complete_reqs"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1442/edit"> <meta name="created" content="2011-11-10T11:22:21-05:00"> <meta name="modified" content="2012-08-27T09:14:46-04:00"> <meta name="publication-date" content="2011-11-10T11:22:21-05:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/complete_reqs"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Complete Eukaryotic Genome Requirements</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Additional Guidelines for Complete Eukaryotic Genome Submissions
 

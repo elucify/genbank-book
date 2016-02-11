@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1437"> <meta name="revision-id" content="20174"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/asndisc"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1437/edit"> <meta name="created" content="2011-11-09T14:20:41-05:00"> <meta name="modified" content="2014-05-15T11:19:25-04:00"> <meta name="publication-date" content="2011-11-09T14:20:41-05:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/asndisc"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Discrepancy Report</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Discrepancy Report
 

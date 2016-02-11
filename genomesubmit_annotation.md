@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1376"> <meta name="revision-id" content="28063"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/genomesubmit_annotation"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1376/edit"> <meta name="created" content="2011-10-31T13:00:08-04:00"> <meta name="modified" content="2015-06-11T09:58:59-04:00"> <meta name="publication-date" content="2011-10-31T13:00:08-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/genomesubmit_annotation"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Detailed Annotation Guide</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Prokaryotic Genome Annotation Guide
 

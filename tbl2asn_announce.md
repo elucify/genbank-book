@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1137"> <meta name="revision-id" content="4073"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/tbl2asn_announce"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1137/edit"> <meta name="created" content="2011-09-09T15:50:11-04:00"> <meta name="modified" content="2011-10-24T12:46:11-04:00"> <meta name="publication-date" content="2011-09-09T15:50:11-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/tbl2asn_announce"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>tbl2asn_announce</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # TBL2ASN Update Notification
 

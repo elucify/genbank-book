@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="4900"> <meta name="revision-id" content="30151"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/genome_validation"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4900/edit"> <meta name="created" content="2015-10-15T12:47:11-04:00"> <meta name="modified" content="2015-10-23T07:53:48-04:00"> <meta name="publication-date" content="2015-10-15T12:45:00-04:00"> <meta name="author" content="kclark"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/genome_validation"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Genome Validation Errors</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Validation Error Explanations for Genomes
 

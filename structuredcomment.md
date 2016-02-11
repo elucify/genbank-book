@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1388"> <meta name="revision-id" content="29531"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/structuredcomment"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1388/edit"> <meta name="created" content="2011-11-01T11:55:38-04:00"> <meta name="modified" content="2015-10-01T13:53:06-04:00"> <meta name="publication-date" content="2011-11-01T11:55:38-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/structuredcomment"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Structured Comment</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Adding a Structured Comment to GenBank Submissions
 

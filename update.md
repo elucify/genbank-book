@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="823"> <meta name="revision-id" content="29156"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/update"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/823/edit"> <meta name="created" content="2011-02-22T16:51:40-05:00"> <meta name="modified" content="2015-09-08T10:55:01-04:00"> <meta name="publication-date" content="2011-02-22T16:51:40-05:00"> <meta name="author" content="darjidm"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/update"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <link type="text/css" rel="stylesheet" href="/core/assets/genbank/css/genbank.css"> <title>How to Update</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Updating Information on GenBank Records
 

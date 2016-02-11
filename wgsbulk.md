@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="2581"> <meta name="revision-id" content="14670"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/wgsbulk"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/2581/edit"> <meta name="created" content="2013-01-06T17:48:56-05:00"> <meta name="modified" content="2013-04-12T12:52:13-04:00"> <meta name="publication-date" content="2014-01-29T00:00:00-05:00"> <meta name="author" content="kclark"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/wgsbulk"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>WGS Bulk Submissions</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## WGS Bulk Submission by FTP
 
@@ -17,12 +12,13 @@
   c. Genome-Assembly-Data structured comment = file1.cmt  
     [https://submit.ncbi.nlm.nih.gov/structcomment/genomes/](https://submit.ncbi.nlm.nih.gov/structcomment/genomes/)  
     or create the 2-column tab-delimited table yourself:  
-
+```
 StructuredCommentPrefix    GenomeAssembly-Data  
 Assembly Method    algorithm v. version/date  
 Genome Coverage    12x  
 Sequencing Technology    Illumina HiSeq2000  
 StructuredCommentSuffix    GenomeAssembly-Data
+```
 
 NOTE: the value of Assembly Method must include ‘v. ‘ between the name of the algorithm and the version used, or date that it was used.
 

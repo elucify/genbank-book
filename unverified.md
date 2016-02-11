@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="3684"> <meta name="revision-id" content="21046"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/unverified"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/3684/edit"> <meta name="created" content="2014-06-13T14:07:16-04:00"> <meta name="modified" content="2014-06-17T14:33:34-04:00"> <meta name="publication-date" content="2014-06-13T13:58:00-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/unverified"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <link type="text/css" rel="stylesheet" href="/core/assets/genbank/css/genbank.css"> <title>Unverified</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Unverfied Comment
 

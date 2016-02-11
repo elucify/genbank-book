@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1307"> <meta name="revision-id" content="14532"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/tpa-inf"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1307/edit"> <meta name="created" content="2011-10-14T13:58:17-04:00"> <meta name="modified" content="2013-04-05T12:26:45-04:00"> <meta name="publication-date" content="2011-10-14T13:58:17-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/tpa-inf"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>TPA Inferential</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## What is a Third Party Annotation:inferential (TPA:inferential) Sequence?
 

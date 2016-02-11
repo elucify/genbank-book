@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="4394"> <meta name="revision-id" content="29014"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/rrnachimera"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4394/edit"> <meta name="created" content="2015-02-12T13:38:07-05:00"> <meta name="modified" content="2015-08-25T09:52:28-04:00"> <meta name="publication-date" content="2015-02-12T13:37:00-05:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/rrnachimera"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>rrnachimera</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 <div>
 

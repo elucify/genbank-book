@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="4563"> <meta name="revision-id" content="31786"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/validation"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4563/edit"> <meta name="created" content="2015-04-23T10:20:37-04:00"> <meta name="modified" content="2016-01-12T07:55:13-05:00"> <meta name="publication-date" content="2015-04-23T10:12:00-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/validation"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <link type="text/css" rel="stylesheet" href="/core/assets/genbank/css/genbank.css"> <title>validation</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Validation and Discrepancy Report Error Explanations
 

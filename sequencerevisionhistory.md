@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="4157"> <meta name="revision-id" content="23926"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/sequencerevisionhistory"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4157/edit"> <meta name="created" content="2014-10-07T11:04:54-04:00"> <meta name="modified" content="2014-10-07T14:01:42-04:00"> <meta name="publication-date" content="2014-10-07T11:04:00-04:00"> <meta name="author" content="mjohnson"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/sequencerevisionhistory"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <link type="text/css" rel="stylesheet" href="/core/assets/genbank/css/genbank.css"> <title>Sequence Revision History</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## Sequence Revision History
 

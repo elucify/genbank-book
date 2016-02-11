@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="3133"> <meta name="revision-id" content="16551"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/wgs_update"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/3133/edit"> <meta name="created" content="2013-08-04T13:31:36-04:00"> <meta name="modified" content="2013-08-04T14:52:35-04:00"> <meta name="publication-date" content="2013-08-04T13:13:00-04:00"> <meta name="author" content="kclark"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/wgs_update"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>How to Update Genome Records</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Updating Information on GenBank Draft Genome Records
 

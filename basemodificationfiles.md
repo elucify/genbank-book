@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="5016"> <meta name="revision-id" content="31677"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/basemodificationfiles"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/5016/edit"> <meta name="created" content="2015-12-16T17:05:40-05:00"> <meta name="modified" content="2016-01-06T13:47:38-05:00"> <meta name="publication-date" content="2015-12-16T17:02:00-05:00"> <meta name="author" content="kclark"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/basemodificationfiles"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Base Modification Files</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## PacBio Base Modification Files
 

@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="3215"> <meta name="revision-id" content="17248"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/shutdown-oct-2013"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/3215/edit"> <meta name="created" content="2013-10-07T13:05:33-04:00"> <meta name="modified" content="2013-10-07T14:58:13-04:00"> <meta name="publication-date" content="2013-10-07T13:00:00-04:00"> <meta name="author" content="mjohnson"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/shutdown-oct-2013"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Data Submissions During Federal Government Shutdown</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Data Submissions During Federal Government Shutdown
 

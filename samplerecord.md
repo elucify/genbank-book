@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="4012"> <meta name="revision-id" content="29005"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/samplerecord"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4012/edit"> <meta name="created" content="2014-08-26T16:21:42-04:00"> <meta name="modified" content="2015-08-21T13:52:31-04:00"> <meta name="publication-date" content="2014-08-26T16:21:00-04:00"> <meta name="author" content="mjohnson"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/samplerecord"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Sample GenBank Record</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## Sample GenBank Record
 

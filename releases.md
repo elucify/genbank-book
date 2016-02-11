@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="821"> <meta name="revision-id" content="848"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/releases"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/821/edit"> <meta name="created" content="2011-02-22T16:11:00-05:00"> <meta name="modified" content="2011-03-01T13:03:12-05:00"> <meta name="publication-date" content="2011-02-22T16:11:00-05:00"> <meta name="author" content="darjidm"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/releases"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Releases</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 <div>
 

@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="3349"> <meta name="revision-id" content="18516"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/wgs_gapped"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/3349/edit"> <meta name="created" content="2014-01-01T13:48:26-05:00"> <meta name="modified" content="2014-01-02T14:28:10-05:00"> <meta name="publication-date" content="2014-01-01T12:39:00-05:00"> <meta name="author" content="kclark"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/wgs_gapped"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>Gapped Genome Submission</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Gapped Format for Genome Submissions
 

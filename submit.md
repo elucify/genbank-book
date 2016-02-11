@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="2790"> <meta name="revision-id" content="25454"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/submit"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/2790/edit"> <meta name="created" content="2013-04-11T11:54:37-04:00"> <meta name="modified" content="2015-01-26T09:19:00-05:00"> <meta name="publication-date" content="2013-04-11T11:53:00-04:00"> <meta name="author" content="cohenaa"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/submit"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>GenBank Submission Tools</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 <div>
 

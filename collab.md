@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1138"> <meta name="revision-id" content="27821"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/collab"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1138/edit"> <meta name="created" content="2011-09-09T16:45:47-04:00"> <meta name="modified" content="2015-05-28T15:09:30-04:00"> <meta name="publication-date" content="2011-09-09T16:45:47-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/collab"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>INSD Collaboration</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # International Nucleotide Sequence Database Collaboration
 

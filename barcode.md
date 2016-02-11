@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1457"> <meta name="revision-id" content="10287"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/barcode"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1457/edit"> <meta name="created" content="2011-11-16T13:06:04-05:00"> <meta name="modified" content="2012-08-27T09:16:06-04:00"> <meta name="publication-date" content="2011-11-16T13:06:04-05:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/barcode"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>BarCode</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # BarCode of Life
 

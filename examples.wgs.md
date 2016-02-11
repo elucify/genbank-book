@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1443"> <meta name="revision-id" content="10860"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/examples.wgs"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1443/edit"> <meta name="created" content="2011-11-10T11:35:56-05:00"> <meta name="modified" content="2012-09-17T12:25:57-04:00"> <meta name="publication-date" content="2011-11-10T11:35:56-05:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/examples.wgs"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>WGS Example Files</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # WGS Example Files
 

@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="3118"> <meta name="revision-id" content="16555"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/genome_ncrna_information"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/3118/edit"> <meta name="created" content="2013-07-17T14:26:19-04:00"> <meta name="modified" content="2013-08-04T17:02:23-04:00"> <meta name="publication-date" content="2013-07-17T14:11:00-04:00"> <meta name="author" content="kclark"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/genome_ncrna_information"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>ncRNA Information</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## ncRNA Information for Annotation in GenBank
 

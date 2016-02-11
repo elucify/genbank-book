@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1312"> <meta name="revision-id" content="30131"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/tpafaq"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1312/edit"> <meta name="created" content="2011-10-18T10:32:34-04:00"> <meta name="modified" content="2015-10-22T12:42:48-04:00"> <meta name="publication-date" content="2011-10-18T10:32:34-04:00"> <meta name="author" content="mjohnson"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/tpafaq"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>TPA FAQ</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # TPA Frequently Asked Questions
 

@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1574"> <meta name="revision-id" content="10352"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/eukaryotic_genome_submission_examples"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1574/edit"> <meta name="created" content="2012-01-11T13:59:02-05:00"> <meta name="modified" content="2012-08-27T11:26:22-04:00"> <meta name="publication-date" content="2012-01-11T13:59:02-05:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/eukaryotic_genome_submission_examples"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <link type="text/css" rel="stylesheet" href="/core/assets/genbank/css/feature-table.css"> <title>Eukaryotic Genome Examples</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## Eukaryotic Genome Submission Examples
 

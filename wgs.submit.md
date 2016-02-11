@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1435"> <meta name="revision-id" content="28950"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/wgs.submit"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1435/edit"> <meta name="created" content="2011-11-09T12:26:31-05:00"> <meta name="modified" content="2015-08-17T12:21:28-04:00"> <meta name="publication-date" content="2011-11-09T12:26:31-05:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/wgs.submit"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>WGS Submission Guide</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # How to Submit WGS Genomes
 

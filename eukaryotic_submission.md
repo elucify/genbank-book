@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="3496"> <meta name="revision-id" content="19531"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/eukaryotic_submission"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/3496/edit"> <meta name="created" content="2014-03-16T12:54:28-04:00"> <meta name="modified" content="2014-03-24T13:44:02-04:00"> <meta name="publication-date" content="2014-03-16T12:39:00-04:00"> <meta name="author" content="kclark"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/eukaryotic_submission"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <link type="text/css" rel="stylesheet" href="/core/assets/genbank/css/submission_table.css"> <title>Submitting Eukaryotic Genomes to GenBank</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Introduction
 

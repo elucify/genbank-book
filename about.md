@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="698"> <meta name="revision-id" content="2033"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/about"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/698/edit"> <meta name="created" content="2010-08-12T15:28:49-04:00"> <meta name="modified" content="2011-07-05T20:37:29-04:00"> <meta name="publication-date" content="2010-08-12T15:28:49-04:00"> <meta name="author" content="mjohnson"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/about"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>About GenBank</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # About GenBank
 

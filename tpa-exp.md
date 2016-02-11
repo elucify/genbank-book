@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="1306"> <meta name="revision-id" content="14537"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/tpa-exp"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/1306/edit"> <meta name="created" content="2011-10-14T13:53:21-04:00"> <meta name="modified" content="2013-04-05T12:46:33-04:00"> <meta name="publication-date" content="2011-10-14T13:53:21-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/tpa-exp"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <title>TPA Experimental</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 ## What is a Third Party Annotation:experimental (TPA:experimental) Sequence?
 

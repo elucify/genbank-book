@@ -1,8 +1,3 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  <meta name="node-id" content="4778"> <meta name="revision-id" content="29021"> <meta name="cms-base-url" content="http://cms.ncbi.nlm.nih.gov"> <meta name="cms-view-url" content="http://cms.ncbi.nlm.nih.gov/genbank/sequencecheck"> <meta name="cms-edit-url" content="http://cms.ncbi.nlm.nih.gov/node/4778/edit"> <meta name="created" content="2015-08-25T09:54:07-04:00"> <meta name="modified" content="2015-08-25T10:12:43-04:00"> <meta name="publication-date" content="2015-08-25T09:53:00-04:00"> <meta name="author" content="yankie"> <meta name="subsite" content="genbank"> <meta name="path" content="genbank/sequencecheck"> <meta name="node-type" content="page"> <meta name="jira-ticket" content=""> <meta name="cms-tags" content="">  <meta name="" content=""> <link type="text/css" rel="stylesheet" href="/core/assets/genbank/css/genbank.css"> <title>sequencecheck</title>
-
-<div class="node clear-block">
-
-<div class="content">
 
 # Prokaryotic 16S Ribosomal RNA Sequence Processing at NCBI
 
