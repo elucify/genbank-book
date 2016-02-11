@@ -147,133 +147,108 @@ Guidelines for naming proteins:
 *   Do not use plurals in a protein name. e.g. "ankyrin repeats-containing protein 8" is wrong.
 *   Proteins of unknown function which contain a defined domain or motif, can be named according to the domain present. The name should be of the following type: "<domain|repeat>-containing protein". e.g. "PAS domain-containing protein 5".
 
-Here are some examples of good protein names:
+Here are some examples of good protein names. These names all concisely describe the function of the protein, where known, and avoid references to structure, homology and species:
 
-<dl class="goodbad">
-
-<dt>**cytochrome b**</dt>
-
-<dt>**CytB**</dt>
-
-<dt>**aconitate hydrase B**</dt>
-
-<dt>**hypothetical protein**</dt>
-
-<dt>**cytochrome b-like protein**</dt>
-
-<dt>**4Fe-4S cluster binding protein**</dt>
-
-<dt>**adenylyltransferase/ADP-heptose synthase**</dt>
-
-<dt>**2-hydroxyhepta-2,4-diene-1,7-dioate isomerase**</dt>
-
-<dt>**short-chain specific acyl-CoA dehydrogenase**</dt>
-
-<dt>**formylmethanofuran--tetrahydromethanopterin formyltransferase**</dt>
-
-<dt>**serine/threonine-protein kinase**</dt>
-
-<dt>**translation initiation factor 1**</dt>
-
-<dt>**triphosphoribosyl-dephospho-CoA synthetase**</dt>
-
-<dt>**thiamine biosynthesis protein ThiC**</dt>
-
-<dt>**PAS domain-containing protein 5**</dt>
-
-<dt>**ABC transporter ATP-binding protein AlbC**</dt>
-
-<dt>**stage 0 sporulation protein J**</dt>
-
-<dd>_These names all concisely describe the function of the protein, where known, and avoid references to structure, homology and species._</dd>
-
-</dl>
+* ``cytochrome b``
+* ``CytB``
+* ``aconitate hydrase B``
+* ``hypothetical protein``
+* ``cytochrome b-like protein``
+* ``4Fe-4S cluster binding protein``
+* ``adenylyltransferase/ADP-heptose synthase``
+* ``2-hydroxyhepta-2,4-diene-1,7-dioate isomerase``
+* ``short-chain specific acyl-CoA dehydrogenase``
+* ``formylmethanofuran--tetrahydromethanopterin formyltransferase``
+* ``serine/threonine-protein kinase``
+* ``translation initiation factor 1``
+* ``triphosphoribosyl-dephospho-CoA synthetase``
+* ``thiamine biosynthesis protein ThiC``
+* ``PAS domain-containing protein 5``
+* ``ABC transporter ATP-binding protein AlbC``
+* ``stage 0 sporulation protein J``
 
 Here are some examples of bad protein names:
 
-<dl class="goodbad">
+* ``required for the efficient incorporation of molybdate into molybdoproteins``
+    * _This describes the protein's role in a biosynthetic process but is not a protein name._
 
-<dt>**required for the efficient incorporation of molybdate into molybdoproteins**</dt>
+ 
+* ``chaperone Hsp70; DNA biosynthesis; autoregulated heat shock proteins``
+    * _The name "chaperone Hsp70" is fine however the remaining comments would be best fielded as a note or in the function qualifier._
 
-<dd>_This describes the protein's role in a biosynthetic process but is not a protein name._</dd>
+ 
+* ``putative carbonic anhdrase (EC 4.2.1.1)``
+    * _The EC number should not be part of the protein name but instead fielded in the EC_number qualifier_
 
-<dt>**chaperone Hsp70; DNA biosynthesis; autoregulated heat shock proteins**</dt>
+ 
+* ``similar to aconitrate hydrase B``
+    * _This statement is fine as a note, however as a protein name aconitrate hydrase B-like protein is preferred_
 
-<dd>_The name "chaperone Hsp70" is fine however the remaining comments would be best fielded as a note or in the function qualifier._</dd>
+ 
+* ``related to protein of unknown function``
+    * _uninformative name_
 
-<dt>**putative carbonic anhdrase (EC 4.2.1.1)**</dt>
+ 
+* ``cytochrome b-like``
+    * _cytochrome b-like protein is preferred_
 
-<dd>_The EC number should not be part of the protein name but instead fielded in the EC_number qualifier_</dd>
+ 
+* ``ABC transporter related``
+    * _vague name, there are many ABC transporters and subunits, be more specific_
 
-<dt>**similar to aconitrate hydrase B**</dt>
+ 
+* ``pirin, N-terminal:pirin, C-terminal``
+    * _uniformative name noting similarity in N and C terminus_
 
-<dd>_This statement is fine as a note, however as a protein name aconitrate hydrase B-like protein is preferred_</dd>
+ 
+* ``helix-turn-helix motif``
+    * _Describes a motif or structural domain but is not an appropriate protein name._
 
-<dt>**related to protein of unknown function**</dt>
+ 
+* ``PP-loop``
+    * _Describes a motif or structural domain but is not an appropriate protein name._
 
-<dd>_uninformative name_</dd>
+ 
+* ``alpha/beta hydrolast fold``
+    * _Describes a motif or structural domain but is not an appropriate protein name._
 
-<dt>**cytochrome b-like**</dt>
+ 
+* ``pentapeptide repeat``
+    * _Describes a motif or structural domain but is not an appropriate protein name._
 
-<dd>_cytochrome b-like protein is preferred_</dd>
+ 
+* ``phosphopantetheine-binding domain``
+    * _Describes a motif or structural domain but is not an appropriate protein name._
 
-<dt>**ABC transporter related**</dt>
+ 
+* ``protein of unknown function:conserved``
+    * _uninformative name_
 
-<dd>_vague name, there are many ABC transporters and subunits, be more specific_</dd>
+ 
+* ``hypothetical 32.5 kDa protein homologous to phytoene and squalene synthethases``
+    * _Hypothetical protein alone is appropriate. The remaining comments should be fielded as a note._
 
-<dt>**pirin, N-terminal:pirin, C-terminal**</dt>
+ 
+* ``ribosomal protein L3 (E. coli)``
+    * _Protein names should not contain references to organism names. Ribosomal protein L3 is an appropriate name by itself._
 
-<dd>_uniformative name noting similarity in N and C terminus_</dd>
+ 
+* ``saccharopine dehydrogenase or related protein``
+    * _"saccharopine dehydrogenase" or "saccharopine dehydrogenase-like protein" would be more appropriate_
 
-<dt>**helix-turn-helix motif**</dt>
+ 
+* ``tyrosine-protein kinase (capsular polysaccharide biosynthesis)``
+    * _tyrosine-protein kinase is fine as a protein name but capsular polysaccharide biosynthesis would be more appropriate as a function._
 
-<dd>_Describes a motif or structural domain but is not an appropriate protein name._</dd>
+ 
+* ``RimM protein, required for 16S rRNA processing``
+    * _RimM is fine as a protein name but descriptive comments should be placed in the note._
 
-<dt>**PP-loop**</dt>
+ 
+* ``involved in flagellar biosynthesis``
+    * _This is a functional comment and not a protein name._
 
-<dd>_Describes a motif or structural domain but is not an appropriate protein name._</dd>
 
-<dt>**alpha/beta hydrolast fold**</dt>
-
-<dd>_Describes a motif or structural domain but is not an appropriate protein name._</dd>
-
-<dt>**pentapeptide repeat**</dt>
-
-<dd>_Describes a motif or structural domain but is not an appropriate protein name._</dd>
-
-<dt>**phosphopantetheine-binding domain**</dt>
-
-<dd>_Describes a motif or structural domain but is not an appropriate protein name._</dd>
-
-<dt>**protein of unknown function:conserved**</dt>
-
-<dd>_uninformative name_</dd>
-
-<dt>**hypothetical 32.5 kDa protein homologous to phytoene and squalene synthethases**</dt>
-
-<dd>_Hypothetical protein alone is appropriate. The remaining comments should be fielded as a note._</dd>
-
-<dt>**ribosomal protein L3 (E. coli)**</dt>
-
-<dd>_Protein names should not contain references to organism names. Ribosomal protein L3 is an appropriate name by itself._</dd>
-
-<dt>**saccharopine dehydrogenase or related protein**</dt>
-
-<dd>_"saccharopine dehydrogenase" or "saccharopine dehydrogenase-like protein" would be more appropriate_</dd>
-
-<dt>**tyrosine-protein kinase (capsular polysaccharide biosynthesis)**</dt>
-
-<dd>_tyrosine-protein kinase is fine as a protein name but capsular polysaccharide biosynthesis would be more appropriate as a function._</dd>
-
-<dt>**RimM protein, required for 16S rRNA processing**</dt>
-
-<dd>_RimM is fine as a protein name but descriptive comments should be placed in the note._</dd>
-
-<dt>**involved in flagellar biosynthesis**</dt>
-
-<dd>_This is a functional comment and not a protein name._</dd>
-
-</dl>
 
 #### Notes
 
