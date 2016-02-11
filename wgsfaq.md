@@ -98,7 +98,7 @@ In addition, provide the following:
 
 usage:
 
-*   ./rast2sqn.sh template flatfile locus_tag_prefix protein_id_prefix
+*  ``./rast2sqn.sh template flatfile locus_tag_prefix protein_id_prefix``
 
 for example:
 
@@ -109,7 +109,7 @@ input:
 *   locus_tag prefix = AAA
 *   protein_id_prefix = xx
 
-commandline:
+command line:
 
 *   ```./rast2sqn.sh template.sbt TEST.gb AAA xx```
 
