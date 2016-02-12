@@ -347,7 +347,7 @@ start    stop    CDS
                         transl_except
 ```
 
-tbl2asn or Sequin concatenate multiple `note` qualifiers into a single `note` with semicolons as separators.
+Multiple `note` qualifiers are supported. tbl2asn or Sequin concatenate multiple `note` qualifiers into a single `note` with semicolons as separators.
 
 #### Bifunctional proteins:
 
