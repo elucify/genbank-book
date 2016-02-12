@@ -9,11 +9,9 @@ Please ensure that your submissions follow these sequence quality and file forma
 
 2. Remove: vector, linker, adaptor, mitochondrial, ribosomal, and contaminant sequences
 
-3. Use VecScreen to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)
+3. Use VecScreen ([http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)) to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)
 
-[http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)
-
-4. Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.
+5. . Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.
 
 5. Remove any low quality sequences.  These have high number of N's and/or long stretches of polynucleotides throughout. 
 
