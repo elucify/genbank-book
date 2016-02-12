@@ -383,7 +383,7 @@ Partial coding regions may be used for incomplete genomes only. All coding regio
 
 Sometimes a genome will have adjacent or nearby genes that seem to be only part of a protein. In many cases these indicate a possible problem with the sequence and/or annotation. A related issue is the presence of internal stop codons in the conceptual translation of a CDS that looks like it should be a real CDS. These problems may be due to a variety of reasons, including mutations or sequencing artifacts. They can be annotated in a number of ways:
 
-1.  Annotate the gene as a pseudogene. If multiple gene fragments were present initially, then add a single gene feature which covers all of the potential coding regions and add the pseudo qualifier indicating this is a pseudogene. If known, a note qualifier may be added indicating why this gene is disrupted.
+1.  _Annotate the gene as a pseudogene._ If multiple gene fragments were present initially, then add a single gene feature which covers all of the potential coding regions and add the pseudo qualifier indicating this is a pseudogene. If known, a note qualifier may be added indicating why this gene is disrupted.
 
     ```
 1        200     gene
@@ -394,7 +394,7 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
                             note    frameshift
     ```
 
-2.  Alternatively, if you are not sure if the disrupted gene is a "pseudogene" you can just use a gene feature without the /pseudo. Please use the complete nucleotide spans of the frameshifted gene. A note can be added to indicate the reason for the incomplete translation.
+2.  _Alternatively, if you are not sure if the disrupted gene is a "pseudogene" you can just use a gene feature without the `/pseudo`._ Please use the complete nucleotide spans of the frameshifted gene. A note can be added to indicate the reason for the incomplete translation.
 
     ```
 1    200     gene
@@ -404,7 +404,7 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
                             note    nonfunctional due to frameshift
     ```
 
-3.  A coding region containing a frameshift that is thought to be corrected by ribosomal slippage can be annotated using joined feature spans. Joined spans on a feature are used to combine two non-contiguous regions of sequence that are joined together to encode a protein, for example. This is typically used to combine eukaryotic exons to translate the coding region. To create a join CDS you must specify the spans of each contiguous region of sequence that encodes the protein. The use of the joined feature spans is rare in bacteria.
+3.  _A coding region containing a frameshift that is thought to be corrected by ribosomal slippage can be annotated using joined feature spans._ Joined spans on a feature are used to combine two non-contiguous regions of sequence that are joined together to encode a protein, for example. This is typically used to combine eukaryotic exons to translate the coding region. To create a join CDS you must specify the spans of each contiguous region of sequence that encodes the protein. The use of the joined feature spans is rare in bacteria.
 
     ```
 333255  333181  CDS
@@ -412,11 +412,11 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
                             product AbcD
                             protein_id     gnl|dbname|OBB_0001
                             exception      ribosomal slippage
-    ```
+```
 
-    In this case the CDS must also include an exception qualifier with the exact text "ribosomal slippage". If you include a join feature for a different reason, please include a note qualifier indicating why the two nucleotide spans are joined.
+In this case the CDS must also include an exception qualifier with the exact text "ribosomal slippage". If you include a join feature for a different reason, please include a note qualifier indicating why the two nucleotide spans are joined.
 
-4.  If a gene is localized but the translation is unknown, it is possible to simply annotate the gene feature without a corresponding coding region. The gene_desc qualifier can be used to annotate both the gene symbol and the gene description.
+4.  _If a gene is localized but the translation is unknown, it is possible to simply annotate the gene feature without a corresponding coding region._ The `gene_desc` qualifier can be used to annotate both the gene symbol and the gene description.
 
     ```
 1   200     gene
@@ -426,7 +426,7 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
 
     ```
 
-5.  Gene containing an authentic frameshift induced by phase variation can be represented by a gene feature with a note.
+5.  _A gene containing an authentic frameshift induced by phase variation can be represented by a gene feature with a `note`._
 
     ```
 1    200     gene
