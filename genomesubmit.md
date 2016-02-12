@@ -100,22 +100,3 @@ Once we have completed our review of your submission, we will prepare it for rel
 ### Updating a genome
 
 See [Update Genome Resources](//www.ncbi.nlm.nih.gov/genbank/wgs_update)
-
-
-
-
-
-<div id="shared-content-1" nid="1469">
-
-<div class="rightnav">
-
-## Genome Resources
-
-*   [BioProject](http://www.ncbi.nlm.nih.gov/bioproject)
-*   [Prokaryotic Genome Annotation Guide](/~/genomesubmit_annotation)
-*   [tbl2asn](/~/tbl2asn2)
-*   [GenomesMacroSend](http://www.ncbi.nlm.nih.gov/projects/GenomeSubmit/genome_submit.cgi)
-*   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
-
-
-
