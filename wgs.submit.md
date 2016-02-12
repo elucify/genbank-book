@@ -261,34 +261,3 @@ scf10,pBR322
 
 Requests for annotation by the [Prokaryotic Genomes Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/) is a step during submission of the genome to GenBank. Prepare a regular GenBank WGS submission and request PGAP annotation during the submission process by clicking on the box "Annotate this prokaryotic genome in the NCBI Prokaryotic Annotation Pipeline before being <label for="id_prokaryote_source-annotate_prokaryotic_genome">released".  </label> A fasta submission in the new updated submission portal would be simplest. You may edit the files before final submission, though this is not required and is generally not recommended, as it will slow processing and may introduce problems that you would need to fix before submitting the edited file.
 
-
-
-
-
-<div id="shared-content-1" nid="1465">
-
-<div class="rightnav">
-
-## WGS Resources
-
-*   [About WGS](/~/wgs)
-*   [WGS Project List](http://www.ncbi.nlm.nih.gov/Traces/wgs)
-*   [WGS Submission Guide](/~/wgs.submit)
-*   [Update Genome Records](/~/wgs_update)
-*   [FAQ](/~/wgsfaq)
-*   [tbl2asn](/~/tbl2asn2)
-*   [Create Submission Template](http://www.ncbi.nlm.nih.gov/WebSub/template.cgi)
-*   [BioProject](http://www.ncbi.nlm.nih.gov/bioproject)
-*   [Eukaryotic Annotation Guide](/~/eukaryotic_genome_submission)
-*   [Prokaryotic Annotation Guide](/~/genomesubmit)
-*   [Discrepancy Report](/~/asndisc)
-*   [WGS Example Files](/~/examples.wgs)
-*   [Assembly Submission Guide](http://www.ncbi.nlm.nih.gov/assembly/docs/submission/)
-*   [AGP Format](http://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)
-*   [WGS Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/wgs/)
-*   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
-*   [Metagenome Submission Guide](/~/metagenome)
-*   [Structured Comment](/~/structuredcomment)
-
-
-
