@@ -1,4 +1,3 @@
-
 # Prokaryotic Genome Annotation Guide
 
 ### Annotation
@@ -37,8 +36,9 @@ If you do not understand any of the instructions presented here or you have ques
 
 The features must be in a simple five-column tab-delimited table, called the feature table. The feature table specifies the location and type of each feature for tbl2asn or Sequin to include in the GenBank submission that is created. The first line of the table contains the following basic information:
 
-<pre>>Features SeqId table_name
-</pre>
+```
+>Features SeqId table_name
+```
 
 The SeqId must be the same as that used on the sequence. The table_name is optional. Subsequent lines of the table list the features. Columns are separated by tabs.
 
@@ -58,12 +58,13 @@ Gene features are usually a single interval, and their location should cover the
 
 #### Example
 
-<pre class="example">correct cytB
+```
+correct cytB
   incorrect CYTB
   incorrect cytochrome B
   incorrect orf1
   incorrect putative gene fragment
-</pre>
+```
 
 If a gene is a pseudogene, please do not add the word "pseudo" to the gene name or protein name. Instead use the /pseudo qualifier on the gene feature. Please see [Gene fragments](#disrupted_genes) for more details.
 
@@ -75,29 +76,33 @@ The use of locus_tag is supported in Sequin version 4.35 or newer. If you have a
 
 #### Table view of gene with both biological name and locus_tag
 
-<pre class="example">1 1575   gene
+```
+1 1575   gene
                 gene    abcD
                 locus_tag     OBB_0001
-</pre>
+```
 
 #### Flatfile view
 
-<pre class="example">gene     1..1575
+```
+gene     1..1575
         /gene="abcD"
         /locus_tag="OBB_0001"
-</pre>
+```
 
 #### Table view of gene with only locus_tag:
 
-<pre class="example">1 1575   gene
+```
+1 1575   gene
                 locus_tag     OBB_0001
-</pre>
+```
 
 #### Flatfile view:
 
-<pre class="example">gene     1..157
+```
+gene     1..157
         /locus_tag="OBB_0001"
-</pre>
+```
 
 #### protein_id
 
@@ -107,13 +112,14 @@ The submitter must assign an identification number to all proteins. NCBI uses th
 
 The protein_id for abcD is `gnl|dbname|OBB_0001`. This identifier is saved with the record (in ASN.1 format), but it is not visible in the flatfile. We recommend using the locus_tag number as the protein identification number.
 
-<pre class="example">1  1575    gene
+```
+1  1575    gene
                         gene    abcD
                         locus_tag     OBB_0001
 1       1575    CDS
                         product AbcD
                         protein_id      gnl|SmithUCSD|OBB_0001
-</pre>
+```
 
 The protein_id is used for internal tracking in our database, it is important that the complete protein_id (dbname + string) not be duplicated by a genome center. Note that when WGS submissions are processed, the dbname in the protein_id is automatically changed to 'WGS:XXXX', where XXXX is the project's accession number prefix. After your genome is released into GenBank, the proteins are assigned accession numbers. We will provide a table of the protein SeqIDs and accession numbers for you to use in future [updates](/~/genomesubmit#updating) .
 
@@ -254,15 +260,17 @@ Here are some examples of bad protein names:
 
 Please avoid including notes indicating a specific percentage of similarity to other entries in the database, since the corresponding record that you have pointed to may change and make your current note inaccurate, incorrect and obsolete. Descriptions, notes describing similarity to other proteins, and functional comments must be placed in the appropriate CDS qualifiers such as note, or prot_desc, as they are descriptors of the product. E.C. numbers must be fielded in an EC_number qualifier.
 
-<pre>start    stop    CDS
+```
+start    stop    CDS
                         product DNA gyrase subunit B
                         EC_number     5.99.1.3
                         note    required for the gyration of DNA
-</pre>
+```
 
 Qualifiers that can be used on the CDS feature are:
 
-<pre>start   stop    CDS
+```
+start   stop    CDS
                         product
                         prot_desc
                         function
@@ -278,7 +286,7 @@ Qualifiers that can be used on the CDS feature are:
                         exception
                         transl_except
 
-</pre>
+```
 
 #### Bifunctional Proteins
 
@@ -286,37 +294,41 @@ If a protein contains two separate and distinct functions or if it has more than
 
 Table view:
 
-<pre>start  stop    CDS
+```
+start  stop    CDS
                         product adenylyltransferase/ADP-heptose synthase
                         note    bifunctional
                         EC_number     2.7.7.2
                         EC_number     1.4.1.13
-</pre>
+```
 
 or
 
-<pre>start    stop    CDS
+```
+start    stop    CDS
                         product bifunctional adenylyltransferase/ADP-heptose synthase cyclohydrolase
                         EC_number     2.7.7.2
                         EC_number     1.4.1.13
-</pre>
+```
 
 or
 
-<pre>start    stop    CDS
+```
+start    stop    CDS
                         product FolD 
                         function        adenylyltransferase
                         function        ADP-heptose synthase cyclohydrolase
                         note    bifunctional
                         EC_number     2.7.7.2
                         EC_number     1.4.1.13
-</pre>
+```
 
 #### Intein-containing coding regions
 
 Intein-containing coding regions must be represented as follows:
 
-<pre class="example">946506  950039  gene
+```
+946506  950039  gene
                         gene    recA
                         locus_tag     OBB_0010
 946506  950039  CDS
@@ -328,7 +340,7 @@ Intein-containing coding regions must be represented as follows:
 946791  948056  misc_feature
                         note    intein  
 
-</pre>
+```
 
 Inteins should be annotated with two mat_peptide features, one for the intein and one for the final protein. We also add "precursor" to the product name on the CDS feature. Unfortunately, you can not add a mat_peptide feature in a table. Instead, you can add a misc_feature and we can convert them for you. Please see accession number [AY847267](//www.ncbi.nlm.nih.gov/nuccore/AY847267) for an example of an intein containing protein.
 
@@ -340,7 +352,8 @@ Annotate a partial coding region using the "<" or ">" in your feature table to d
 
 In the first example below, the "<" designates this coding region as 5' partial and "codon_start 3" tells the software to start translation with the third nucleotide of the CDS. Note that if the codon_start is not specified, then the software assumes a codon_start of 1\. The second coding region below is partial at the 3' end so ">" is used to indicate a 3' partial feature. The third example is of a 3' partial coding region on the complementary or minus strand.
 
-<pre class="example"><1   497     gene
+```
+<1   497     gene
                         gene    abcD
                         locus_tag     OBB_0001
 <1   497     CDS
@@ -360,11 +373,11 @@ In the first example below, the "<" designates this coding region as 5' partial 
 436     >1   CDS
                         product NirK
                         protein_id      gnl|dbname|OBB_0003
-</pre>
+```
 
 Here are [more examples of formatting partial CDS features](/~/examples.wgs#partialcds) .
 
-<span>Partial coding regions may be used for incomplete genomes only. All coding regions annotated on finished genomes must be complete at both the 5' and 3' ends.</span>
+Partial coding regions may be used for incomplete genomes only. All coding regions annotated on finished genomes must be complete at both the 5' and 3' ends.
 
 #### Disrupted genes and gene fragments
 
@@ -372,70 +385,77 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
 
 1.  Annotate the gene as a pseudogene. If multiple gene fragments were present initially, then add a single gene feature which covers all of the potential coding regions and add the pseudo qualifier indicating this is a pseudogene. If known, a note qualifier may be added indicating why this gene is disrupted.
 
-    <pre>1        200     gene
+    ```
+1        200     gene
                             gene    phoA
                             gene_desc     alkaline phosphatase
                             locus_tag     OBB_0001
                             pseudo
                             note    frameshift
-    </pre>
+    ```
 
 2.  Alternatively, if you are not sure if the disrupted gene is a "pseudogene" you can just use a gene feature without the /pseudo. Please use the complete nucleotide spans of the frameshifted gene. A note can be added to indicate the reason for the incomplete translation.
 
-    <pre>1    200     gene
+    ```
+1    200     gene
                             gene    phoA
                             gene_desc     alkaline phosphatase
                             locus_tag     OBB_0001
                             note    nonfunctional due to frameshift
-    </pre>
+    ```
 
 3.  A coding region containing a frameshift that is thought to be corrected by ribosomal slippage can be annotated using joined feature spans. Joined spans on a feature are used to combine two non-contiguous regions of sequence that are joined together to encode a protein, for example. This is typically used to combine eukaryotic exons to translate the coding region. To create a join CDS you must specify the spans of each contiguous region of sequence that encodes the protein. The use of the joined feature spans is rare in bacteria.
 
-    <pre>333255  333181  CDS
+    ```
+333255  333181  CDS
     333179  332157
                             product AbcD
                             protein_id     gnl|dbname|OBB_0001
                             exception      ribosomal slippage
-    </pre>
+    ```
 
     In this case the CDS must also include an exception qualifier with the exact text "ribosomal slippage". If you include a join feature for a different reason, please include a note qualifier indicating why the two nucleotide spans are joined.
 
 4.  If a gene is localized but the translation is unknown, it is possible to simply annotate the gene feature without a corresponding coding region. The gene_desc qualifier can be used to annotate both the gene symbol and the gene description.
 
-    <pre>1   200     gene
+    ```
+1   200     gene
                             gene    phoA
                             gene_desc     alkaline phosphatase
                             locus_tag     OBB_0001
 
-    </pre>
+    ```
 
 5.  Gene containing an authentic frameshift induced by phase variation can be represented by a gene feature with a note.
 
-    <pre>1    200     gene
+    ```
+1    200     gene
                             gene    phoA
                             gene_desc     alkaline phosphatase
                             locus_tag     OBB_0001
                             note    authentic frameshift induced by phase variation; This region contains 
                             an authentic frameshift or in-frame stop in the coding sequence and is not the 
                             result of a sequencing error
-                     </pre>
+                     ```
 
 #### Intron-Containing Genes
 
 While rare, there are some examples of bacterial genes containing introns. Annotate the gene feature of any intron-containing gene such that the gene feature spans are a single span covering all exons and introns. The actual feature (CDS, tRNA, etc.) should then be annotated with sets of nucleotide spans showing how the exons are joined to create the correct product. In this example there are two exons transcribed to create a tRNA. The first exon is from 1456 to 1419 and the second is from 1400 to 1361\. Note how the gene feature spans encompass both exons and the intron.
 
-<pre>1456    1361    gene
+```
+1456    1361    gene
                         locus_tag     APO_t01
 1456    1419    tRNA
 1400    1361
                         product tRNA-Cys
-</pre>
+```
 
 #### Transpliced Genes
 
 Transpliced genes are the exception to the rule for annotating gene feature spans. Transpliced genes are similar to intron containing genes except the two pieces of the gene are found on different regions of the chromosome. These genes are transcribed as two or more separate RNA products that are transpliced into a single mRNA or tRNA. To annotate this using a table, enter the nucleotide spans so that the complementary (minus strand) spans are arranged from high to low and vice versa for the plus strand.
 
-<pre>36700   36618   gene
+```
+36700   36618   gene
 86988   87064
                         locus_tag    NEQ_t38
                         exception    trans-splicing
@@ -446,11 +466,12 @@ Transpliced genes are the exception to the rule for annotating gene feature span
                         product tRNA-Glu
                         exception    trans-splicing
                         note    this trans-spliced tRNA consists of two halves on mixed strands; it shares a 3' half with another tRNA
-</pre>
+```
 
 Flatfile view:
 
-<pre>gene            join(complement(36618..36700),86988..87064)
+```
+gene            join(complement(36618..36700),86988..87064)
                      /locus_tag="NEQ_t38"
                      /trans_splicing
      misc_feature    complement(36618..36631)
@@ -462,7 +483,7 @@ Flatfile view:
                      /trans_splicing
                      /note="this trans-spliced tRNA consists of two halves on
                      mixed strands; it shares a 3' half with another tRNA"
-</pre>
+```
 
 #### Split genes on two contigs
 
@@ -470,7 +491,8 @@ NEW (Sept 2012): Sometimes in incomplete genomes the ends of a gene may be on di
 
 #### Example
 
-<pre class="example">>Feature Cont01.00111
+```
+>Feature Cont01.00111
 5000    >7500        gene
                         locus_tag     KCS_2223A
 5488    5500    CDS
@@ -478,16 +500,17 @@ NEW (Sept 2012): Sometimes in incomplete genomes the ends of a gene may be on di
                         product enolase
                         protein_id    gnl|dbname|KCS_2223A
                         note    5' end; 3' end is gene KCS_2223B on contig Cont01.00224
-</pre>
+```
 
-<pre class="example">>Feature Cont01.00224
+```
+>Feature Cont01.00224
 <1   1000    gene    
                         locus_tag     KCS_2223B
 <100 876     CDS
                         product enolase
                         protein_id    gnl|dbname|KCS_2223B
                         note    3' end; 5' end is gene KCS_2223A on contig Cont01.00111
-</pre>
+```
 
 #### Ribosomal RNA, tRNA and other RNA features
 
@@ -497,7 +520,8 @@ Annotate ncRNAs that belong to one of the INSDC [ncRNA_class](//www.insdc.org/do
 
 Some rRNA, tRNA, ncRNA examples:
 
-<pre><1      400     gene
+```
+<1      400     gene
                         locus_tag     OBB_0001
 <1      400     rRNA
                         product 16S ribosomal RNA
@@ -526,13 +550,14 @@ Some rRNA, tRNA, ncRNA examples:
 801     900     ncRNA
                         ncRNA_class     SRP_RNA
                         product RNA component of signal recognition particle
-</pre>
+```
 
 #### Evidence Qualifiers
 
 At the 2005 annual meeting of the International Nucleotide Sequence Databases (INSD), DDBJ, EMBL and GenBank agreed to adopt two qualifiers to describe the evidence for features in sequence records. These are "/experimental=text" and "/inference=TYPE:text", where 'TYPE' is from a select list and 'text' is structured text. These new qualifiers replace "evidence=experimental" and "evidence=non-experimental", respectively, which are no longer supported. Read more about [Evidence Qualifiers](/~/evidence)
 
-<pre>1     100   gene  
+```
+1     100   gene  
                 locus_tag   Test_0001
 1     100   CDS
                 product     RecA
@@ -557,7 +582,7 @@ At the 2005 annual meeting of the International Nucleotide Sequence Databases (I
                 product     nitroreductase A
                 protein_id  gnl|center_name|Test_0004
                 experiment  expression of GST fusion protein    
-</pre>
+```
 
 #### Functional bacteriophage
 
@@ -565,26 +590,29 @@ If a bacterial genome contains a functional phage, an additional source feature 
 
 #### Example
 
-<pre class="example">361      4200    source
+```
+361      4200    source
                         organism        Bacteriophage xyz
-</pre>
+```
 
 #### Insertion sequences and transposons
 
 Insertion sequences and transposons must be annotated as repeat_region features. The name of the insertion sequence or transposon must be added in a insertion_seq or transposon qualifier. Note that transposons and insertion sequences should not be given locus_tags.
 
-<pre>1     100     repeat_region
+```
+1     100     repeat_region
                         mobile_element  insertion sequence:IS1363
 
 500   600     repeat_region
                         mobile_element  transposon:Athena-Av1
-</pre>
+```
 
 #### Data base cross references
 
 A variety of data base cross references can be added to a feature. These appear as /db_xref on the features. This qualifier serves as a vehicle for linking of sequence records to other external databases. See the full list of [db_xref](/~/collab/db_xref) .
 
-<pre>1     100   gene  
+```
+1     100   gene  
                 locus_tag   Test_0001
 1     100   CDS
                 product     RecA
@@ -594,19 +622,20 @@ A variety of data base cross references can be added to a feature. These appear 
 180     210   misc_feature
                 note     yybP-ykoY element
                 db_xref RFAM:RF00080
-</pre>
+```
 
 #### Gene Ontology
 
 GO (Gene Ontology) terms can be included in genomes in order to describe protein functionality. Gene Ontology (GO) terms can be indicated with the following qualifiers
 
-<pre>1       100     CDS
+```
+1       100     CDS
                         product AbcD
                         go_component    exocyst|0000145
                         go_process      regulation of transcription, DNA-dependent|0006355
                         go_process      exocytosis|0006887
                         go_function     DNA binding|0003677
-</pre>
+```
 
 The value field is separated by vertical bars '|' into a descriptive string, the GO identifier (leading zeroes are retained), and optionally a PubMed ID and one or more evidence codes. The evidence code is the fourth token, so include blank fields, as necessary (eg the last qualifier has no PubMed ID so the third field is blank). See examples on the [detailed eukaryotic annotation](/~/eukaryotic_genome_submission_annotation#GOterms) page.  
 
@@ -621,7 +650,8 @@ Polymorphisms in the sequence can be shown with variation features. Include one 
 
 Here is an example with all of those options:
 
-<pre>100	102	variation
+```
+100	102	variation
 			replace	cc
 			note	polymorphism
 100^	102	variation
@@ -630,11 +660,12 @@ Here is an example with all of those options:
 100	102	variation
 			replace	""
 			note	deletion
-</pre>
+```
 
 Those features will appear like this in the GenBank view:
 
-<pre>variation       100..102
+```
+variation       100..102
                      /note="polymorphism"
                      /replace="cc"
      variation       100^102
@@ -643,20 +674,22 @@ Those features will appear like this in the GenBank view:
      variation       100..102
                      /note="deletion"
                      /replace=""
-</pre>
+```
 
 #### Other Annotation
 
 Riboswitches should be annotated using the misc_binding feature if the bound moiety is known, for example:
 
-<pre>1     100    misc_binding
+```
+1     100    misc_binding
                         note cobalamin riboswitch
                         bound_moiety adenosylcobalamin
-</pre>
+```
 
 If the bound moiety is unknown or if the sequence is a leader sequence, annotate as a misc_feature, for example:
 
-<pre>1     100    misc_feature
+```
+1     100    misc_feature
                         note yybP-ykoY element
 </pre>
 
