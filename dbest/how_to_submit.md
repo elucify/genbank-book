@@ -540,7 +540,7 @@ sequence
      if you find that tag in a cDNA read, you know it came from that
      library, even though you found it in a library which was a pool
      of libraries.
-* `TAG_LIB`: contains the name of the library whose tag you found in this sequence. e.g. `NCI_CGAP_P`r1\. Leave the field blank if you did not find one. If the library name in this field doesn't match the name of the library the sequence came from, or one of the libraries used to make a subtracted library, this field will alert us that there is a problem.  
+* `TAG_LIB`: contains the name of the library whose tag you found in this sequence. e.g. `NCI_CGAP_P`. Leave the field blank if you did not find one. If the library name in this field doesn't match the name of the library the sequence came from, or one of the libraries used to make a subtracted library, this field will alert us that there is a problem.  
 * `TAG_TISSUE`: contains the tissue that the tagged library was made from e.g. prostate in the above example.  
 * `TAG_SEQ`: contains the actual tag sequence you found in the `EST` read. If you didn't find one, put `None found` in this field,
 to distinguish this case from one where the tag hasn't been searched for.
