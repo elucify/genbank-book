@@ -2,7 +2,7 @@
 
 ### Annotation
 
-Sequin and tbl2asn use a simple five-column tab-delimited table of feature locations and qualifiers in order to generate annotation.
+Sequin and tbl2asn use a simple, five-column, tab-delimited table of feature locations and qualifiers to generate annotation.
 
 The format of this feature table allows diferent kinds of features (e.g. gene, coding region, tRNA, repeat_region) and qualifiers (e.g. /product, /note) to be indicated. The validator will check for errors such as internal stops in coding regions.
 
