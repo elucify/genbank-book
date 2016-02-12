@@ -5,7 +5,8 @@
 
 This page presents an annotated sample GenBank record (accession number `U49845`) in its _GenBank Flat File_ format. You can see the corresponding [live record for U49845](/nucleotide/U49845), and see [examples of other records](#OtherFeaturesB) that show a range of biological features.
 
-<pre>[LOCUS](#LocusB)       [SCU49845](#LocusNameB)     [5028 bp](#SequenceLengthB)    [DNA](#MoleculeTypeB)             [PLN](#GenBankDivisionB)       [21-JUN-1999](#ModificationDateB)
+```
+[LOCUS](#LocusB)       [SCU49845](#LocusNameB)     [5028 bp](#SequenceLengthB)    [DNA](#MoleculeTypeB)             [PLN](#GenBankDivisionB)       [21-JUN-1999](#ModificationDateB)
 [DEFINITION](#DefinitionB)  Saccharomyces cerevisiae TCP1-beta gene, partial cds, and Axl2p
             (AXL2) and Rev7p (REV7) genes, complete cds.
 [ACCESSION](#AccessionB)   U49845
@@ -171,7 +172,7 @@ REFERENCE   3  (bases 1 to 5028)
      4981 tgccatgact cagattctaa ttttaagcta ttcaatttct ctttgatc
 //
 
-</pre>
+```
 
 ## FIELD COMMENTS
 
