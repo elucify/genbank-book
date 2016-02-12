@@ -346,11 +346,11 @@ Inteins should be annotated with two `mat_peptide` features, one for the intein 
 
 #### Partial coding regions in incomplete genomes
 
-Annotate a partial coding region using the "<" or ">" in your feature table to designate the feature as either 5' or 3' partial. The coding region must begin at the first nucleotide present, however the translation will start at the first complete codon.
+Annotate a partial coding region using the `<` or `>` in your feature table to designate the feature as either 5' or 3' partial. Although coding region must begin at the first nucleotide present, the translation starts at the first complete codon.
 
 #### Example
 
-In the first example below, the "<" designates this coding region as 5' partial and "codon_start 3" tells the software to start translation with the third nucleotide of the CDS. Note that if the codon_start is not specified, then the software assumes a codon_start of 1\. The second coding region below is partial at the 3' end so ">" is used to indicate a 3' partial feature. The third example is of a 3' partial coding region on the complementary or minus strand.
+In the first example below, the `<` designates this coding region as 5' partial and `codon_start 3` tells the software to start translation with the third nucleotide of the CDS. Note that if the `codon_start` is not specified, then the software assumes a `codon_start` of `1`. The second coding region below is partial at the 3' end so `>` is used to indicate a 3' partial feature. The third example is of a 3' partial coding region on the complementary or minus strand.
 
 ```
 <1   497     gene
