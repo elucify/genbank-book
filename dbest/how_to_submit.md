@@ -537,7 +537,7 @@ sequence
      which of the libraries in the pooled library a particular
      sequence came from, so short sequence tags are being included in
      the library preps. These tags are specific for each library, so
-     if you find that tag in a c`DNA` read, you know it came from that
+     if you find that tag in a cDNA read, you know it came from that
      library, even though you found it in a library which was a pool
      of libraries.
 * `TAG_LIB`: contains the name of the library whose tag you found in this sequence. e.g. `NCI_CGAP_P`r1\. Leave the field blank if you did not find one. If the library name in this field doesn't match the name of the library the sequence came from, or one of the libraries used to make a subtracted library, this field will alert us that there is a problem.  
