@@ -629,11 +629,11 @@ The second example is a `CDS` that is partial at the 5' end and lacks any 3' UTR
 
 ```
 
-#### Alternatively spliced genes
+### Alternatively spliced genes
 
 In many cases a gene can be alternatively spliced, yielding alternative transcripts. These transcripts may differ in the coding region and produce different products, or they may differ in the non-translated 5' or 3' UTR and produce the same protein. To annotate alternatively spliced genes, include one `mRNA` and `CDS` for each transcript, and include only one gene over all of the features. Give the corresponding `mRNA` and `CDS` the same name, and include a `note` with the value `alternatively spliced` on each. If there are multiple `CDS` with the same name, then add a `note` to each `mRNA` and `CDS` to refer to each other; e.g., `transcript variant A` and `encoded by transcript variant A` for one `mRNA`/`CDS` pair. If the `CDS` have different translations, then they should have different product names. Make sure that all the proteins have unique `protein_id` values.
 
-#### Example
+#### Examples
 
 Example 1 (different products):
 
