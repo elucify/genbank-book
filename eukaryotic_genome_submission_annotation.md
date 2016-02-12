@@ -557,9 +557,9 @@ Some rRNA, tRNA and ncRNA examples:
 
 ```
 
-misc_feature and misc_binding features do not have an associated gene feature. If it is desired to tag these features with a locus_tag-like identifier, then include that value in the note, separated from other information by a semi-colon and space.
+`misc_feature` and `misc_binding` features do not have an associated `gene` feature. To tag these features with a `locus_tag`-like identifier, include that value in the `note`, separated from other information by a semicolon and space.
 
-Riboswitches should be annotated using the misc_binding feature if the bound moiety is known, for example:
+Riboswitches should be annotated using the `misc_binding` feature if the bound moiety is known; for example:
 
 ```
 1     100    misc_binding
