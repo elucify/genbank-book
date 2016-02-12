@@ -414,7 +414,7 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
                             exception      ribosomal slippage
 ```
 
-In this case the CDS must also include an exception qualifier with the exact text "ribosomal slippage". If you include a join feature for a different reason, please include a note qualifier indicating why the two nucleotide spans are joined.
+    In this case the CDS must also include an exception qualifier with the exact text "ribosomal slippage". If you include a join feature for a different reason, please include a note qualifier indicating why the two nucleotide spans are joined.
 
 4.  _If a gene is localized but the translation is unknown, it is possible to simply annotate the gene feature without a corresponding coding region._ The `gene_desc` qualifier can be used to annotate both the gene symbol and the gene description.
 
