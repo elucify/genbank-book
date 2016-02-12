@@ -41,24 +41,3 @@ Some authors are concerned that the appearance of their data in GenBank prior to
 ### Privacy
 
 If you are submitting human sequences to GenBank, do not include any data that could reveal the personal identity of the source. It is our assumption that you have received any necessary informed consent authorizations that your organizations require prior to submitting your sequences.
-
-
-
-
-
-
-
-<div id="shared-content-1" nid="1092">
-
-<div class="rightnav">
-
-## GenBank Resources
-
-*   [GenBank Home](/~/)
-*   [Submission Types](/~/submit_types)
-*   [Submission Tools](/~/submit)
-*   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
-*   [Update GenBank Records](/~/update)
-
-
-
