@@ -9,8 +9,9 @@ Looking at that record, note that the original gi number for the nucleotide sequ
 
 In addition, when a GenBank record contains an updated sequence, the `COMMENT` field will contain a cross-reference to the gi number of the earlier sequence; e.g., see this excerpt from [U46667](/nucleotide/U46667?format=grevhist):
 
-<pre>COMMENT     [WARNING] On Jun 2, 1998 this sequence was replaced by gi:[3172140](/nuccore/3172140).
-</pre>
+```
+COMMENT     [WARNING] On Jun 2, 1998 this sequence was replaced by gi:[3172140](/nuccore/3172140).
+```
 
 If you follow the link for that earlier gi number, Entrez will display that version of the GenBank record. Similarly, the `COMMENT` field of the older version will have a warning that the sequence has been updated, and will contain a cross-reference to the newer version.
 
