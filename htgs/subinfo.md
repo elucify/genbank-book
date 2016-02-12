@@ -1,5 +1,4 @@
-
-## Submitting HTG Sequences
+# Submitting HTG Sequences
 
 The submission [process](/~/htgs/processing) for HTGs is quite different from that for other direct [submissions](/~/). The goal of the process is to make new and updated sequences available to the public in a timely fashion. Thus, NCBI will perform only very basic validation checks of HTGs, and submitters must check their records carefully before submission. Furthermore, because sequences will be released to the public as soon as processing is finished, it is presently not the standard procedure to indicate a "hold until published" (HUP) date on which they should be released. If a HUP date is necessary, the submitter should please [contact](mailto:htgs-admin@ncbi.nlm.nih.gov) the database staff about submitting through an alternate route.
 
