@@ -678,7 +678,7 @@ variation       100..102
 
 #### Other Annotation
 
-Riboswitches should be annotated using the misc_binding feature if the bound moiety is known, for example:
+Riboswitches should be annotated using the `misc_binding` feature if the bound moiety is known, for example:
 
 ```
 1     100    misc_binding
@@ -691,7 +691,7 @@ If the bound moiety is unknown or if the sequence is a leader sequence, annotate
 ```
 1     100    misc_feature
                         note yybP-ykoY element
-</pre>
+```
 
-misc_feature and misc_binding features do not have an associated gene feature. If it is desired to tag these features with a locus_tag-like identifier, then include that value in the note, separated from other information by a semi-colon and space.
+`misc_feature` and `misc_binding` features do not have an associated gene feature. If it is desired to tag these features with a locus_tag-like identifier, then include that value in the note, separated from other information by a semi-colon and space.
 
