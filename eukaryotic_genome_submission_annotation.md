@@ -33,8 +33,9 @@ If you do not understand any of the instructions presented here or you have ques
 
 The features must be in a simple five-column tab-delimited table, called the feature table. The feature table specifies the location and type of each feature for tbl2asn or Sequin to include in the GenBank submission that is created. The first line of the table contains the following basic information:
 
-<pre>>Features SeqID table_name
-</pre>
+```
+>Features SeqID table_name
+```
 
 The SeqID must be the same as the sequence's SeqID in the FASTA file. The table_name is optional. Subsequent lines of the table list the features. Columns are separated by tabs.
 
@@ -66,29 +67,33 @@ All genes should be assigned a systematic gene identifier which should receive t
 
 #### Table view of gene with both biological name and locus_tag:
 
-<pre class="example">1       1575    gene
+```
+1       1575    gene
                         gene    Abc5
                         locus_tag        KCS_0001
-</pre>
+```
 
 #### Flatfile view:
 
-<pre class="example">gene       1..1575
+```
+gene       1..1575
                      /gene="Abc5"
                      /locus_tag="KCS_0001"
-</pre>
+```
 
 #### Table view of gene with only locus_tag:
 
-<pre class="example">1 1575    gene
+```
+1 1575    gene
                         locus_tag     KCS_0001
-</pre>
+```
 
 #### Flatfile view:
 
-<pre class="example">gene       1..1575
+```
+gene       1..1575
                      /locus_tag="KCS_0001"
-</pre>
+```
 
 For consistency the same locus_tag prefix must be used throughout the entire genome. Therefore, all the chromosomes of a genome should have the same locus_tag prefix.
 
@@ -108,13 +113,14 @@ All proteins in a WGS or complete genome must be assigned an identification numb
 
 #### Example:
 
-<pre class="example"><1      >1575        gene
+```
+<1      >1575        gene
                         gene    Abc5
                         locus_tag    KCS_0001
 1       1575    CDS
                         product      ABC5
                         protein_id   gnl|SmithUCSD|KCS_0001
-</pre>
+```
 
 Since the protein_id is used for internal tracking in our database, it is important that the complete protein_id (dbname + SeqID) not be duplicated by a genome center. Thus, if your genome center is submitting more than one complete genome, please be sure to use unique protein_id's for all of the genomes.
 
@@ -128,7 +134,8 @@ After your genome is released into GenBank, the proteins are assigned accession 
 
 The transcript_id is included as a qualifier for both the CDS and its corresponding mRNA. It has the same format as the protein_id, gnl|dbname|identifier. Because each transcript_id and protein_id must be unique, we suggest adding 'mrna' or 't' to the protein_id identifier as a simple way to create the corresponding (unique) transcript_id. However, you can use whatever naming convention you choose, as long as all of the identifiers are unique.
 
-<pre>63574        87173   gene
+```
+63574        87173   gene
                         locus_tag     Ngs_17131
 63574   63907   mRNA
 75690   75730
@@ -150,7 +157,7 @@ The transcript_id is included as a qualifier for both the CDS and its correspond
                         product     hypothetical protein
                         protein_id  gnl|ncbi|Ngs_17131
                         transcript_id     gnl|ncbi|mrna.Ngs_17131
-</pre>
+```
 
 #### CDS (coding region) features
 
@@ -314,14 +321,16 @@ Here are some examples of bad protein names:
 
 Please avoid including notes indicating a specific percentage of similarity to other entries in the database, since the corresponding record that you have pointed to may change and make your current note inaccurate, incorrect and obsolete. Descriptions, notes describing similarity to other proteins, and functional comments must be placed in the appropriate CDS qualifiers such as note, or prot_desc, as they are descriptors of the product. E.C. numbers must be fielded in an EC_number qualifier.
 
-<pre>start      stop    CDS
+```
+start      stop    CDS
                         product     DNA gyrase subunit B
                         EC_number   5.99.1.3
-</pre>
+```
 
 Qualifiers that can be used on the CDS feature are:
 
-<pre>start    stop    CDS
+```
+start    stop    CDS
                         product
                         prot_desc
                         function
@@ -336,7 +345,7 @@ Qualifiers that can be used on the CDS feature are:
                         pseudo
                         exception
                         transl_except
-</pre>
+```
 
 Multiple note qualifiers can be included and will be concatenated by tbl2asn or Sequin into a single note with semi-colons as separators.
 
@@ -344,28 +353,31 @@ Multiple note qualifiers can be included and will be concatenated by tbl2asn or 
 
 If a protein contains two separate and distinct functions or if it has more than one name, these can be annotated in several ways, as outlined below. Table view:
 
-<pre>start  stop    CDS
+```
+start  stop    CDS
                         product     adenylyltransferase/ADP-heptose synthase
                         note   bifunctional
 
-</pre>
+```
 
 or
 
-<pre>start    stop    CDS
+```
+start    stop    CDS
                         product     bifunctional adenylyltransferase/ADP-heptose synthase cyclohydrolase
 
-</pre>
+```
 
 or
 
-<pre>start    stop    CDS
+```
+start    stop    CDS
                         product     FolD 
                         function    adenylyltransferase
                         function    ADP-heptose synthase cyclohydrolase
                         note   bifunctional
 
-</pre>
+```
 
 #### Partial coding regions in incomplete genomes
 
@@ -375,7 +387,8 @@ To annotate an partial coding region, you should use the "<" or ">" in your feat
 
 In the first example below, the "<" designates this coding region as 5' partial and "codon_start 3" tells the software to start translation with the third nucleotide of the CDS. Note that if the codon_start is not specified, then the software assumes a codon_start of 1\. The second coding region below is partial at the 3' end so ">" is used to indicate a 3' partial feature.
 
-<pre class="example"><1  497     CDS
+```
+<1  497     CDS
                         product       ABC5
                         note   similar to Bacillus subtilis aldolase
                         codon_start  3
@@ -387,7 +400,7 @@ In the first example below, the "<" designates this coding region as 5' partial 
                         protein_id   gnl|dbname|KCS_0002
                         transcript_id   gnl|dbname|KCS_mrna0002
 
-</pre>
+```
 
 Here are [more examples of formatting partial CDS features](/~/examples.wgs#partialcds) .
 
@@ -401,37 +414,44 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
 
 1.  Annotate the gene as a pseudogene. If multiple gene fragments were present initially, then add a single gene feature which covers all of the potential coding regions and add the pseudo qualifier indicating that this is a pseudogene. If known, a note qualifier may be added indicating why this gene is disrupted.
 
-    <pre>1    200     gene
+```
+1    200     gene
                             gene    Abc5
                             locus_tag        KCS_0001
                             gene_desc       alkaline phosphatase
                             pseudo
                             note    frameshift
 
-    </pre>
+    
+```
 
 2.  Alternatively, if you are not sure if the disrupted gene is a "pseudogene" you can just use a gene feature without the /pseudo. Please use the complete nucleotide spans of the frameshifted gene. If known, the reason for the incomplete translation can be included in a note.
 
-    <pre>1  200     gene
+```
+1  200     gene
                             gene    Abc5
                             locus_tag        KCS_0001
                             gene_desc       alkaline phosphatase
                             note    nonfunctional due to frameshift
 
-    </pre>
+    
+```
 
 3.  If the feature is just noting a similarity to genes in the database and is probably not translated, then it should be annotated as a misc_feature without a corresponding gene feature.
 
-    <pre>1  200     misc_feature
+```
+1  200     misc_feature
                             note    similar to Abc5
 
-    </pre>
+    
+```
 
 #### Transpliced Genes
 
 Transpliced genes are the exception to the rule for annotating gene feature spans. Transpliced genes are similar to intron containing genes except the two pieces of the gene are found on different regions of the chromosome. These genes are transcribed as two or more separate RNA products that are transpliced into a single mRNA or tRNA. To annotate this using a table, enter the nucleotide spans so that the complementary (minus strand) spans are arranged from high to low and vice versa for the plus strand.
 
-<pre>36700   36618   gene
+```
+36700   36618   gene
 86988   87064
                         locus_tag    NEQ_t38
                         exception    trans-splicing
@@ -442,9 +462,10 @@ Transpliced genes are the exception to the rule for annotating gene feature span
                         product tRNA-Glu
                         exception    trans-splicing
                         note    this trans-spliced tRNA consists of two halves on mixed strands; it shares a 3' half with another tRNA
-</pre>
+```
 
-<pre>gene            join(complement(36618..36700),86988..87064)
+```
+gene            join(complement(36618..36700),86988..87064)
                      /locus_tag="NEQ_t38"
                      /trans_splicing
      misc_feature    complement(36618..36631)
@@ -456,7 +477,7 @@ Transpliced genes are the exception to the rule for annotating gene feature span
                      /trans_splicing
                      /note="this trans-spliced tRNA consists of two halves on
                      mixed strands; it shares a 3' half with another tRNA"
-</pre>
+```
 
 #### Split genes on two contigs
 
@@ -464,7 +485,8 @@ NEW (Sept 2012): Sometimes in incomplete genomes the ends of a gene may be on di
 
 #### Example
 
-<pre class="example">>Feature Cont01.00111
+```
+>Feature Cont01.00111
 5000    >7500        gene
                         locus_tag     KCS_2223A
 5000    5500    mRNA
@@ -478,9 +500,10 @@ NEW (Sept 2012): Sometimes in incomplete genomes the ends of a gene may be on di
                         protein_id    gnl|dbname|KCS_2223A
                         transcript_id    gnl|dbname|KCS_mrna2223A
                         note   5' end; 3' end is gene KCS_2223B on contig Cont01.00224
-</pre>
+```
 
-<pre class="example">>Feature Cont01.00224
+```
+>Feature Cont01.00224
 <1   1000    gene    
                         locus_tag    KCS_2223B
 <100 1000    mRNA
@@ -493,7 +516,7 @@ NEW (Sept 2012): Sometimes in incomplete genomes the ends of a gene may be on di
                         transcript_id    gnl|dbname|KCS_mrna2223B
                         note   3' end; 5' end is gene KCS_2223A on contig Cont01.00111
 
-</pre>
+```
 
 #### Ribosomal RNA, tRNA and other RNA features
 
@@ -503,7 +526,8 @@ Annotate ncRNAs that belong to one of the INSDC [nRNA_class](http://www.insdc.or
 
 Some rRNA, tRNA and ncRNA examples:
 
-<pre><1      400     gene
+```
+<1      400     gene
                         locus_tag       KCS_00011
 <1      400     rRNA
                         product 16S ribosomal RNA
@@ -531,22 +555,24 @@ Some rRNA, tRNA and ncRNA examples:
 950     1000    tmRNA
                         product tmRNA
 
-</pre>
+```
 
 misc_feature and misc_binding features do not have an associated gene feature. If it is desired to tag these features with a locus_tag-like identifier, then include that value in the note, separated from other information by a semi-colon and space.
 
 Riboswitches should be annotated using the misc_binding feature if the bound moiety is known, for example:
 
-<pre>1     100    misc_binding
+```
+1     100    misc_binding
                         note cobalamin riboswitch
                         bound_moiety adenosylcobalamin
-</pre>
+```
 
 If the bound moiety is unknown or if the sequence is a leader sequence, annotate as a misc_feature, for example:
 
-<pre>1     100    misc_feature
+```
+1     100    misc_feature
                         note yybP-ykoY element
-</pre>
+```
 
 #### mRNA features
 
@@ -561,7 +587,8 @@ Include an mRNA feature for each translated CDS. Several things to note are:
 
 The first example is a complete CDS whose 5' and 3' UTRs are known.
 
-<pre class="example">>Feature Cont54
+```
+>Feature Cont54
 10400   12512   gene
                         locus_tag    CCC_03116
 10400   10462   mRNA
@@ -581,11 +608,12 @@ The first example is a complete CDS whose 5' and 3' UTRs are known.
                         protein_id  gnl|dbname|CCC_03116
                         transcript_id    gnl|dbname|CCC_mrna03116
 
-</pre>
+```
 
 The second example is a CDS that is partial at the 5' end and lacks any 3' UTR information.
 
-<pre class="example">>Feature Cont3
+```
+>Feature Cont3
 <1   >497 gene             
                         locus_tag CCC_111011
 <1   497     CDS             
@@ -599,7 +627,7 @@ The second example is a CDS that is partial at the 5' end and lacks any 3' UTR i
                         protein_id   gnl|dbname|CCC_111011
                         transcript_id    gnl|dbname|CCC_mrna111011
 
-</pre>
+```
 
 #### Alternatively spliced genes
 
@@ -609,7 +637,8 @@ In many cases a gene can be alternatively spliced, yielding alternative transcri
 
 Example 1 (different products):
 
-<pre class="example">>Feature Cont01.00055
+```
+>Feature Cont01.00055
 10      5000    gene    
                         locus_tag    CCC_04562
 10      500     mRNA
@@ -642,11 +671,12 @@ Example 1 (different products):
                         note alternatively spliced
                         protein_id  gnl|dbname|CCC_04562B
                         transcript_id   gnl|dbname|CCC_mrna04562B
-</pre>
+```
 
 Example 2 (same product):
 
-<pre class="example">>Feature Cont01.00056
+```
+>Feature Cont01.00056
 100     1000    gene
                         locus_tag    CCC_03222
 100     333     mRNA
@@ -675,7 +705,7 @@ Example 2 (same product):
                         note    encoded by transcript variant B; alternatively spliced
                         protein_id  gnl|dbname|CCC_03222B       
                         transcript_id   gnl|dbname|CCC_mrna03222B       
-</pre>
+```
 
 #### Evidence Qualifiers
 
@@ -693,7 +723,8 @@ See more information about the [Evidence Qualifiers](/~/evidence) .
 
 A variety of database cross references can be added to a feature. These appear as /db_xref on the features. This qualifier serves as a vehicle for linking of sequence records to other external databases. See the full list of [db_xref](/~/collab/db_xref) databases.
 
-<pre>1     100   CDS
+```
+1     100   CDS
                 product     RecA
                 protein_id  gnl|center_name|Test_0001
                 db_xref InterPro:IPR000111
@@ -701,13 +732,14 @@ A variety of database cross references can be added to a feature. These appear a
 180     210    misc_feature
                         note yybP-ykoY element
                         db_xref RFAM:RF00080
-</pre>
+```
 
 #### Gene Ontology
 
 GO (Gene Ontology) terms can be included in genomes in order to describe protein functionality. Gene Ontology (GO) terms can be indicated with the following qualifiers
 
-<pre>1       100     CDS
+```
+1       100     CDS
                         product helicase
                         go_process      chromatin assembly or disassembly|0006333||IEA
                         go_process      antimicrobial humoral response|0019730|16163390|IMP
@@ -717,7 +749,7 @@ GO (Gene Ontology) terms can be included in genomes in order to describe protein
                         go_function     nucleic acid binding|0003676||IEA
                         go_function     ATP binding|0005524||IEA
 
-</pre>
+```
 
 The value field is separated by vertical bars '|' into a descriptive string, the GO identifier (leading zeroes are retained), and optionally a PubMed ID and one or more evidence codes. The evidence code is the fourth token, so include blank fields, as necessary (eg the last qualifier has no PubMed ID so the third field is blank).
 
