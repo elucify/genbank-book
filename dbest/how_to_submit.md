@@ -1,58 +1,56 @@
+# Submitting sequences to dbEST
 
-## <span>Submitting sequences to dbEST</span>
-
-
-
-<span><span>Please</span> </span>ensure that your submissions follow these sequence quality and file formatting guidelines:
+Please ensure that your submissions follow these sequence quality and file formatting guidelines:
 
 
+## Sequence Quality and Content
 
-**<span><span>Sequence Quality and Content:</span></span>**
+1. Please submit only single-pass sequences (no next-gen sequences, raw or assembled)
 
-<span>[1] Please submit only single-pass sequences (no next-gen sequences, raw or assembled)</span>
+2. Remove: vector, linker, adaptor, mitochondrial, ribosomal, and contaminant sequences
 
-<span>[2] Remove: vector, linker, adaptor, mitochondrial, ribosomal, and contaminant sequences</span>
+3. Use VecScreen to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)
 
-<span>[3] Use VecScreen to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)</span>
+[http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)
 
-<span>[http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)</span>
+4. Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.
 
-<span>[4] Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.</span>
+5. Remove any low quality sequences.  These have high number of N's and/or long stretches of polynucleotides throughout. 
 
-<span>[5] Remove any low quality sequences.  These have high number of N's and/or long stretches of polynucleotides throughout. </span>
+### Examples of low quality sequences
 
-<span>Examples of low quality sequences:</span>
+SEQUENCE:
+```
+AAAAAAAAAAAAAAAAAAAAACCCCCCCCCCCCCCCCCCCCCCTTTTTTGGGGGG
+```
+SEQUENCE:
+```
+TNNCANNNNGNNNGGNNCNNANNNNNTGCNNNNNNTTNNAANNGCAANNNNTG
+```
 
-<span>SEQUENCE:</span>
+## File Formatting
 
-<span>AAAAAAAAAAAAAAAAAAAAACCCCCCCCCCCCCCCCCCCCCCTTTTTTGGGGGG</span>
+1. Please send your submission as two text files:
 
-<span>SEQUENCE:</span>
+     plc.txt   contains publication, library, and contact files
 
-<span>TNNCANNNNGNNNGGNNCNNANNNNNTGCNNNNNNTTNNAANNGCAANNNNTG</span>
+     est.txt   contains all EST submissions
 
-<span>**File Formatting:**</span>
+2. Ensure that all EST# are unique
 
-<span>[6] Please send your submission as two text files:</span>
+8. EST file CITATION must exactly match Pub file TITLE
 
-<span>     plc.txt   contains publication, library, and contact files</span>
+9. EST file LIBRARY must exactly match Lib file NAME
 
-<span>     est.txt   contains all EST submissions</span>
+10. EST file CONT_NAME must exactly match Cont file NAME
 
-<span>[7] Ensure that all EST# are unique</span>
+11. PUT_ID field should not contain organism, hypothetical protein, unknown, or similar information
 
-<span>[8] EST file CITATION must exactly match Pub file TITLE</span>
+12. Use only standard 26 letters of the English alphabet (no accent marks, umlauts, etc.)
 
-<span>[9] EST file LIBRARY must exactly match Lib file NAME</span>
+13. The following represents the basic structure for each file:
 
-<span>[10] EST file CONT_NAME must exactly match Cont file NAME</span>
-
-<span>[11] PUT_ID field should not contain organism, hypothetical protein, unknown, or similar information</span>
-
-<span>[12] Use only standard 26 letters of the English alphabet (no accent marks, umlauts, etc.)</span>
-
-<span>[13] The following represents the basic structure for each file:</span>
-
+```
 TYPE: Pub
 
 TITLE:
@@ -104,19 +102,22 @@ PUBLIC:
 SEQUENCE:
 
 ||
+```
 
-### <span>Data submission file types</span>
+## Data submission file types
 
 The batch submission process for [EST sequence data](#SubmissionFormatforESTSequenceData) involves the completion of four file types:
 
- a.  [Publication](#PublicationFiles)  
- b.  [Library](#LibraryFiles)  
- c.  [Contact](#ContactFiles)  
- d.  [EST](#ESTFiles)
+a. [Publication](#PublicationFiles)  
+b. [Library](#LibraryFiles)  
+c. [Contact](#ContactFiles)  
+d. [EST](#ESTFiles)
 
 The format for each file is described below.
 
-If all the ESTs share the same Publication, Library, and Contact information, you only need to prepare one of each of those files.  Then complete a separate EST file (file type d) for each sequence.
+If all the ESTs share the same Publication, Library, and Contact
+information, you only need to prepare one of each of those files.
+Then complete a separate EST file (file type d) for each sequence.
 
 If any of the EST files have different Publication, Library, or Contact information, you must complete a new file of type a, b, or c.
 
@@ -154,9 +155,7 @@ Send the update files to: [batch-sub@ncbi.nlm.nih.gov](mailto:batch-sub@ncbi.nlm
 
 If you have questions about the EST submission format, please contact [info@ncbi.nlm.nih.gov](mailto:info@ncbi.nlm.nih.gov).  
 
-* * *
-
-## <a name="SubmissionFormatforESTSequenceData"></a>Submission Format for EST Sequence Data
+## Submission Format for EST Sequence Data
 
 The following is a specification for flat file formats for delivering EST and related data to the NCBI EST database.
 
@@ -164,7 +163,7 @@ The following is a specification for flat file formats for delivering EST and re
 *   The data fields should appear on the same line as the tag, with no line wrapping. Exceptions to this are the TITLE and AUTHORS fields of the Publication file; Description (DESCR:) field of the Library file; and the CITATION, COMMENT, and SEQUENCE fields of the EST file. In these fields, the data may begin on the same line as the field tag or on the line following the tag and the lines can be wrapped.
 *   Note that some fields are obligatory.
 *   The TYPE field is obligatory at the beginning of each entry, even if there are multiple entries of a given type in a file.
-*   If data is not available for a non-obligatory field, the field can either be omitted entirely, or the tag may be included with an empty data field.  Please do not put '*', "-", etc to indicate missing data.
+*   If data is not available for a non-obligatory field, the field can either be omitted entirely, or the tag may be included with an empty data field. Please do not put `*`, `-`, etc., to indicate missing data.
 *   Each record (including the last record in the file) should end with a double-bar tag (||) to indicate the end of the record.
 *   Please also see the bulletted tips at the end of each file format for important notes about that file type.
 
@@ -182,11 +181,12 @@ Each EST file needs to reference the Publication, Library, and Contact data.  T
 
 * * *
 
-### a. <a name="PublicationFiles"></a>Publication Files
+### Publication Files
 
 These are the valid tags and a short description:
 
-<pre>TYPE:      Entry type - must be "Pub" for publication entries. 
+```
+TYPE:      Entry type - must be "Pub" for publication entries. 
            **Obligatory field**
 MEDUID:    Medline unique identifier. 
            Not obligatory, include if you know it.
@@ -209,11 +209,12 @@ STATUS:    Publication status.
            1=unpublished, 2=submitted, 3=in press, 4=published
            **Obligatory field**
 ||
-</pre>
+```
 
-Examples:
+#### Examples
 
-<pre>TYPE: Pub
+```
+TYPE: Pub
 MEDUID: 92347897
 TITLE: 
 Expressed sequence tags and chromosomal localization of 
@@ -227,11 +228,12 @@ PAGES: 873-6
 YEAR: 1992
 STATUS: 4
 ||
-</pre>
+```
 
 Pub data template with required and most often used fields:
 
-<pre>TYPE:      Pub
+```
+TYPE:      Pub
 TITLE:     
 title
 AUTHORS:   
@@ -243,7 +245,7 @@ PAGES:
 YEAR: 
 STATUS:    
 ||
-</pre>
+```
 
 *   The TYPE field is obligatory at the beginning of each entry, even if there are multiple entries of a given type in a file.
 *   The MEDUID field is a MEDLINE record unique identifier. We do not normally expect you to supply this - we try to retrieve this from our relational version of MEDLINE database.
@@ -256,7 +258,8 @@ STATUS:
 
 These are the valid tags and a short description:
 
-<pre>TYPE:       Entry type - must be "Lib" for library entries.
+```
+TYPE:       Entry type - must be "Lib" for library entries.
             **Obligatory field**
 NAME:       Name of library.
             **Obligatory field**
@@ -281,11 +284,12 @@ DESCR:      Description of library preparation methods, vector,
             etc. 
             Text starts on the same line or the line below the DESCR: tag.
 ||
-</pre>
+```
 
-Examples:
+#### Examples
 
-<pre>TYPE: Lib
+```
+TYPE: Lib
 NAME:  Rat embryonic day 17 post-fertilization Library
 ORGANISM: Rattus norvegicus
 STRAIN: Sprague-Dawley
@@ -295,11 +299,12 @@ TISSUE: aorta
 CELL_TYPE: vascular smooth muscle
 DESCR: 
 ||
-</pre>
+```
 
 Lib data template with required and most often used fields:
 
-<pre>TYPE:       Lib
+```
+TYPE:       Lib
 NAME:       
 ORGANISM:  
 STRAIN:   
@@ -318,7 +323,7 @@ RE_2:
 DESCR:      
 description
 ||
-</pre>
+```
 
 *   The TYPE field is obligatory at the beginning of each entry, even if there are multiple entries of a given type in a file.
 *   Try to keep the library NAME field to <= 48 characters. We can accept up to 128 characters, but it will be truncated to 48 characters in the identification line of the FASTA file created for BLAST searching.
@@ -332,7 +337,8 @@ description
 
 These are the valid tags and a short description:
 
-<pre>TYPE:     Entry type - must be "Cont" for contact entries.
+```
+TYPE:     Entry type - must be "Cont" for contact entries.
           **Obligatory field**
 NAME:     Name of person submitting the EST. 
           **Obligatory field**
@@ -343,11 +349,12 @@ LAB:      Laboratory providing EST.
 INST:     Institution name
 ADDR:     Address string, comma delineation.
 ||
-</pre>
+```
 
-Examples:
+#### Examples
 
-<pre>TYPE: Cont
+```
+TYPE: Cont
 NAME: Sikela JM
 FAX: 303 270 7097
 TEL: 303 270 
@@ -356,11 +363,12 @@ LAB: Department of Pharmacology
 INST: University of Colorado Health Sciences Center
 ADDR: Box C236, 4200 E. 9th Ave., Denver, CO 80262-0236, USA
 ||
-</pre>
+```
 
 Contact data template with required and most often used fields:
 
-<pre>TYPE: Cont
+```
+TYPE: Cont
 NAME: 
 FAX: 
 TEL:
@@ -369,20 +377,19 @@ LAB:
 INST: 
 ADDR: 
 ||
-</pre>
+```
 
 *   The TYPE field is obligatory at the beginning of each entry, even if there are multiple entries of a given type in a file.
 *   None of the other fields are obligatory, but we require at least the name of a contact person.
 *   We would like as many of the fields filled in as possible, to provide complete information to the user for contacting a source for the EST or further information about it.
 *   The contact name field (CONT_NAME) in the EST files must contain an identical string to the string used in the NAME field of the Contact file, for automatic matching.
 
-* * *
-
 ### d. <a name="ESTFiles"></a>EST Files
 
 These are the valid tags and a short description:
 
-<pre>TYPE:      Entry type - must be "EST" for EST entries.
+```
+TYPE:      Entry type - must be "EST" for EST entries.
            **Obligatory field**
 STATUS:    Status of EST entry - "New" or "Update".
            **Obligatory field**
@@ -444,11 +451,12 @@ SEQUENCE:  Sequence string.
            Starts on the same line or the line below SEQUENCE: tag.
            **Obligatory field**
 ||
-</pre>
+```
 
-Examples:
+#### Examples
 
-<pre>TYPE: EST
+```
+TYPE: EST
 STATUS:  New
 CONT_NAME: Kerlavage AR
 EST#: HHC189f
@@ -478,11 +486,12 @@ GCAAAAGTGATAATGATTTGAGGATTTCTGTCTCTAATTGGAGGATGATTCTCATGTAAGGT
 TGTTAGGAAATGGCAAAGTATTGATGATTGTGTGCTATGTGATTGGTGCTAGATACTTTAAC
 TGAGTATACGAGTGAAATACTTGAGACTCGTGTCACTT
 ||
-</pre>
+```
 
 EST data template with required and most often used fields:
 
-<pre>TYPE:      EST
+```
+TYPE:      EST
 STATUS:  
 CONT_NAME: 
 CITATION:  
@@ -513,24 +522,28 @@ comments
 SEQUENCE: 
 sequence
 ||
-</pre>
+```
 
-*   The TYPE field is obligatory at the beginning of each entry, even if there are multiple entries of a given type in a file.
-*   Valid data values for the EST STATUS field are New (new entry) or Update (change existing EST entry).
-*   When updating an EST, only the fields with text present in the EST file will be changed. The text in the update file will replace entirely the text for that field in the current version of the file.
-*   The DNA_TYPE is assumed to be cDNA, so this field may be omitted unless the DNA type differs from this.
-*   Sequences start on the same line or the line below the SEQUENCE field tag.
-
-*   It is very important that the strings in the following fields be completely identical, for purposes of automatic matching:
-
-*   New fields added April 1999: Four new fields have been added to the EST table:  
-
-    POLYA is used to indicate whether a polyA tail sequence was found in the EST read.  
-
-    TAG_LIB, TAG_TISSUE, TAG_SEQ: these were added because some researchers, for example, Bento Soares, are pooling libraries to make subtracted libraries. It's important to many people to know which of the libraries in the pooled library a particular sequence came from, so short sequence tags are being included in the library preps. These tags are specific for each library, so if you find that tag in a cDNA read, you know it came from that library, even though you found it in a library which was a pool of libraries.  
-    TAG_LIB: contains the name of the library whose tag you found in this sequence. e.g. NCI_CGAP_Pr1\. Leave the field blank if you did not find one. If the library name in this field doesn't match the name of the library the sequence came from, or one of the libraries used to make a subtracted library, this field will alert us that there is a problem.  
-    TAG_TISSUE: contains the tissue that the tagged library was made from e.g. prostate in the above example.  
-    TAG_SEQ: contains the actual tag sequence you found in the EST read. If you didn't find one, put "None found" in this field - that will distinguish this case from one where the tag hasn't been searched for.
+* The `TYPE` field is obligatory at the beginning of each entry, even if there are multiple entries of a given type in a file.
+* Valid data values for the `EST STATUS` field are New (new entry) or Update (change existing `EST` entry).
+* When updating an `EST`, only the fields with text present in the `EST` file will be changed. The text in the update file will replace entirely the text for that field in the current version of the file.
+* The `DNA_TYPE` is assumed to be c`DNA`, so this field may be omitted unless the `DNA` type differs from this.
+* Sequences start on the same line or the line below the `SEQUENCE` field tag.
+* It is very important that the strings in the following fields be completely identical, for purposes of automatic matching:
+* `POLYA` indicates whether a polyA tail sequence was found in the `EST` read.  
+* `TAG_LIB`, `TAG_TISSUE`, `TAG_SEQ`: these were added because some
+     researchers pool libraries to
+     make subtracted libraries. It's important to many people to know
+     which of the libraries in the pooled library a particular
+     sequence came from, so short sequence tags are being included in
+     the library preps. These tags are specific for each library, so
+     if you find that tag in a c`DNA` read, you know it came from that
+     library, even though you found it in a library which was a pool
+     of libraries.
+* `TAG_LIB`: contains the name of the library whose tag you found in this sequence. e.g. `NCI_CGAP_P`r1\. Leave the field blank if you did not find one. If the library name in this field doesn't match the name of the library the sequence came from, or one of the libraries used to make a subtracted library, this field will alert us that there is a problem.  
+* `TAG_TISSUE`: contains the tissue that the tagged library was made from e.g. prostate in the above example.  
+* `TAG_SEQ`: contains the actual tag sequence you found in the `EST` read. If you didn't find one, put `None found` in this field,
+to distinguish this case from one where the tag hasn't been searched for.
 
 
 
