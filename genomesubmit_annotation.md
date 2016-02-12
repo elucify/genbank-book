@@ -643,10 +643,10 @@ The value field is separated by vertical bars '|' into a descriptive string, the
 
 Polymorphisms in the sequence can be shown with variation features. Include one of the polymorphisms in the sequence (usually, this is the most commonly seen sequence), and then add a variation feature in the .tbl file for each of the other possibilities.
 
-*   The variation feature requires a 'replace' qualifier, whose value is the sequence of the polymorphism that is NOT in the submitted sequence. For example, if CCC is most common at position 100-102 but there is also CC (a substitution), CCCCC (an insertion), and nothing (a deletion) then the sequence will have CCC at that location and you would include three variation features, one for each polymorphism.
-*   For an insertion polymorphism, a carat (^) is part of the start location.
+*   The `variation` feature requires a `replace` qualifier, whose value is the sequence of the polymorphism that is NOT in the submitted sequence. For example, if CCC is most common at position 100-102 but there is also `CC` (a substitution), `CCCCC` (an insertion), and nothing (a deletion) then the sequence will have `CCC` at that location and you would include three variation features, one for each polymorphism.
+*   For an insertion polymorphism, a carat (`^`) is part of the start location.
 *   When the polymorphism is a complete deletion, then the replace value is just two double-quotes.
-*   You can also include optional qualifiers- note, and the frequency with which the other sequence is found.
+*   You can also include optional qualifiers: `note`, and the `frequency` with which the other sequence is found.
 
 Here is an example with all of those options:
 
