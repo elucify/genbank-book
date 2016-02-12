@@ -567,7 +567,7 @@ Riboswitches should be annotated using the `misc_binding` feature if the bound m
                         bound_moiety adenosylcobalamin
 ```
 
-If the bound moiety is unknown or if the sequence is a leader sequence, annotate as a misc_feature, for example:
+If the bound moiety is unknown or if the sequence is a leader sequence, annotate as a `misc_feature`, for example:
 
 ```
 1     100    misc_feature
