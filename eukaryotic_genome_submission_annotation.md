@@ -481,7 +481,7 @@ gene            join(complement(36618..36700),86988..87064)
 
 #### Split genes on two contigs
 
-ometimes in incomplete genomes the ends of a gene may be on different contigs. When certain that the two pieces are part of the same gene, annotate these as separate genes with unique locus_tags, plus separate CDS/mRNAs with different protein_id's and transcript_id's. In addition, link the features together with notes that refer to the other part of the gene. However, do not create extremely short features, for example if one end is only the start methinione or only a few amino acids before the stop codon.
+Sometimes, in incomplete genomes, the ends of a gene may be on different contigs. When certain that the two pieces are part of the same gene, annotate these as separate genes with unique locus_tags, plus separate CDS/mRNAs with different protein_id's and transcript_id's. In addition, link the features together with notes that refer to the other part of the gene. However, do not create extremely short features, for example if one end is only the start methinione or only a few amino acids before the stop codon.
 
 #### Example
 
