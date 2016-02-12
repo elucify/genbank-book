@@ -258,7 +258,7 @@ Here are some examples of bad protein names:
 
 #### Notes
 
-Please avoid including notes indicating a specific percentage of similarity to other entries in the database, since the corresponding record that you have pointed to may change and make your current note inaccurate, incorrect and obsolete. Descriptions, notes describing similarity to other proteins, and functional comments must be placed in the appropriate CDS qualifiers such as note, or prot_desc, as they are descriptors of the product. E.C. numbers must be fielded in an EC_number qualifier.
+Please avoid including notes indicating a specific percentage of similarity to other entries in the database, since the corresponding record that you have pointed to may change and make your current note inaccurate, incorrect and obsolete. Descriptions, notes describing similarity to other proteins, and functional comments must be placed in the appropriate CDS qualifiers such as `note`, or `prot_desc`, as they are descriptors of the product. E.C. numbers must be fielded in an `EC_number` qualifier.
 
 ```
 start    stop    CDS
