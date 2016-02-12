@@ -342,7 +342,7 @@ Intein-containing coding regions must be represented as follows:
 
 ```
 
-Inteins should be annotated with two mat_peptide features, one for the intein and one for the final protein. We also add "precursor" to the product name on the CDS feature. Unfortunately, you can not add a mat_peptide feature in a table. Instead, you can add a misc_feature and we can convert them for you. Please see accession number [AY847267](//www.ncbi.nlm.nih.gov/nuccore/AY847267) for an example of an intein containing protein.
+Inteins should be annotated with two `mat_peptide` features, one for the intein and one for the final protein. We also add `precursor` to the product name on the CDS feature. Unfortunately, you can not add a mat_peptide feature in a table. Instead, you can add a misc_feature and we can convert them for you. Please see accession number [AY847267](//www.ncbi.nlm.nih.gov/nuccore/AY847267) for an example of an intein-containing protein.
 
 #### Partial coding regions in incomplete genomes
 
