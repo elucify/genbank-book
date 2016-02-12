@@ -1,4 +1,3 @@
-
 # Eukaryotic Genome Annotation Guide
 
 ### Annotation
