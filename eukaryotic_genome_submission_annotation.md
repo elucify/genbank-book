@@ -10,7 +10,7 @@ The format of this feature table allows different kinds of features (e.g. `gene`
 
 If you do not understand any of the instructions presented here or you have questions, please contact us by email at [genomes@ncbi.nlm.nih.gov](mailto:genomes@ncbi.nlm.nih.gov) prior to creating your submission. This will save us both a lot of time.
 
-### Table of Contents
+## Table of Contents
 
 1.  [Prepare annotation table](#prepare_table)
     *   [Gene features](#Genes)
@@ -29,7 +29,7 @@ If you do not understand any of the instructions presented here or you have ques
     *   [Data base cross references](#db_xref)
     *   [Gene Ontology](#GOterms)
 
-### Prepare annotation table
+## Prepare annotation table
 
 The features must be in a simple five-column tab-delimited table, called the feature table. The feature table specifies the location and type of each feature for tbl2asn or Sequin to include in the GenBank submission that is created. The first line of the table contains the following basic information:
 
@@ -53,7 +53,7 @@ Please avoid unnecessary capitalization in all text entered in your table.
 
 Additional requirements, as well as suggestions for various types of annotation, are included in the following sections.
 
-#### Gene features
+### Gene features
 
 Gene features are always a single interval, and their location should cover the intervals of all the relevant features such as promoters and polyA binding sites.
 
@@ -61,11 +61,11 @@ Gene names should follow the standard nomenclature rules of the particular organ
 
 Coding regions (CDS) and RNAs, such as tRNAs and rRNAs, must have a corresponding gene feature. However, other features such as repeat_regions and misc_features do not have a corresponding gene or locus_tag.
 
-#### locus_tag
+### `locus_tag`
 
 All genes should be assigned a systematic gene identifier which should receive the locus_tag qualifier on the gene feature in the table. Genes may also have functional names as assigned in the scientific literature. In this example, KCS_0001 is the systematic gene identifier, while Abc5 is the functional gene name.
 
-#### Table view of gene with both biological name and locus_tag:
+### Table view of gene with both biological name and locus_tag:
 
 ```
 1       1575    gene
@@ -73,7 +73,7 @@ All genes should be assigned a systematic gene identifier which should receive t
                         locus_tag        KCS_0001
 ```
 
-#### Flatfile view:
+### Flatfile view:
 
 ```
 gene       1..1575
@@ -81,14 +81,14 @@ gene       1..1575
                      /locus_tag="KCS_0001"
 ```
 
-#### Table view of gene with only locus_tag:
+### Table view of gene with only locus_tag:
 
 ```
 1 1575    gene
                         locus_tag     KCS_0001
 ```
 
-#### Flatfile view:
+### Flatfile view:
 
 ```
 gene       1..1575
@@ -107,7 +107,7 @@ Please register your genome project and proposed locus_tag prefix on the [BioPro
 
 The use of locus_tag is supported in Sequin version 4.35 or later. If you have an older version of Sequin please download the [current version](http://www.ncbi.nlm.nih.gov/Sequin/) . The latest version of tbl2asn is available from the [tbl2asn](/~/tbl2asn2) page.
 
-#### protein_id
+### `protein_id`
 
 All proteins in a WGS or complete genome must be assigned an identification number by the submitter. We use this number to track proteins when sequences are updated. This number is indicated in the table by the CDS qualifier protein_id, and should have the format gnl|dbname|string, where dbname is a version of your lab name that you think will be unique (eg SmithUCSD), and string is the unique protein SeqID assigned by the submitter. This identifier is saved with the record (in ASN.1 format), but it is not visible in the flatfile. We recommend using the locus_tag as the protein SeqID. In this example, the protein_id for ABC5 is gnl|SmithUCSD|KCS_0001.
 
@@ -130,7 +130,7 @@ Note that when WGS submissions are processed, the dbname in the protein_id is au
 
 After your genome is released into GenBank, the proteins are assigned accession numbers. We will provide a table of the protein SeqIDs and accession numbers for you to use in future [updates](/~/eukaryotic_genome_submission#updating) .
 
-#### transcript_id
+### `transcript_id`
 
 The transcript_id is included as a qualifier for both the CDS and its corresponding mRNA. It has the same format as the protein_id, gnl|dbname|identifier. Because each transcript_id and protein_id must be unique, we suggest adding 'mrna' or 't' to the protein_id identifier as a simple way to create the corresponding (unique) transcript_id. However, you can use whatever naming convention you choose, as long as all of the identifiers are unique.
 
@@ -159,7 +159,7 @@ The transcript_id is included as a qualifier for both the CDS and its correspond
                         transcript_id     gnl|ncbi|mrna.Ngs_17131
 ```
 
-#### CDS (coding region) features
+### `CDS` (coding region) features
 
 All CDS features must have a product qualifier (protein name). NCBI protein naming conventions are adopted in part from the [UniProt-Swiss-Prot Protein Knowledgebase](http://www.uniprot.org/docs/gennameprot)
 
@@ -167,7 +167,7 @@ Consistent nomenclature is indispensable for communication, literature searching
 
 Ambiguities regarding gene/protein names are a major problem in the literature and it is even worse in the sequence databases which tend to propagate the confusion. For this reason, we ask that you follow some basic guidelines in naming your proteins. The protein naming guidelines are based on the premise that a good and stable recommended name for a protein is a name that is as neutral as possible.
 
-Guidelines for naming proteins:
+#### Guidelines for naming proteins:
 
 *   If it exists, use the approved nomenclature.
 *   Use a concise name, not a description or phrase.
@@ -379,7 +379,7 @@ start    stop    CDS
 
 ```
 
-#### Partial coding regions in incomplete genomes
+### Partial coding regions in incomplete genomes
 
 To annotate an partial coding region, you should use the "<" or ">" in your feature table to designate the feature as either 5' or 3' partial. The coding region should begin at the first nucleotide present, however the translation will start at the first complete codon.
 
@@ -707,7 +707,7 @@ Example 2 (same product):
                         transcript_id   gnl|dbname|CCC_mrna03222B       
 ```
 
-#### Evidence Qualifiers
+### Evidence Qualifiers
 
 The International Nucleotide Sequence Database Collaboration, DDBJ, EMBL and GenBank has adopted a set of new qualifiers to describe the evidence for feature annotation in GenBank records. These are:
 
@@ -752,35 +752,4 @@ GO (Gene Ontology) terms can be included in genomes in order to describe protein
 ```
 
 The value field is separated by vertical bars '|' into a descriptive string, the GO identifier (leading zeroes are retained), and optionally a PubMed ID and one or more evidence codes. The evidence code is the fourth token, so include blank fields, as necessary (eg the last qualifier has no PubMed ID so the third field is blank).
-
-
-
-
-
-<div id="shared-content-1" nid="1465">
-
-<div class="rightnav">
-
-## WGS Resources
-
-*   [About WGS](/~/wgs)
-*   [WGS Project List](http://www.ncbi.nlm.nih.gov/Traces/wgs)
-*   [WGS Submission Guide](/~/wgs.submit)
-*   [Update Genome Records](/~/wgs_update)
-*   [FAQ](/~/wgsfaq)
-*   [tbl2asn](/~/tbl2asn2)
-*   [Create Submission Template](http://www.ncbi.nlm.nih.gov/WebSub/template.cgi)
-*   [BioProject](http://www.ncbi.nlm.nih.gov/bioproject)
-*   [Eukaryotic Annotation Guide](/~/eukaryotic_genome_submission)
-*   [Prokaryotic Annotation Guide](/~/genomesubmit)
-*   [Discrepancy Report](/~/asndisc)
-*   [WGS Example Files](/~/examples.wgs)
-*   [Assembly Submission Guide](http://www.ncbi.nlm.nih.gov/assembly/docs/submission/)
-*   [AGP Format](http://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)
-*   [WGS Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/wgs/)
-*   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
-*   [Metagenome Submission Guide](/~/metagenome)
-*   [Structured Comment](/~/structuredcomment)
-
-
 
