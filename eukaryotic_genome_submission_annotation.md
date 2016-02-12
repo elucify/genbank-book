@@ -1,12 +1,12 @@
 # Eukaryotic Genome Annotation Guide
 
-### Annotation
+## Annotation
 
 Sequin and tbl2asn use a simple, five-column, tab-delimited table of feature locations and qualifiers to generate annotation.
 
 The format of this feature table allows different kinds of features (e.g. `gene`, `CDS` (coding region), `tRNA`, `repeat_region`) and qualifiers (e.g. `/product`, `/note`) to be indicated. The validator will check for errors such as internal stops in coding regions.
 
-Guidelines for [prokaryotic genome submissions](/~/genomesubmit) .
+## Guidelines for [prokaryotic genome submissions](/~/genomesubmit) .
 
 If you do not understand any of the instructions presented here or you have questions, please contact us by email at [genomes@ncbi.nlm.nih.gov](mailto:genomes@ncbi.nlm.nih.gov) prior to creating your submission. This will save us both a lot of time.
 
