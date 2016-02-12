@@ -17,8 +17,6 @@ The two systems of identifiers run in parallel to each other. That is, when any 
 
 For example, here is the [sequence revision history of Reference Sequence Human Chromosome 1](/nuccore/NC_000001?report=girevhist), as of October 2014:
 
-<style type="text/css">.col table { width: 90%; margin: auto; margin-bottom: 1em; }</style>
-
 <div class="col six_col">
 
 <table>
