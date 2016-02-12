@@ -22,7 +22,6 @@
 * [HTGs](htgs.md)
    * [Submit HTGs](htgs/subinfo.md)
    * [HTGs FAQ](htgs/faq.md)
-   * [HTGs Resources](htg_resources.md)
 * [EST](dbest.md)
    * [Submit EST](dbest/how_to_submit.md)
 * [GSS](dbgss.md)
