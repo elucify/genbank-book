@@ -448,7 +448,7 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
 
 #### Transpliced Genes
 
-Transpliced genes are the exception to the rule for annotating gene feature spans. Transpliced genes are similar to intron-containing genes, except that the two pieces of the gene occur on different regions of the chromosome. These genes are transcribed as two or more separate RNA products that are transpliced into a single mRNA or tRNA. To annotate this using a table, enter the nucleotide spans so that the complementary (minus strand) spans are arranged from high to low, and vice-ersa for the plus strand.
+Transpliced genes are the exception to the rule for annotating gene feature spans. Transpliced genes are similar to intron-containing genes, except that the two pieces of the gene occur on different regions of the chromosome. These genes are transcribed as two or more separate RNA products that are transpliced into a single mRNA or tRNA. To annotate this using a table, enter the nucleotide spans so that the complementary (minus strand) spans are arranged from high to low, and vice-versa for the plus strand.
 
 ```
 36700   36618   gene
