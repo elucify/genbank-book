@@ -83,7 +83,8 @@ Please do not send a list of nucleotide changes. Do not include non-IUPAC charac
 
 If you are adding annotation to a record that has none, then send us the features as a tab-delimited 5-column [Feature table.](http://www.ncbi.nlm.nih.gov/Sequin/table.html) For example:
 
-<pre>>Feature gb|EFxxxxxx|EFxxxxxx
+```
+>Feature gb|EFxxxxxx|EFxxxxxx
 <1      400     gene
                         gene            ENO1
 <1      30      CDS
@@ -98,27 +99,10 @@ If you are adding annotation to a record that has none, then send us the feature
 70      400     exon
                         number          2
 
-</pre>
+```
 
 ### Update features on record with annotation
 
 If you are updating many features of a record, let us know, and we can send you a tab-delimited 5-column [Feature table](http://www.ncbi.nlm.nih.gov/Sequin/table.html) with the current annotation for you to edit and return to us.
-
-
-
-
-
-<div id="shared-content-1" nid="1092">
-
-<div class="rightnav">
-
-## GenBank Resources
-
-*   [GenBank Home](/~/)
-*   [Submission Types](/~/submit_types)
-*   [Submission Tools](/~/submit)
-*   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
-*   [Update GenBank Records](/~/update)
-
 
 
