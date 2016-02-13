@@ -1,5 +1,4 @@
-
-## Bacterial Genome Submission Examples
+# Bacterial Genome Submission Examples
 
 #### Figure 1: Sample FASTA-formatted sequence
 

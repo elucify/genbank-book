@@ -1,5 +1,4 @@
-
-## Sequence Identifiers
+# Sequence Identifiers
 
 Many sequences have two<span> types of identification numbers,</span> _GI_ <span>and</span> _VERSION_<span>. The two identifier types differ in format , and were implemented at different times.</span>
 

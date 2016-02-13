@@ -1,9 +1,7 @@
 
-The /country qualifier
+# The `/country` qualifier
 
-* * *
-
-The /country qualifier is used to indicate the country of origin of a DNA sample.
+The '/country` qualifier is used to indicate the country of origin of a DNA sample.
 
 The text below outlines the format and the present list of allowed countries
 

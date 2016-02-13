@@ -1,5 +1,4 @@
-
-## Sample GenBank Record
+# Sample GenBank Record
 
 <style type="text/css">#maincontent h2 { padding-top: 1em; } pre { font-family: Courier, Monospace; border: solid 1px #ccc; background-color: #ffe; padding: 1em; margin: 1.2em; font-size: 1.0em; } code { font-weight: bold; }</style>
 

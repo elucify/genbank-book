@@ -1,5 +1,4 @@
-
-## What is tbl2asn?
+# What is tbl2asn?
 
 Tbl2asn is a command-line program that automates the creation of sequence records for submission to GenBank. It uses many of the same functions as Sequin but is driven generally by data files. Tbl2asn generates .sqn files for submission to GenBank. Additional manual editing is not required before submission.
 

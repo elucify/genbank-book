@@ -1,5 +1,4 @@
-
-## Eukaryotic Genome Submission Examples
+# Eukaryotic Genome Submission Examples
 
 #### Figure 1: Sample FASTA-formatted sequence
 

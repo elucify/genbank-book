@@ -1,7 +1,4 @@
-
-
-
-## GenBank Releases
+# GenBank Releases
 
 ### General Information about Release Notes
 

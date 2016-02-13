@@ -1,5 +1,4 @@
-
-## PacBio Base Modification Files
+# PacBio Base Modification Files
 
 [PacBio](http://www.pacb.com/) sequence data also permits the analysis of methylated bases within the sequence, which can be extremely helpful to the scientific community.  For example, the precise positions of those modified bases can be used to determine the specificity of the DNA methyltransferases that produced them. The PacBio analysis suite contains an analysis workflow (RS_Modification_and_Motif_Analysis) to extract these sequences and produce several files:
 

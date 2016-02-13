@@ -1,5 +1,4 @@
-
-## Submitting Sequences to dbGSS
+# Submitting Sequences to dbGSS
 
 Please ensure that your submissions follow these sequence quality and file formatting guidelines:
 

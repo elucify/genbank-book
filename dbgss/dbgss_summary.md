@@ -1,5 +1,4 @@
-
-## dbGSS release 130101
+# dbGSS release 130101
 
 Summary by Organism - 01 January 2013
 

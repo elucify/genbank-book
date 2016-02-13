@@ -1,5 +1,4 @@
-
-## Sequence Revision History
+# Sequence Revision History
 
 GenBank can show the revision history of a sequence. The revision history shows the various GI numbers, version numbers, and update dates for sequences that appeared in a specific GenBank record.
 

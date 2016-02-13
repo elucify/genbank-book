@@ -1,5 +1,4 @@
-
-## WGS Bulk Submission by FTP
+# WGS Bulk Submission by FTP
 
 1\. Register BioProject and BioSample with the supplied spreadsheet for bacterial pathogen. Send the spreadsheet to genomeprj@ncbi.nlm.nih.gov
 

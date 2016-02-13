@@ -1,5 +1,4 @@
-
-## Phase 1, 2, and 3 Sequence Examples
+# Phase 1, 2, and 3 Sequence Examples
 
 As a sequence progresses from phase 1 to phase 2 to phase 3, the same accession number is used to reference that sequence. Many sequences do not go through this order; some sequences are submitted as phase 1 and then are updated to a phase 3 record, whereas others are submitted only in the final phase 3 form. At all times, only the most recent version of a record with a given accession number is retrieved by NCBI's Entrez or BLAST services. It is possible to retrieve older versions, when they exist, by using the gi (geninfo) number instead of the accession number.
 

@@ -1,5 +1,4 @@
-
-## Using Sequin to Prepare a HTG Submission
+# Using Sequin to Prepare a HTG Submission
 
 This document assumes that you are already familiar with the Sequin program. If you are not, please visit the Sequin home page at [www.ncbi.nlm.nih.gov/Sequin](//www.ncbi.nlm.nih.gov/Sequin).
 

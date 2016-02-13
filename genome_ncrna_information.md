@@ -1,5 +1,4 @@
-
-## ncRNA Information for Annotation in GenBank
+# ncRNA Information for Annotation in GenBank
 
 This is a guide for how to annotate Rfam output and ncRNA features for GenBank submission. The basic annotation is described in the [prokaryotic](http://www.ncbi.nlm.nih.gov/genbank/genomesubmit_annotation#RNA) and [eukaryotic](http://www.ncbi.nlm.nih.gov/genbank/eukaryotic_genome_submission_annotation#rRNA) annotation instructions.  This list of ncRNAs and Rfam products is not exhaustive and may not be the most currently correct functional assessment of these, as functions become defined for some of these RNAs. Therefore, the purpose of this page is to provide guidance on how to annotate a particular RNA. The basic logic is:
 

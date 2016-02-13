@@ -1,5 +1,4 @@
-
-## Using GenBank
+# Using GenBank
 
 *   [Home](/~/)
 *   [About GenBank](/~/about/)
