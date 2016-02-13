@@ -9,11 +9,9 @@ Please ensure that your submissions follow these sequence quality and file forma
 
 2. Remove: vector, linker, adaptor, mitochondrial, ribosomal, and contaminant sequences
 
-3. Use VecScreen to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)
+3. Use VecScreen ([http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)) to identify any vector, linker, or adaptors (accepts multiple sequences in fasta format)
 
-[http://www.ncbi.nlm.nih.gov/tools/vecscreen/](http://www.ncbi.nlm.nih.gov/tools/vecscreen/)
-
-4. Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.
+5. . Trim terminal N's from 5' or 3' ends.  Sequences should not begin or end with N.
 
 5. Remove any low quality sequences.  These have high number of N's and/or long stretches of polynucleotides throughout. 
 
@@ -537,10 +535,10 @@ sequence
      which of the libraries in the pooled library a particular
      sequence came from, so short sequence tags are being included in
      the library preps. These tags are specific for each library, so
-     if you find that tag in a c`DNA` read, you know it came from that
+     if you find that tag in a cDNA read, you know it came from that
      library, even though you found it in a library which was a pool
      of libraries.
-* `TAG_LIB`: contains the name of the library whose tag you found in this sequence. e.g. `NCI_CGAP_P`r1\. Leave the field blank if you did not find one. If the library name in this field doesn't match the name of the library the sequence came from, or one of the libraries used to make a subtracted library, this field will alert us that there is a problem.  
+* `TAG_LIB`: contains the name of the library whose tag you found in this sequence. e.g. `NCI_CGAP_P`. Leave the field blank if you did not find one. If the library name in this field doesn't match the name of the library the sequence came from, or one of the libraries used to make a subtracted library, this field will alert us that there is a problem.  
 * `TAG_TISSUE`: contains the tissue that the tagged library was made from e.g. prostate in the above example.  
 * `TAG_SEQ`: contains the actual tag sequence you found in the `EST` read. If you didn't find one, put `None found` in this field,
 to distinguish this case from one where the tag hasn't been searched for.
