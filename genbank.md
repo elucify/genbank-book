@@ -1,7 +1,3 @@
-Title: GenBank Overview
-Date: 2016-02-12 21:33
-Category: Home
-
 # GenBank Overview
 
 ## What is GenBank?
