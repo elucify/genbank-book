@@ -12,15 +12,15 @@ If you do not understand any of the instructions presented here or you have ques
 *   Your lab must have sequenced the genome or paid to have it sequenced or been part of the collaboration that sequenced it. You cannot submit a genome that you have downloaded from a web site or similar place.
 *   The sequence submission must represent a sequence that occurs biologically in the organism. Do not randomly combine the contigs to create a single sequence; you must keep them separate (a traditional WGS submission) or join them with runs of Ns into the correct order and orientation (a gapped WGS submission). If you keep them separate in a traditional submission, you can provide the information to assemble them into scaffolds and/or chromosomes or plasmids with an AGP file (//www.ncbi.nlm.nih.gov/genbank/wgs.submit#agp).
 *   Register the source information for each genome in the [BioSample](https://submit.ncbi.nlm.nih.gov/subs/biosample) database. Multiple BioSamples can be pre-registered at once, with the ‘Batch’ option. For isolated unicellular organisms, chose the appropriate Pathogen package (‘Clinical or host-associated pathogen’ OR ‘Environmental, food or other pathogen’) or the Microbe package. If the same sample is used for two different genome assemblies, then use the same BioSample for both.
-*   Each genome must belong to a [BioProject](https://submit.ncbi.nlm.nih.gov/subs/bioproject/). Genomes sequenced as part of the same research effort can belong to a single multi-isolate or to a multi-species BioProject.  When more BioSamples are added to a BioProject, the assigned locus_tag prefixes are added to the “locustagprefix.txt” file in the BioProject submission portal, [https://submit.ncbi.nlm.nih.gov/subs/bioproject/](https://submit.ncbi.nlm.nih.gov/subs/bioproject/).
+*   Each genome must belong to a [BioProject](https://submit.ncbi.nlm.nih.gov/subs/bioproject/). Genomes sequenced as part of the same research effort can belong to a single multi-isolate or to a multi-species BioProject. When more BioSamples are added to a BioProject, the assigned locus_tag prefixes are added to the “locustagprefix.txt” file in the BioProject submission portal, [https://submit.ncbi.nlm.nih.gov/subs/bioproject/](https://submit.ncbi.nlm.nih.gov/subs/bioproject/).
 *   Raw reads should be submitted to [SRA](//www.ncbi.nlm.nih.gov/books/NBK47529/). If the genome was sequenced using PacBio sequencing technology, please also submit to SRA the base modification files, eg the motif_summary.csv file. If you have any questions about SRA, contact sra@ncbi.nlm.nih.gov.
 *   Annotation is not required, but if annotation is provided it must be biologically valid and the product names should follow the [UniProt-Protein Naming Guidelines](//www.uniprot.org/docs/nameprot).
-*   NCBI’s [Prokaryotic Genomes Annotation Pipeline](//www.ncbi.nlm.nih.gov/genome/annotation_prok/)  (NCBI_PGAP) is used to annotate prokaryotic RefSeq genomes and is available for GenBank submissions, by request. No changes by the submitter are needed to make this annotation ready for GenBank submission. Note that all complete prokaryotic genomes will be run through NCBI_PGAP for a basic integrity check, to see that the genome contains some required elements like RNAs and has low levels of pseudogenes/frameshifted genes.  The genome will not be released with this annotation unless you ask us to include it.
+*   NCBI’s [Prokaryotic Genomes Annotation Pipeline](//www.ncbi.nlm.nih.gov/genome/annotation_prok/) (NCBI_PGAP) is used to annotate prokaryotic RefSeq genomes and is available for GenBank submissions, by request. No changes by the submitter are needed to make this annotation ready for GenBank submission. Note that all complete prokaryotic genomes will be run through NCBI_PGAP for a basic integrity check, to see that the genome contains some required elements like RNAs and has low levels of pseudogenes/frameshifted genes. The genome will not be released with this annotation unless you ask us to include it.
 *   Provide relevant chromosome, plasmid or organellar assignment information for any sequences in the fasta definition line, as described below.
 
 ### Data files:
 
-1\. Fasta file
+1\. FASTA file
 
 *   put the sequences into [fasta format](//www.ncbi.nlm.nih.gov/genbank/tbl2asn2#fsa) of the sequences. These files have the suffix .fsa. Each sequence has a definition line beginning with a '>' and a unique identifier, eg contig001, contig002, etc.
     *   The source information can be included in the defline of each contig or in the tbl2asn commandline. It is included in the same format, in either place. At a minimum the source information is the organism and the relevant strain, breed, cultivar or isolate, if one exists for the sequenced organism. The additional source qualifiers will be obtained from the registered BioSample.
@@ -35,13 +35,15 @@ If you do not understand any of the instructions presented here or you have ques
         *   [topology=circular] [completeness=complete]
     *   Here is an example of the definition line for the complete plasmid of a bacterial submission:
 
->contig02  [organism=Clostridium difficile] [strain=ABDC] [gcode=11] [plasmid-name=pABDC1] [topology=circular] [completeness=complete]
+```
+>contig02 [organism=Clostridium difficile] [strain=ABDC] [gcode=11] [plasmid-name=pABDC1] [topology=circular] [completeness=complete]
+```
 
 Another example of a FASTA-formatted sequence is shown in [Figure 1](/~/genomesubmit-examples#fig1)
 
-2.      a [template](//www.ncbi.nlm.nih.gov/WebSub/template.cgi) file with submitter, publication, BioProject and BioSample information.
+2. a [template](//www.ncbi.nlm.nih.gov/WebSub/template.cgi) file with submitter, publication, BioProject and BioSample information.
 
-3.       The Genome-Assembly-Data Structured Comment which includes the assembly method and version, the genome coverage and the sequencing technologies can be created on the [Structured Comment Template](https://submit.ncbi.nlm.nih.gov/structcomment/genomes/) page.
+3. The Genome-Assembly-Data Structured Comment which includes the assembly method and version, the genome coverage and the sequencing technologies can be created on the [Structured Comment Template](https://submit.ncbi.nlm.nih.gov/structcomment/genomes/) page.
 
 4\. annotation files, if appropriate. These correspond to and have the same basenames as the .fsa files, but have the suffix .tbl. The .tbl files have a 5-column tab-delimited format, as described in the annotation instruction pages. Be sure to read the annotation requirements in the appropriate annotation guidelines:
 
@@ -58,7 +60,7 @@ Put all the files in the same directory, and run [tbl2asn](//www.ncbi.nlm.nih.go
 
 **If the sequences contain Ns that represent gaps**, then run the appropriate tbl2asn commandline with the –l and –a arguments, as described in the [Gapped Genome Submission](//www.ncbi.nlm.nih.gov/genbank/wgs_gapped) page.
 
-For either case:               
+For either case:
 
 *   if you put the template file in a different directory, then include the full path to that file
 *   if you want to use a particular file, then use -i file_name, instead of -p path_to_files
