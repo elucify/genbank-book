@@ -14,9 +14,9 @@ If you do not understand any of the instructions presented here or you have ques
 
 1.  [Prepare annotation table](#prepare_table)
     *   [Gene features](#Genes)
-    *   [locus_tag](#locus_tag)
-    *   [protein_id](#protein_id)
-    *   [transcript_id](#transcript_id)
+    *   [`locus_tag`](#`locus_tag`)
+    *   [`protein_id`](#`protein_id`)
+    *   [`transcript_id`](#`transcript_id`)
     *   [CDS (coding region) features](#CDS)
     *   [Partial coding regions in incomplete genomes](#Partialcodingregionsinincompletegenomes)
     *   [Gene fragments](#Gene_fragments)
@@ -59,18 +59,18 @@ Gene features are always a single interval, and their location should cover the 
 
 Gene names should follow the standard nomenclature rules of the particular organism. For example, mouse gene names begin with an uppercase letter, and the remaining letters are lowercase.
 
-Coding regions (CDS) and RNAs, such as tRNAs and rRNAs, must have a corresponding gene feature. However, other features such as repeat_regions and misc_features do not have a corresponding gene or locus_tag.
+Coding regions (CDS) and RNAs, such as tRNAs and rRNAs, must have a corresponding gene feature. However, other features such as repeat_regions and misc_features do not have a corresponding gene or `locus_tag`.
 
 ### `locus_tag`
 
-All genes should be assigned a systematic gene identifier which should receive the locus_tag qualifier on the gene feature in the table. Genes may also have functional names as assigned in the scientific literature. In this example, KCS_0001 is the systematic gene identifier, while Abc5 is the functional gene name.
+All genes should be assigned a systematic gene identifier which should receive the `locus_tag` qualifier on the gene feature in the table. Genes may also have functional names as assigned in the scientific literature. In this example, KCS_0001 is the systematic gene identifier, while Abc5 is the functional gene name.
 
-### Table view of gene with both biological name and locus_tag
+### Table view of gene with both biological name and `locus_tag`
 
 ```
 1       1575    gene
                         gene    Abc5
-                        locus_tag        KCS_0001
+                        `locus_tag`        KCS_0001
 ```
 
 ### Flatfile view
@@ -78,38 +78,38 @@ All genes should be assigned a systematic gene identifier which should receive t
 ```
 gene       1..1575
                      /gene="Abc5"
-                     /locus_tag="KCS_0001"
+                     /`locus_tag`="KCS_0001"
 ```
 
-### Table view of gene with only locus_tag
+### Table view of gene with only `locus_tag`
 
 ```
 1 1575    gene
-                        locus_tag     KCS_0001
+                        `locus_tag`     KCS_0001
 ```
 
 ### Flatfile view
 
 ```
 gene       1..1575
-                     /locus_tag="KCS_0001"
+                     /`locus_tag`="KCS_0001"
 ```
 
-For consistency the same locus_tag prefix must be used throughout the entire genome. Therefore, all the chromosomes of a genome should have the same locus_tag prefix.
+For consistency the same `locus_tag` prefix must be used throughout the entire genome. Therefore, all the chromosomes of a genome should have the same `locus_tag` prefix.
 
-To improve the use of locus_tags we are now requiring that all locus_tag prefixes be registered and that they be unique. We recommend having the BioProject registration process auto-assign a locus_tag prefix, as they are not meant to convey meaning. The locus_tag prefix should be 3-12 alphanumeric characters and the first character may not be a digit. The locus_tag prefix is followed by an underscore and then an alphanumeric identification number that is unique within the given genome. Other than the single underscore used to separate the prefix from the identification number, no special characters can be used in the locus_tag.
+To improve the use of `locus_tag`s we are now requiring that all `locus_tag` prefixes be registered and that they be unique. We recommend having the BioProject registration process auto-assign a `locus_tag` prefix, as they are not meant to convey meaning. The `locus_tag` prefix should be 3-12 alphanumeric characters and the first character may not be a digit. The `locus_tag` prefix is followed by an underscore and then an alphanumeric identification number that is unique within the given genome. Other than the single underscore used to separate the prefix from the identification number, no special characters can be used in the `locus_tag`.
 
-The chromosome number can be embedded in the locus_tag, if desired, in the format `Prefix\_`_#g#####_, where the first `#` is the chromosome number and `#####` is the unique number of the gene. For example, `Ajs_4g00123` for a gene on chromosome 4.
+The chromosome number can be embedded in the `locus_tag`, if desired, in the format `Prefix\_`_#g#####_, where the first `#` is the chromosome number and `#####` is the unique number of the gene. For example, `Ajs_4g00123` for a gene on chromosome 4.
 
-Read more about [locus_tags](http://www.ncbi.nlm.nih.gov/genomes/locustag/Proposal.pdf) and their intended usage.
+Read more about [`locus_tag`s](http://www.ncbi.nlm.nih.gov/genomes/locustag/Proposal.pdf) and their intended usage.
 
-Please register your genome project and proposed locus_tag prefix on the [BioProject registration](https://submit.ncbi.nlm.nih.gov/subs/bioproject/) page prior to preparing your submission to GenBank. Each project that is registered here is assigned a project_id, and in the future we intend that the project_id will appear on all entries associated with a particular genome project.
+Please register your genome project and proposed `locus_tag` prefix on the [BioProject registration](https://submit.ncbi.nlm.nih.gov/subs/bioproject/) page prior to preparing your submission to GenBank. Each project that is registered here is assigned a project_id, and in the future we intend that the project_id will appear on all entries associated with a particular genome project.
 
-The use of locus_tag is supported in Sequin version 4.35 or later. If you have an older version of Sequin please download the [current version](http://www.ncbi.nlm.nih.gov/Sequin/) . The latest version of tbl2asn is available from the [tbl2asn](/~/tbl2asn2) page.
+The use of `locus_tag` is supported in Sequin version 4.35 or later. If you have an older version of Sequin please download the [current version](http://www.ncbi.nlm.nih.gov/Sequin/) . The latest version of tbl2asn is available from the [tbl2asn](/~/tbl2asn2) page.
 
 ### `protein_id`
 
-All proteins in a WGS or complete genome must be assigned an identification number by the submitter. We use this number to track proteins when sequences are updated. This number is indicated in the table by the CDS qualifier protein_id, and should have the format gnl|dbname|string, where dbname is a version of your lab name that you think will be unique (eg SmithUCSD), and string is the unique protein SeqID assigned by the submitter. This identifier is saved with the record (in ASN.1 format), but it is not visible in the flatfile. We recommend using the locus_tag as the protein SeqID. In this example, the protein_id for ABC5 is gnl|SmithUCSD|KCS_0001.
+All proteins in a WGS or complete genome must be assigned an identification number by the submitter. We use this number to track proteins when sequences are updated. This number is indicated in the table by the CDS qualifier `protein_id`, and should have the format gnl|dbname|string, where dbname is a version of your lab name that you think will be unique (eg SmithUCSD), and string is the unique protein SeqID assigned by the submitter. This identifier is saved with the record (in ASN.1 format), but it is not visible in the flatfile. We recommend using the `locus_tag` as the protein SeqID. In this example, the `protein_id` for `ABC5` is `gnl|SmithUCSD|KCS_0001`.
 
 #### Example:
 
@@ -122,21 +122,21 @@ All proteins in a WGS or complete genome must be assigned an identification numb
                         protein_id   gnl|SmithUCSD|KCS_0001
 ```
 
-Since the protein_id is used for internal tracking in our database, it is important that the complete protein_id (dbname + SeqID) not be duplicated by a genome center. Thus, if your genome center is submitting more than one complete genome, please be sure to use unique protein_id's for all of the genomes.
+Since the `protein_id` is used for internal tracking in our database, it is important that the complete `protein_id` (dbname + SeqID) not be duplicated by a genome center. Thus, if your genome center is submitting more than one complete genome, please be sure to use unique `protein_id`'s for all of the genomes.
 
-The protein_id is also included as a qualifier on the corresponding mRNA feature, to allow the CDS and mRNA to be paired during processing.
+The `protein_id` is also included as a qualifier on the corresponding mRNA feature, to allow the CDS and mRNA to be paired during processing.
 
-Note that when WGS submissions are processed, the dbname in the protein_id is automatically changed to 'WGS:XXXX', where XXXX is the project's accession number prefix.
+Note that when WGS submissions are processed, the dbname in the `protein_id` is automatically changed to 'WGS:XXXX', where XXXX is the project's accession number prefix.
 
 After your genome is released into GenBank, the proteins are assigned accession numbers. We will provide a table of the protein SeqIDs and accession numbers for you to use in future [updates](/~/eukaryotic_genome_submission#updating) .
 
 ### `transcript_id`
 
-The transcript_id is included as a qualifier for both the CDS and its corresponding mRNA. It has the same format as the protein_id, gnl|dbname|identifier. Because each transcript_id and protein_id must be unique, we suggest adding 'mrna' or 't' to the protein_id identifier as a simple way to create the corresponding (unique) transcript_id. However, you can use whatever naming convention you choose, as long as all of the identifiers are unique.
+The `transcript_id` is included as a qualifier for both the CDS and its corresponding mRNA. It has the same format as the `protein_id`, gnl|dbname|identifier. Because each `transcript_id` and `protein_id` must be unique, we suggest adding 'mrna' or 't' to the `protein_id` identifier as a simple way to create the corresponding (unique) `transcript_id`. However, you can use whatever naming convention you choose, as long as all of the identifiers are unique.
 
 ```
 63574        87173   gene
-                        locus_tag     Ngs_17131
+                        `locus_tag`     Ngs_17131
 63574   63907   mRNA
 75690   75730
 84396   85536
@@ -173,7 +173,7 @@ Ambiguities regarding gene/protein names are a major problem in the literature a
 *   Use a concise name, not a description or phrase.
 *   Ideally the name should be unique and attributed to all orthologs.
 *   The protein name should not contain specific characteristics of the protein, and it should not reflect the function of the protein, its subcellular location, its domain structure, its molecular weight or its species of origin. This information can be included in the note.
-*   In cases where the protein name is not known use "unknown" or "hypothetical protein" as the product name. We recommend the use of "hypothetical protein" as this will allow the locus_tag identifier to be appended to the product name in BLAST and Entrez summary lines.
+*   In cases where the protein name is not known use "unknown" or "hypothetical protein" as the product name. We recommend the use of "hypothetical protein" as this will allow the `locus_tag` identifier to be appended to the product name in BLAST and Entrez summary lines.
 *   Protein names may be denoted by the same symbol as the corresponding gene, but in the correct format for the organism. For example, mouse proteins have the same symbol as the gene name, but the protein name has all capital letters.
 *   Avoid the use of molecular weights in protein names; "unicornase subunit A" is preferred to "unicornase 52 kDa subunit"
 *   Do not use the term "homolog" in a protein as this infers an evolutionary relationship that has generally not been determined.
@@ -396,8 +396,8 @@ In the first example below, the "<" designates this coding region as 5' partial 
                         transcript_id   gnl|dbname|KCS_mrna0001
 
 600     >1575        CDS
-                        product      actin-like protein
-                        protein_id   gnl|dbname|KCS_0002
+                        product         actin-like protein
+                        protein_id      gnl|dbname|KCS_0002
                         transcript_id   gnl|dbname|KCS_mrna0002
 
 ```
@@ -417,7 +417,7 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
 ```
 1    200     gene
                             gene    Abc5
-                            locus_tag        KCS_0001
+                            `locus_tag`        KCS_0001
                             gene_desc       alkaline phosphatase
                             pseudo
                             note    frameshift
@@ -430,7 +430,7 @@ Sometimes a genome will have adjacent or nearby genes that seem to be only part 
 ```
 1  200     gene
                             gene    Abc5
-                            locus_tag        KCS_0001
+                            `locus_tag`        KCS_0001
                             gene_desc       alkaline phosphatase
                             note    nonfunctional due to frameshift
 
@@ -453,7 +453,7 @@ Transpliced genes are the exception to the rule for annotating gene feature span
 ```
 36700   36618   gene
 86988   87064
-                        locus_tag    NEQ_t38
+                        `locus_tag`    NEQ_t38
                         exception    trans-splicing
 36631   36618   misc_feature
                         note    sequence cleaved during processing of trans-spliced tRNAs
@@ -466,13 +466,13 @@ Transpliced genes are the exception to the rule for annotating gene feature span
 
 ```
 gene            join(complement(36618..36700),86988..87064)
-                     /locus_tag="NEQ_t38"
+                     /`locus_tag`="NEQ_t38"
                      /trans_splicing
      misc_feature    complement(36618..36631)
-                     /locus_tag="NEQ_t38"
+                     /`locus_tag`="NEQ_t38"
                      /note="sequence cleaved during processing of trans-spliced tRNAs"
      tRNA            join(complement(36635..36673),87030..87064)
-                     /locus_tag="NEQ_t38"
+                     /`locus_tag`="NEQ_t38"
                      /product="tRNA-Glu"
                      /trans_splicing
                      /note="this trans-spliced tRNA consists of two halves on
@@ -488,7 +488,7 @@ Sometimes, in incomplete genomes, the ends of a gene may be on different contigs
 ```
 >Feature Cont01.00111
 5000    >7500        gene
-                        locus_tag     KCS_2223A
+                        `locus_tag`     KCS_2223A
 5000    5500    mRNA
 6000    >7200
                         product       enolase
@@ -505,7 +505,7 @@ Sometimes, in incomplete genomes, the ends of a gene may be on different contigs
 ```
 >Feature Cont01.00224
 <1   1000    gene    
-                        locus_tag    KCS_2223B
+                        `locus_tag`    KCS_2223B
 <100 1000    mRNA
                         product      enolase
                         protein_id   gnl|dbname|KCS_2223B
@@ -520,7 +520,7 @@ Sometimes, in incomplete genomes, the ends of a gene may be on different contigs
 
 #### Ribosomal RNA, tRNA and other RNA features
 
-RNA features (rRNA, tRNA, ncRNA) need a corresponding gene feature with a locus_tag qualifier. If the amino acid of a tRNA is unknown, use tRNA-Xxx as the product, as in the example. Many submitters like to label the tRNAs such as tRNA-Gly1, etc. If you wish to do this please include "tRNA-Gly1" as a note and not in /gene. The use of /gene is reserved for the actual biological gene symbol such as "trnG". If a tRNA is a pseudogene, please use the /pseudo qualifier.
+RNA features (rRNA, tRNA, ncRNA) need a corresponding gene feature with a `locus_tag` qualifier. If the amino acid of a tRNA is unknown, use tRNA-Xxx as the product, as in the example. Many submitters like to label the tRNAs such as tRNA-Gly1, etc. If you wish to do this please include "tRNA-Gly1" as a note and not in /gene. The use of /gene is reserved for the actual biological gene symbol such as "trnG". If a tRNA is a pseudogene, please use the /pseudo qualifier.
 
 Annotate ncRNAs that belong to one of the INSDC [nRNA_class](http://www.insdc.org/documents/ncrna-vocabulary) as an ncRNA feature, with the appropriate value in the required /ncRNA_class qualifier. Regions of an RNA should be annotated as a misc_feature (eg, leader sequences), or a misc_binding feature if they bind a known molecule (eg, riboswitches). If the RFAM identifier is known, it can be included as a [db_xref](#db_xref).
 
@@ -528,30 +528,30 @@ Some rRNA, tRNA and ncRNA examples:
 
 ```
 <1      400     gene
-                        locus_tag       KCS_00011
+                        `locus_tag`       KCS_00011
 <1      400     rRNA
                         product 16S ribosomal RNA
 488     560     gene
-                        locus_tag       KCS_00012
+                        `locus_tag`       KCS_00012
 488     560     tRNA
                         product tRNA-Lys
 570     601     gene
-                        locus_tag       KCS_00020
+                        `locus_tag`       KCS_00020
                         pseudo
 570     601     tRNA
                         product tRNA-Phe
                         pseudo
 700     780     gene
-                        locus_tag       KCS_00013
+                        `locus_tag`       KCS_00013
 700     780     tRNA
                         product tRNA-Xxx
 900     923     gene
-                        locus_tag       KCS_00014
+                        `locus_tag`       KCS_00014
 900     923     ncRNA
                         ncRNA_class     miRNA
                         product mir-9c
 950     1000    gene
-                        locus_tag       KCS_00015
+                        `locus_tag`       KCS_00015
 950     1000    tmRNA
                         product tmRNA
 
