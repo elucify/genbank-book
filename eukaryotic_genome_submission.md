@@ -39,9 +39,9 @@ Please register your genome project and locus_tag prefix on the [BioProject regi
 Nucleotide sequences must be in FASTA format. FASTA format consists of a single definition line, beginning with a '>' and followed by optional text, and subsequent lines of sequence. At minimum, all definition lines must contain an identifier for the sequence, called the SeqID. Other information about the biological source of the organism can also be encoded on the definition line of the sequence and is used to build the record.
 
 A sample definition line is
-
-<pre>>HTE831 [organism=Drosophila yakuba] [strain=HTE831] 
-</pre>
+```
+>HTE831 [organism=Drosophila yakuba] [strain=HTE831] 
+```
 
 Common source [modifiers](http://www.ncbi.nlm.nih.gov/Sequin/modifiers.html) may be incorporated into the definition line e.g. [strain=HTE831]. Alternatively, these modifiers can be included in the tbl2asn command line with -j.
 
@@ -180,6 +180,3 @@ See the [WGS](/~/wgs#update) page for information about updating a WGS project.
 *   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
 *   [Metagenome Submission Guide](/~/metagenome)
 *   [Structured Comment](/~/structuredcomment)
-
-
-
