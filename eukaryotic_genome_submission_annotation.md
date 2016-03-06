@@ -6,7 +6,7 @@
 
 The format of this feature table allows different kinds of features (e.g. `gene`, `CDS` (coding region), `tRNA`, `repeat_region`) and qualifiers (e.g. `/product`, `/note`) to be indicated. The validator will check for errors such as internal stops in coding regions.
 
-## Guidelines for [prokaryotic genome submissions](/~/genomesubmit) .
+## Guidelines for [prokaryotic genome submissions](/genbank/genomesubmit) .
 
 If you do not understand any of the instructions presented here or you have questions, please contact us by email at [genomes@ncbi.nlm.nih.gov](mailto:genomes@ncbi.nlm.nih.gov) prior to creating your submission. This will save us both a lot of time.
 
@@ -65,7 +65,7 @@ Coding regions (CDS) and RNAs, such as tRNAs and rRNAs, must have a correspondin
 
 All genes should be assigned a systematic gene identifier which should receive the locus_tag qualifier on the gene feature in the table. Genes may also have functional names as assigned in the scientific literature. In this example, KCS_0001 is the systematic gene identifier, while Abc5 is the functional gene name.
 
-### Table view of gene with both biological name and locus_tag:
+### Table view of gene with both biological name and locus_tag
 
 ```
 1       1575    gene
@@ -73,7 +73,7 @@ All genes should be assigned a systematic gene identifier which should receive t
                         locus_tag        KCS_0001
 ```
 
-### Flatfile view:
+### Flatfile view
 
 ```
 gene       1..1575
@@ -81,14 +81,14 @@ gene       1..1575
                      /locus_tag="KCS_0001"
 ```
 
-### Table view of gene with only locus_tag:
+### Table view of gene with only locus_tag
 
 ```
 1 1575    gene
                         locus_tag     KCS_0001
 ```
 
-### Flatfile view:
+### Flatfile view
 
 ```
 gene       1..1575
@@ -99,7 +99,7 @@ For consistency the same locus_tag prefix must be used throughout the entire gen
 
 To improve the use of locus_tags we are now requiring that all locus_tag prefixes be registered and that they be unique. We recommend having the BioProject registration process auto-assign a locus_tag prefix, as they are not meant to convey meaning. The locus_tag prefix should be 3-12 alphanumeric characters and the first character may not be a digit. The locus_tag prefix is followed by an underscore and then an alphanumeric identification number that is unique within the given genome. Other than the single underscore used to separate the prefix from the identification number, no special characters can be used in the locus_tag.
 
-The chromosome number can be embedded in the locus_tag, if desired, in the format Prefix_#g#####, where the first # is the chromosome number and ##### is the unique number of the gene. For example, Ajs_4g00123 for a gene on chromosome 4.
+The chromosome number can be embedded in the locus_tag, if desired, in the format `Prefix\_`_#g#####_, where the first `#` is the chromosome number and `#####` is the unique number of the gene. For example, `Ajs_4g00123` for a gene on chromosome 4.
 
 Read more about [locus_tags](http://www.ncbi.nlm.nih.gov/genomes/locustag/Proposal.pdf) and their intended usage.
 
