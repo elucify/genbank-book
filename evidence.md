@@ -7,7 +7,7 @@ The evidence qualifiers /experiment and /inference can be used to provide more d
 
 Definition: a brief description of the nature of the experimental evidence that supports the feature identification or assignment.
 
-Value format: "[CATEGORY:]text"
+Value format: `[CATEGORY:]text`
 
 CATEGORY is optional, and is one of these:
 
@@ -18,13 +18,9 @@ CATEGORY is optional, and is one of these:
 A PubMedID or doi can be included within brackets in the text.
 
 <dl>
-
 <dt>Examples:</dt>
-
 <dd>/experiment="EXISTENCE:Northern blot"</dd>
-
 <dd>/experiment="heterologous expression system of Xenopus laevis oocytes [PMID: 12345678, 10101010, 987654]"</dd>
-
 </dl>
 
 Comment: detailed experimental details should not be included, and would normally be found in the cited publications.
@@ -169,6 +165,3 @@ The resulting flatfile looks like this:
 *   [tbl2asn](/~/tbl2asn2)
 *   [GenomesMacroSend](http://www.ncbi.nlm.nih.gov/projects/GenomeSubmit/genome_submit.cgi)
 *   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
-
-
-
