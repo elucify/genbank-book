@@ -1,4 +1,4 @@
-# What is a Third Party Annotation:experimental (TPA:experimental) Sequence?
+![](IMG_5195.JPG)# What is a Third Party Annotation:experimental (TPA:experimental) Sequence?
 
 **TPA:experimental** A database designed to capture experimental results that support submitter-provided annotation for sequence data that the submitter did not directly determine but derived from GenBank primary data.
 
