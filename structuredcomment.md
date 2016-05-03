@@ -5,9 +5,9 @@
 
 Public database sequence records consist primarily of nucleotide sequence data, source organism information, and sequence features. The organism and feature description are based on a controlled list of organism modifiers (such as isolate, strain, clone, and specimen voucher) and features (such as CDS, rRNA, and gene).
 
-However, many sequence submitters also have additional organism metadata that cannot easily fit into the controlled list but that is significant for the complete description of a sequences source and allows for comparisons of sequences isolated from similar locations.
+However, many sequence submitters also have additional organism metadata that cannot easily fit into the controlled list, but that is significant for the complete description of a sequences source, and allows for comparisons of sequences isolated from similar locations.
 
-To collect and display such additional metadata in sequence records, GenBank has developed a Structured Comment. The comment consists of tag-value pairs that are contained within START and END tags that function as delimiters for easy parsing. These comments can be incorporated from a tab-delimited table into submission files using either Sequin or tbl2asn. An example of a GenBank record that includes a structured comment is [GU949562](/nuccore/291609868).
+To collect and display such additional metadata in sequence records, GenBank has developed the *Structured Comment*. The comment consists of tag-value pairs that are contained within START and END tags that function as delimiters for easy parsing. These comments can be incorporated from a tab-delimited table into submission files using either Sequin or tbl2asn. An example of a GenBank record that includes a structured comment is [GU949562](http://www.ncbi.nlm.nih.gov/nuccore/291609868).
 
 This guide explains how to include structured comments with your sequence submission.
 
