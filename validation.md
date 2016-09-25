@@ -218,17 +218,3 @@ _Suggestion_: Provide unique (non-identical) clone names for your sequences. A c
 
 
 
-<div id="shared-content-1" nid="1092">
-
-<div class="rightnav">
-
-## GenBank Resources
-
-*   [GenBank Home](/~/)
-*   [Submission Types](/~/submit_types)
-*   [Submission Tools](/~/submit)
-*   [Search GenBank](http://www.ncbi.nlm.nih.gov/nuccore/)
-*   [Update GenBank Records](/~/update)
-
-
-

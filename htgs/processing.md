@@ -44,16 +44,3 @@ All files placed on the FTP site are checked for a variety of possible errors. S
 
 
 
-<div id="shared-content-1" nid="1331">
-
-<div class="rightnav">
-
-## HTGs Resources
-
-*   [About HTGs](/~/htgs)
-*   [Submitting HTGs](/~/htgs/subinfo)
-*   [Processing HTGs](/~/htgs/processing)
-*   [](/~/htgs/processing)[HTGs FAQ](/~/htgs/faq)
-
-
-

@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h1 id="wgs-bulk-submission-by-ftp">WGS Bulk Submission by FTP</h1>
+<p>1. Register BioProject and BioSample with the supplied spreadsheet for bacterial pathogen. Send the spreadsheet to genomeprj@ncbi.nlm.nih.gov</p>
+<p>2. Create files for wgs submission<br />a. Template, <a href="http://www.ncbi.nlm.nih.gov/WebSub/template.cgi">http://www.ncbi.nlm.nih.gov/WebSub/template.cgi</a> = template.sbtx<br />b. Fasta file of all contigs &gt;200bp, with no Ns at ends or internal Ns that represent gaps =file1.fsa<br />Â Â  Â Â Â Â  Put source info into the fasta header of each contig:<br />Â  &gt;contig0001 [organism=Genus species] [strain=strain] [bioproject=PRJNAxxxxx] [biosample=SAMNxxxxxxx] [host=Genus species] [isolation-source=text] [country=country: more details] [collection-date=dd-Mmm-yyyy or Mmm-yyyy]</p>
+<p>Â  c. Genome-Assembly-Data structured comment = file1.cmt<br />Â Â  Â <a href="https://submit.ncbi.nlm.nih.gov/structcomment/genomes/">https://submit.ncbi.nlm.nih.gov/structcomment/genomes/</a><br />Â Â  Â or create the 2-column tab-delimited table yourself:</p>
+<pre><code>StructuredCommentPrefixÂ Â  Â GenomeAssembly-Data  
+Assembly MethodÂ Â  Â algorithm v. version/date  
+Genome CoverageÂ Â  Â 12x  
+Sequencing TechnologyÂ Â  Â Illumina HiSeq2000  
+StructuredCommentSuffixÂ Â  Â GenomeAssembly-Data</code></pre>
+<p>NOTE: the value of Assembly Method must include âv. â between the name of the algorithm and the version used, or date that it was used.</p>
+<p>Assembly Name (a brief abbreviation to name this version) is optional tag:<br />StructuredCommentPrefixÂ Â  Â GenomeAssembly-Data<br />Assembly MethodÂ Â  Â Newbler v. 2.3<br />Assembly NameÂ Â  Â EcoliABCD_v1.0<br />Genome CoverageÂ Â  Â 12x<br />Sequencing TechnologyÂ Â  Â Illumina HiSeq2000<br />StructuredCommentSuffixÂ Â  Â GenomeAssembly-Data</p>
+<p>Use semi-colon to separate multiple values, like this:<br />StructuredCommentPrefixÂ Â  Â GenomeAssembly-Data<br />Assembly MethodÂ Â  Â Newbler v. 2.3; Celera Assembly v. May 2010<br />Genome CoverageÂ Â  Â 12x Illumina; 6x 454<br />Sequencing TechnologyÂ Â  Â Illumina HiSeq2000; 454<br />StructuredCommentSuffixÂ Â  Â GenomeAssembly-Data</p>
+<ol start="4" style="list-style-type: lower-alpha">
+<li>Optional 5-column feature table (.tbl) file. Format and requirements are <a href="http://www.ncbi.nlm.nih.gov/genbank/genomesubmit#prepare_table">http://www.ncbi.nlm.nih.gov/genbank/genomesubmit#prepare_table</a> and <a href="http://www.ncbi.nlm.nih.gov/genbank/genomesubmit_annotation">http://www.ncbi.nlm.nih.gov/genbank/genomesubmit_annotation</a>. Use the locus_tag prefix registered in step 1.</li>
+</ol>
+<p>4. Run tbl2asn, <a href="http://www.ncbi.nlm.nih.gov/genbank/tbl2asn2/">http://www.ncbi.nlm.nih.gov/genbank/tbl2asn2</a>/ (available by FTP, <a href="ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/">ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn</a>/):</p>
+<p>If all the genomes use the same template, then you can put all the .fsa and .cmt and optional .tbl files into a single directory and run:</p>
+<p>Â Â  Â tbl2asn -t template.sbt -p path_to_files -M n -j &quot;[gcode=11]&quot; -X C -c bx</p>
+<p>Any ERROR, REJECT and FATAL problems in the the <em>.val and </em>.dr files need to be fixed</p>
+<p>5. Deposit .sqn files on ftp account, and send an email to genomes@ncbi.nlm.nih.gov with a table with this info:</p>
+<p>BioProjectID (PRJNAxxxxx) Â Â  Organism nameÂ  Strain Name Â Â  File nameÂ Â  Â Release date (Immediate OR Mmm-Dd-Yyyy)</p>
+<hr />
+<p>There are some options, which can be chosen according to which works best for the submitter's system:</p>
+<p>1. The source information can be included in the fasta deflines, as described, OR in the -j argument of the tbl2asn commandline</p>
+<p>2. The biosampleID and bioprojectID can be included in the template, OR with the source information in either the fasta defline, as described, or with the source information with the -j argument of the tbl2asn commandline</p>
+<p>3.The structured comment file can have the same basename as the .fsa file and be put into the same directory and then called with -X C, as described.Â  OR it can have any name and be in any directory and then called specifically by name with -w, eg -w ../structuredcmt_file.Â  NOTE: if both options are used, then the file called with -w will be used to create the .sqn file.</p>
+<p>4. tbl2asn can be run individually on a .fsa file by using -i file1.fsa (instead of -p path_to_files, which will read all the .fsa files in that directory)</p>
+</body>
+</html>

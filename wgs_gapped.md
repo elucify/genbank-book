@@ -120,30 +120,3 @@ For more information about splitting CDS features, see either the [eukaryotic an
 
 
 
-<div id="shared-content-1" nid="1465">
-
-<div class="rightnav">
-
-## WGS Resources
-
-*   [About WGS](/~/wgs)
-*   [WGS Project List](http://www.ncbi.nlm.nih.gov/Traces/wgs)
-*   [WGS Submission Guide](/~/wgs.submit)
-*   [Update Genome Records](/~/wgs_update)
-*   [FAQ](/~/wgsfaq)
-*   [tbl2asn](/~/tbl2asn2)
-*   [Create Submission Template](http://www.ncbi.nlm.nih.gov/WebSub/template.cgi)
-*   [BioProject](http://www.ncbi.nlm.nih.gov/bioproject)
-*   [Eukaryotic Annotation Guide](/~/eukaryotic_genome_submission)
-*   [Prokaryotic Annotation Guide](/~/genomesubmit)
-*   [Discrepancy Report](/~/asndisc)
-*   [WGS Example Files](/~/examples.wgs)
-*   [Assembly Submission Guide](http://www.ncbi.nlm.nih.gov/assembly/docs/submission/)
-*   [AGP Format](http://www.ncbi.nlm.nih.gov/assembly/agp/AGP_Specification/)
-*   [WGS Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/wgs/)
-*   [NCBI Prokaryotic Genome Annotation Pipeline](http://www.ncbi.nlm.nih.gov/genome/annotation_prok/)
-*   [Metagenome Submission Guide](/~/metagenome)
-*   [Structured Comment](/~/structuredcomment)
-
-
-

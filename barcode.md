@@ -13,21 +13,3 @@ The NCBI provides a web-based [Barcode Submission Tool](http://www.ncbi.nlm.nih.
 
 
 
-<div id="shared-content-1" nid="1458">
-
-<div class="rightnav">
-
-## Barcode Resources
-
-*   [Barcode Submission Tool](http://www.ncbi.nlm.nih.gov/WebSub/index.cgi?tool=barcode)
-*   [Consortium for the Barcode of Life, Smithsonian Institution](http://barcoding.si.edu/)
-*   [Barcode of Life Database (BoLD)](http://www.barcodinglife.com/)
-*   [NCBI Taxonomy Browser](http://www.ncbi.nlm.nih.gov/Taxonomy/taxonomyhome.html/index.cgi)
-*   [Integrated Taxonomic Information System (ITIS)](http://www.itis.gov)
-*   [Catalogue of Life](http://www.catalogueoflife.org)
-*   [Encyclopedia of Life (EoL)](http://www.eol.org)
-*   [The Tree of Life Web Project](http://tolweb.org/tree/phylogeny.html)
-*   [Census of Marine Life](http://www.coml.org/)
-
-
-

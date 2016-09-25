@@ -194,16 +194,3 @@ All annotations present in an HTG record use and apply the same rules that are p
 
 
 
-<div id="shared-content-1" nid="1331">
-
-<div class="rightnav">
-
-## HTGs Resources
-
-*   [About HTGs](/~/htgs)
-*   [Submitting HTGs](/~/htgs/subinfo)
-*   [Processing HTGs](/~/htgs/processing)
-*   [](/~/htgs/processing)[HTGs FAQ](/~/htgs/faq)
-
-
-
