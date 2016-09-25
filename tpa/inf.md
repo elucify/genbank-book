@@ -1,4 +1,4 @@
-# What is a Third Party Annotation:inferential (TPA:inferential) Sequence?
+# Third Party Annotation:inferential (TPA:inferential) Sequences
 
 **TPA:inferential** A database of sequences annotated by inference, where the source molecule or its product(s) have not been the subject of direct experimentation.
 

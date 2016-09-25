@@ -1,6 +1,8 @@
-![](IMG_5195.JPG)# What is a Third Party Annotation:experimental (TPA:experimental) Sequence?
+# Third Party Annotation:experimental (TPA:experimental) Sequences
 
-**TPA:experimental** A database designed to capture experimental results that support submitter-provided annotation for sequence data that the submitter did not directly determine but derived from GenBank primary data.
+![alt](IMG_5195.JPG)
+
+**TPA:experimental** A database designed to capture experimental results that support submitter-provided annotation for sequence data that the submitter did not directly determine, but derived from GenBank primary data.
 
 A TPA sequence is derived or assembled from primary sequence data currently found in the DDBJ/EMBL/GenBank databases. It can be genomic or mRNA sequence, and can be assembled or derived from primary genomic and/or mRNA sequences. TPA sequences are submitted as part of the process of publishing biological experiments that include the annotation of existing nucleotide sequences in the primary sequence database.
 

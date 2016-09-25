@@ -1,11 +1,11 @@
 
 # Transcriptome Shotgun Assembly Sequence Database
 
-### What is the Transcriptome Shotgun Assembly (TSA) Database?
+## What is the Transcriptome Shotgun Assembly (TSA) Database?
 
 **TSA** is an archive of computationally assembled sequences from primary data such as ESTs, traces and Next Generation Sequencing Technologies. The overlapping sequence reads from a complete transcriptome are assembled into transcripts by computational methods instead of by traditional cloning and sequencing of cloned cDNAs. The primary sequence data used in the assemblies must have been experimentally determined by the same submitter. TSA sequence records differ from EST and GenBank records because there are no physical counterparts to the assemblies.
 
-### How Do TSA Sequence Records Differ from Other GenBank/EMBL/DDBJ Records?
+## How Do TSA Sequence Records Differ from Other GenBank/EMBL/DDBJ Records?
 
 The display of a TSA sequence is similar to other International Nucleotide Sequence Database Collaboration (INSDC) records, but includes the following:
 
@@ -24,7 +24,7 @@ An example of a TSA master record is [GAAA00000000.](//www.ncbi.nlm.nih.gov:80/e
 
 TSA sequence records are shared by all three INSDC databases and can be found using typical search methods in Entrez Nucleotide and Entrez Protein.
 
-### Nucleotide sequences must conform to the following standards:
+## Nucleotide sequences must conform to the following standards:
 
 *   Submitted sequences must be assembled from data experimentally determined by the submitter.
 *   Screened for vector contamination and any vector/linker sequence removed. This includes the removal of NextGen sequencing primers.
@@ -34,7 +34,7 @@ TSA sequence records are shared by all three INSDC databases and can be found us
 *   Gaps cannot be of unknown length.
 *   If the submission is a single-step, unannotated assembly and the output is a BAM file(s) these should be submitted as a TSA project to [SRA](https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi).
 
-### Requirements:
+## Requirements:
 
 *   Register your project in the [BioProject](//submit.ncbi.nlm.nih.gov/subs/bioproject/) database as a Transcriptome Shotgun Assembly project.
 *   Register your library information in the [BioSample](//submit.ncbi.nlm.nih.gov/subs/biosample) database.
@@ -46,22 +46,22 @@ TSA sequence records are shared by all three INSDC databases and can be found us
 *   The keyword 'Targeted' and feature annotation should be included for all targeted subsets of transcriptome data.  See [Targeted vs. Non-targeted TSA Studies](/~/tsaguide#target) for more information.
 *   Annotation must be biologically valid.
 
-### How to Submit to TSA
+## How to Submit to TSA
 
 All TSA submissions must be submitted through the TSA [Submission Portal](https://submit.ncbi.nlm.nih.gov/subs/tsa/) . Submission details can be found in the [TSA submission guide](/~/tsaguide). 
 
-### How to Update an Existing TSA Submission
+## How to Update an Existing TSA Submission
 
 Please contact [gb-admin@ncbi.nlm.nih.gov](mailto:gb-admin@ncbi.nlm.nih.gov) with reason for updating your assemblies and instructions on how to update will be provided.
 
-### How to Search for TSA Sequences:
+## How to Search for TSA Sequences:
 
 *   You can search Entrez Nucleotide using the following terms: tsa-master [prop] and 'Genus Species' [orgn].  
     For example: tsa-master [prop] AND  Nitella mirabilis [orgn]
 *   The public submissions are available through the [WGS/TSA browser](//www.ncbi.nlm.nih.gov/Traces/wgs/?term=tsa).
 *   The sequences can be downloaded from the [NCBI FTP GenBank site](ftp://ftp.ncbi.nlm.nih.gov/genbank/tsa/).
 
-### Should not be submitted to TSA
+## Should not be submitted to TSA
 
 *   Assemblies from sequences not directly sequenced by the submitter.
 *   Clonal based assemblies. These should be submitted to GenBank.
