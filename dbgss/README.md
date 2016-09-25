@@ -1,4 +1,4 @@
-# What is GSS?
+# General Survey Sequences (GSS)
 
 The GSS division of GenBank is similar to the EST division, with the exception that most of the sequences are genomic in origin, rather than cDNA (mRNA). It should be noted that two classes (exon trapped products and gene trapped products) may be derived via a cDNA intermediate. Care should be taken when analyzing sequences from either of these classes, as a splicing event could have occurred and the sequence represented in the record may be interrupted when compared to genomic sequence. The GSS division contains (but is not limited to) the following types of data:
 

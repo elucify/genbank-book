@@ -1,4 +1,4 @@
-# What is a Third Party Annotation (TPA) Sequence?
+# Third Party Annotations (TPA)
 
 TPA: A database designed to capture experimental or inferential results that support submitter-provided annotation for sequence data that the submitter did not directly determine but derived from GenBank primary data.
 

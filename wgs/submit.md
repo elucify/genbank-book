@@ -1,8 +1,6 @@
 
 # How to Submit WGS Genomes
 
-### Introduction
-
 DDBJ/EMBL/GenBank accepts both complete and incomplete genomes. Whole Genome Shotgun (WGS) sequencing projects are incomplete genomes or incomplete chromosomes that are being sequenced by a whole genome shotgun strategy. See the [WGS page](/~/wgs) for details on what is and is not suitable for submission as a WGS project.
 
 **New**: An updated version of the WGS Submission Portal was released on Feb. 3, 2014\. Its URL is the original [https://submit.ncbi.nlm.nih.gov/subs/wgs/](https://submit.ncbi.nlm.nih.gov/subs/wgs/). However, older submissions that were begun before that date are present at this URL- [https://submit.ncbi.nlm.nih.gov/subs/wgs1/](https://submit.ncbi.nlm.nih.gov/subs/wgs1/). If you have already submitted a genome in the original system, then please use that submission and do not create a duplicate submission, as that will cause confusion and slow down processing.

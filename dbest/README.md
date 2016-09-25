@@ -1,4 +1,4 @@
-# What is dbEST?
+# Expressed Sequence Tags (EST)
 
 dbEST [(Nature Genetics 4:332-3;1993)](http://www.ncbi.nlm.nih.gov/pubmed/8401577?dopt=Abstract) is a division of [GenBank](/Genbank/GenbankOverview) that contains sequence data and other information on "single-pass" cDNA sequences, or "Expressed Sequence Tags", from a number of organisms. A brief account of the history of human ESTs in GenBank is available [(Trends Biochem. Sci. 20:295-6;1995).](http://www.ncbi.nlm.nih.gov/pubmed/7667885?dopt=Abstract) Also, consult the special "Genome Directory" issue of Nature (vol. 377, issue 6547S, 28 September 1995).
 

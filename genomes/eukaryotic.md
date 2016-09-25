@@ -1,5 +1,5 @@
 
-# Introduction
+# Eukaryotic Annotation Submission Guide
 
 Submitting eukaryotic genomes to GenBank includes registering the metadata and submitting the appropriate data files. The steps include:
 
