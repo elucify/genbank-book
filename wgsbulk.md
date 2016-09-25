@@ -3,8 +3,8 @@
 1\. Register BioProject and BioSample with the supplied spreadsheet for bacterial pathogen. Send the spreadsheet to genomeprj@ncbi.nlm.nih.gov
 
 2\. Create files for wgs submission  
- a. Template, [http://www.ncbi.nlm.nih.gov/WebSub/template.cgi](http://www.ncbi.nlm.nih.gov/WebSub/template.cgi) = template.sbtx  
- b. Fasta file of all contigs >200bp, with no Ns at ends or internal Ns that represent gaps =file1.fsa  
+a. Template, [http://www.ncbi.nlm.nih.gov/WebSub/template.cgi](http://www.ncbi.nlm.nih.gov/WebSub/template.cgi) = template.sbtx  
+b. Fasta file of all contigs >200bp, with no Ns at ends or internal Ns that represent gaps =file1.fsa  
         Put source info into the fasta header of each contig:  
   >contig0001 [organism=Genus species] [strain=strain] [bioproject=PRJNAxxxxx] [biosample=SAMNxxxxxxx] [host=Genus species] [isolation-source=text] [country=country: more details] [collection-date=dd-Mmm-yyyy or Mmm-yyyy]
 
