@@ -7,10 +7,10 @@
 {% block head %}
     {{ super() }}
     {% if page.next and page.next.path %}
-    <link rel="next" href="{{ page.next.path|resolveFile }}" />
+        <link rel="next" href="{{ page.next.path|resolveFile }}" />
     {% endif %}
     {% if page.previous and page.previous.path %}
-    <link rel="prev" href="{{ page.previous.path|resolveFile }}" />
+        <link rel="prev" href="{{ page.previous.path|resolveFile }}" />
     {% endif %}
 {% endblock %}
 
@@ -19,9 +19,9 @@
     <script src="{{ "theme.js"|resolveAsset }}"></script>
     {% for resource in plugins.resources.js %}
         {% if resource.url %}
-        <script src="{{ resource.url }}"></script>
+            <script src="{{ resource.url }}"></script>
         {% else %}
-        <script src="{{ resource.path|resolveAsset }}"></script>
+            <script src="{{ resource.path|resolveAsset }}"></script>
         {% endif %}
     {% endfor %}
 {% endblock %}
