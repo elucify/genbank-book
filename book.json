@@ -1,1 +1,6 @@
-{}
+{
+  "author": "NCBI",
+  "//plugins": [
+    "theme-ncbi@git+https://github.com/klortho/theme-ncbi.git#eec753b"
+  ]
+}
