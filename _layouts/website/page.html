@@ -1,39 +1,44 @@
-{% extends "./layout.html" %}
+<?xml version='1.0' encoding='utf-8'?>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8">
+    <title>{% block title %}{{ config.title }}{% endblock %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GenBank Submission Tools</title>
+  </head>
 
+  <body>
 
-{% block description %}{{ page.description }}{% endblock %}
+    {% block body %}
+      <div class='node clear-block'>
+        <div class='content'>
 
-{% block head %}
-  <!-- page.html block head  1 -->
-  {{ super() }}
+          {% block page %}
+            {{ page.content|safe }}
+          {% endblock %}
 
-  <!-- page.html block head  2 -->
-  {% if page.next and page.next.path %}
-    <link rel="next" href="{{ page.next.path|resolveFile }}" />
-  {% endif %}
-  {% if page.previous and page.previous.path %}
-    <link rel="prev" href="{{ page.previous.path|resolveFile }}" />
-  {% endif %}
-{% endblock %}
-
-<!--
-{% block javascript %}
-    <script src="{{ "theme.js"|resolveAsset }}"></script>
-    {% for resource in plugins.resources.js %}
-        {% if resource.url %}
-        <script src="{{ resource.url }}"></script>
-        {% else %}
-        <script src="{{ resource.path|resolveAsset }}"></script>
-        {% endif %}
-    {% endfor %}
-{% endblock %}
--->
-
-  <div class="node clear-block">
-    <div class="content">
-    {% block book_body %}
-
+        </div>
+      </div>
     {% endblock %}
+
+    <div id='shared-content-1' nid='1092'>
+      <div class='rightnav'>
+        <h2>GenBank Resources</h2>
+        <ul>
+          <li>
+            <a href="/~/">GenBank Home</a></li>
+          <li>
+            <a href="/~/submit_types">Submission Types</a></li>
+          <li>
+            <a href="/~/submit">Submission Tools</a></li>
+          <li>
+            <a href="http://www.ncbi.nlm.nih.gov/nuccore/">Search GenBank</a></li>
+          <li>
+            <a href="/~/update">Update GenBank Records</a></li>
+        </ul>
+      </div>
     </div>
 
-  </div>
+  </body>
+</html>
