@@ -1,0 +1,149 @@
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GenBank Submission Tools</title>
+  </head>
+
+  <body>
+
+    
+      <div class='node clear-block'>
+        <div class='content'>
+
+          
+            <h1 id="whole-genome-shotgun-submissions">Whole Genome Shotgun Submissions</h1>
+<h3 id="what-is-whole-genome-shotgun-wgs">What is Whole Genome Shotgun (WGS)?</h3>
+<p>Whole Genome Shotgun (WGS) projects are genome assemblies of incomplete genomes or incomplete chromosomes of prokaryotes or eukaryotes that are generally being sequenced by a whole genome shotgun strategy. WGS projects may be annotated, but annotation is not required. NCBI has a <a href="http://www.ncbi.nlm.nih.gov/genomes/static/Pipeline.html" target="_blank">Prokaryotic Genomes Annotation Pipeline</a> that may be requested at the time the genome files are submitted to GenBank. This pipeline generates a submission-ready annotated file that the submitter could edit prior to data release.</p>
+<p><strong>New</strong>: We are accepting two formats for WGS submissions, Split or Gapped:</p>
+<ul>
+<li>Split format (standard WGS submission format): The pieces of a WGS project are the contigs (overlapping reads with no gaps). An optional <a href="http://www.ncbi.nlm.nih.gov/genbank/wgs.submit#agp" target="_blank">AGP file</a> can be submitted to indicate how the wgs-sequences are assembled together into scaffolds or chromosomes.</li>
+<li>Gapped format (new): the pieces of a WGS project are the scaffolds that contain runs of Ns that represent gaps. An agp file is not required for the gapped format See <a href="~/wgs_gapped">Gapped Genome Submission</a> for details. Sequences that are simply concatenated and joined by Ns are not allowed.</li>
+</ul>
+<p><strong>New</strong>: Assignment of strain-level taxids is ending in January 2014 and registration of a BioSample is required.</p>
+<p>The public WGS projects are at the <a href="http://www.ncbi.nlm.nih.gov/Traces/wgs/" target="_blank">list of WGS projects</a><a href="http://www.ncbi.nlm.nih.gov/Traces/wgs/" target="_blank">.</a></p>
+<p>Each WGS project is assigned a stable 4-letter WGS accession prefix, which does not change as the project is updated. In addition to the WGS accession prefix, the contig identifiers have a version number corresponding to a particular WGS project update. Finally, each individual contig within the assembly is assigned a unique accession number prefixed by the WGS accession prefix and version number. For instance, if a WGS project&apos;s assigned accession number is XXXX00000000, then that project&apos;s first assembly version would be XXXX01000000, and the first contig of that version would be XXXX01000001. (The last six digits of this ID identify each individual contig). When there is more sequencing and the genome is reassembled, the contigs are submitted as the 02 version of the WGS project. No linkage or relationship is expected between the old and new contigs, and the new contigs are given new accession numbers beginning with XXXX02000001. The 01 contigs are suppressed when the 02 contigs are released.  </p>
+<p>In addition, each genome is part of a <a href="http://www.ncbi.nlm.nih.gov/bioproject/" target="_blank">BioProject</a> that describes the research effort, and is from a <a href="http://www.ncbi.nlm.nih.gov/biosample/" target="_blank">BioSample</a>  which presents details of the source of the DNA. Furthermore, each public genome is loaded into the <a href="http://www.ncbi.nlm.nih.gov/assembly/" target="_blank">Assembly</a> database, where it is assigned an Assembly accession. When a genome is updated, the Assembly accession is incremented to the next version, but the BioProject and BioSample accessions remain the same.</p>
+<p>The nucleotide data from all WGS projects go into the BLAST wgs database since the fall of 2011.  Proteins from most WGS projects go into the BLAST nr database.  Proteins from environmental projects are present in either the BLAST nr or env_nr database, depending upon whether that sequence has been identified as a particular organism (nr), or if the organism is not yet known (env_nr).</p>
+<p>See the <a href="~/metagenome">Metagenome Submission Guide</a> for information about how to submit the various elements of a metagenome project.</p>
+<p>Information about the requirements for more complex assemblies, such as those with PARs or alternate loci, is in the <a href="http://www.ncbi.nlm.nih.gov/projects/genome/assembly/submission/index.shtml" target="_blank">Assembly Submission</a> pages.</p>
+<h3 id="some-examples">Some Examples</h3>
+<p>The table below shows a few examples of WGS projects:</p>
+<ol>
+<li>unannotated contigs and scaffolds</li>
+<li>annotated contigs with unannotated scaffolds</li>
+<li>unannotated contigs with annotated scaffolds.</li>
+</ol>
+<p>The accession number of each WGS project is included in the table and will link to the live record for viewing. For accession AZCS00000000, notice that the annotation on contigs is displayed up on the corresponding scaffold. However, annotation that is submitted on a scaffold or chromosome CON record is not displayed on the underlying components, as seen in ABXC00000000. To be able to see the annotation on large records, use the GenBank(full) Display setting and/or the Customize options to &#x2019;show sequence&#x2019;.</p>
+<table border="1">
+
+<tbody>
+
+<tr>
+
+<td>Annotated Contigs</td>
+
+<td>Annotated Scaffolds</td>
+
+<td>No Annotation</td>
+
+</tr>
+
+<tr>
+
+<td>ACZS00000000</td>
+
+<td>ABXC00000000</td>
+
+<td>AAGU00000000</td>
+
+</tr>
+
+<tr>
+
+<td>[WGS contig](http://www.ncbi.nlm.nih.gov/nuccore/260636527?report=gbwithparts&amp;log$=seqview)</td>
+
+<td>[WGS contig](http://www.ncbi.nlm.nih.gov/nuccore/237891334?report=gbwithparts&amp;log$=seqview)</td>
+
+<td>[WGS contig](http://www.ncbi.nlm.nih.gov/nuccore/253587594?report=gbwithparts&amp;log$=seqview)</td>
+
+</tr>
+
+<tr>
+
+<td>[Scaffold CON](http://www.ncbi.nlm.nih.gov/nuccore/260871327?report=gbwithparts&amp;log$)</td>
+
+<td>[Scaffold CON](http://www.ncbi.nlm.nih.gov/nuccore/239785565?report=gbwithparts&amp;log$=seqview)</td>
+
+<td>[Scaffold CON](http://www.ncbi.nlm.nih.gov/nuccore/253994985)</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<h3 id="nucleotide-sequences-must-conform-to-the-following-standards">Nucleotide sequences must conform to the following standards:</h3>
+<ul>
+<li>Submitted sequences must be assembled from data experimentally determined by the submitter.</li>
+<li>Screened for vector contamination and any vector/linker sequence removed. This includes the removal of NextGen sequencing primers.</li>
+<li>Sequences should be greater than 200 bp in length, if they are not part of multi-component scaffolds</li>
+<li>Sequence gaps may be present and annotated with the assembly_gap feature; however, sequences cannot be randomly concatenated for submission. See the <a href="~/wgs_gapped">Gapped Genome Submissions</a> page  for more information about adding assembly_gap features.</li>
+<li>Sequences cannot begin or end with Ns</li>
+</ul>
+<p>WGS genomes without annotation or with PGAP annotation require at least two weeks to be processed. Genomes with annotation require at least one month for processing. Please submit your genome assembly with enough lead time.</p>
+<h3 id="requirements">Requirements:</h3>
+<ul>
+<li>Register the source information for each genome in the <a href="https://submit.ncbi.nlm.nih.gov/subs/biosample" target="_blank">BioSample</a> database. If the same sample is used for two different genome assemblies, then use the same BioSample for both. Registering a new BioSample can be done during the WGS submission process for unannotated (or PGAP-annotated) genomes; however, genomes submitted with annotation will need to be <a href="https://submit.ncbi.nlm.nih.gov/subs/biosample/" target="_blank">pre-registered</a> to get a locus_tag prefix.</li>
+<li>Each genome must belong to a BioProject. Genomes sequenced as part of the same research effort can belong to a single BioProject.  Registering a new BioProject can be done during the WGS submission process for unannotated (or PGAP-annotated) genomes; however, genomes submitted with annotation will need to be <a href="https://submit.ncbi.nlm.nih.gov/subs/bioproject/" target="_blank">pre-registered</a>.</li>
+<li>Raw reads should be submitted to <a href="http://www.ncbi.nlm.nih.gov/books/NBK47529/" target="_blank">SRA</a></li>
+<li>Genome-Assembly-Data Structured Comment. This can be supplied in the submission web page during the genome submission. Alternatively, it can be created using the <a href="https://submit.ncbi.nlm.nih.gov/structcomment/genomes/" target="_blank">Structured Comment Template</a> and then included in the genome file that is submitted. Additional information is in the <a href="http://www.ncbi.nlm.nih.gov/genbank/wgs.submit.html" target="_blank">WGS Submission Guide</a></li>
+<li>If annotation is provided, the product names should follow the <a href="http://www.uniprot.org/docs/nameprot" target="_blank">UniProt-Protein Naming Guidelines</a>.</li>
+<li>Annotation must be biologically valid (and error-free).</li>
+</ul>
+<h3 id="how-to-submit-to-wgs">How to Submit to WGS</h3>
+<p>Submission details can be found in the <a href="~/wgs.submit">WGS Submission Guide</a>.</p>
+<p>See the <a href="~/metagenome">Metagenome Submission Guide</a> for information about how to submit the various elements of a metagenome project.</p>
+<p>WGS projects without annotation require at least two weeks to be processed. Projects with annotation require at least one month for processing. Please submit your project with enough lead time.</p>
+<p>We recommend sending us a test file if you have a large annotated genome to see if there are problems before committing to generating the entire project.</p>
+<h3 id="how-to-update-an-existing-wgs-submission">How to Update an Existing WGS Submission</h3>
+<p>See <a href="http://www.ncbi.nlm.nih.gov/genbank/wgs_update" target="_blank">Update Genome Resources</a></p>
+<h3 id="should-not-be-submitted-to-wgs">Should not be submitted to WGS</h3>
+<ul>
+<li>Assemblies from sequences not directly sequenced by the submitter.</li>
+<li>A single assembly from multiple organisms.</li>
+<li>Complete organellar and viral genomes. They should be submitted as regular GenBank records.  See <a href="http://www.ncbi.nlm.nih.gov/genbank/" target="_blank">GenBank Submissions</a> for more information on how to submit these types if sequences. If the organelle belongs to an already submitted WGS genome, then include the WGS accession and BioProject and BioSample identifiers (PRJNAxxxxxx and SAMNxxxxxx, respectively) in the Comments box during submission.</li>
+<li><a href="~/genomesubmit">Complete genomes</a>, with each of the chromosomes in single sequences should be submitted to GenBank as a complete genome via <a href="http://www.ncbi.nlm.nih.gov/projects/GenomeSubmit/genome_submit.cgi" target="_blank">GenomesMacroSend</a>. The most common complete genomes are bacteria, archaea and fungi. Complete genomes are defined for GenBank as the chromosomes, although any plasmids that are isolated with the chromosomes should be submitted too. As of July 2013, these sequences are allowed to contain gaps and are not required to include annotation. However, submitters need to know what kinds of gaps and linkage evidence are present, as described in <a href="~/wgs_gapped">Gapped Format for Genome Submissions</a>. For information about annotating genomes, see the <a href="~/genomesubmit_annotation">prokaryotic annotation guide</a> or <a href="~/eukaryotic_genome_submission">eukaryotic annotation guide</a>.</li>
+</ul>
+
+          
+
+        </div>
+      </div>
+    
+
+    <div id='shared-content-1' nid='1092'>
+      <div class='rightnav'>
+        <h2>GenBank Resources</h2>
+        <ul>
+          <li>
+            <a href="/~/">GenBank Home</a></li>
+          <li>
+            <a href="/~/submit_types">Submission Types</a></li>
+          <li>
+            <a href="/~/submit">Submission Tools</a></li>
+          <li>
+            <a href="http://www.ncbi.nlm.nih.gov/nuccore/">Search GenBank</a></li>
+          <li>
+            <a href="/~/update">Update GenBank Records</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
+

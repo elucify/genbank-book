@@ -1,0 +1,129 @@
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GenBank Submission Tools</title>
+  </head>
+
+  <body>
+
+    
+      <div class='node clear-block'>
+        <div class='content'>
+
+          
+            <h1 id="updating-information-on-genbank-records">Updating Information on GenBank Records</h1>
+<p>The following information provides the different methods to submit updates to GenBank in order to ensure that your update is processed quickly and correctly. Updates provided in an incorrect format will delay processing. All update files should be saved as plain text.  If  you are updating multiple records, please send a list of all accessions to be updated at the top of your request.</p>
+<p>Do not submit a new Sequin file to update an existing record.</p>
+<p>Update files in the formats below should be emailed directly to <a href="mailto:gb-admin@ncbi.nlm.nih.gov" target="_blank">gb-admin@ncbi.nlm.nih.gov</a> or uploaded using <a href="projects/GenBankUpdate/genbank_update.cgi">UpdateMacroSend</a> .</p>
+<h3 id="update-formats">Update Formats:</h3>
+<ul>
+<li><a href="#source">Source Information</a></li>
+<li><a href="#pub">Publication Information</a></li>
+<li><a href="#sequence">Nucleotide Sequence</a></li>
+<li><a href="#new_feats">Adding Features</a></li>
+<li><a href="#upd_feats">Updating Features</a></li>
+</ul>
+<h3 id="editing-source-information">Editing Source Information</h3>
+<p>Send updates to the <a href="www.ncbi.nlm.nih.gov/Sequin/modifiers.html">source information</a> (i.e. strain, cultivar, country, specimen_voucher) in a multi-column tab-delimited table, for example:</p>
+<pre>acc. num.       strain  country    organism
+AYxxxx02        82      USA    Escherichia coli
+AYxxxx03        ABC     Canada    Bacillus subtilis
+
+</pre>
+
+<h3 id="updating-publication-information">Updating Publication Information</h3>
+<p>Replace any non-ASCII characters (for example, characters with accents and umlauts) with the appropriate English letters. Send updates to the publication information in a multi-column tab-delimited table, for example:</p>
+<pre>acc. num.    authors    title
+FJxxxx01    John A. Smith    Identification of gene A    
+FJxxxx02    Xu P. Weng, Jane Doe    Identification of gene B
+</pre>
+
+<p>The complete list of revised author names should be provided in the following format:</p>
+<p>given_name middle_initial surname, etc.</p>
+<p>These are the valid publication fields which should be used in the column headers:</p>
+<ul>
+<li>authors</li>
+<li>journal</li>
+<li>volume</li>
+<li>issue</li>
+<li>pages</li>
+<li>publication date</li>
+<li>title</li>
+<li>affiliation</li>
+<li>department</li>
+<li>city</li>
+<li>state</li>
+<li>publication country</li>
+<li>street</li>
+<li>postal code</li>
+<li>*PMID</li>
+<li>**class</li>
+</ul>
+<p>All columns may not be appropriate for each reference. Use only the relevant columns. If the reference has been published, include the complete journal title, not an abbreviation.</p>
+<p>*If the publication has a PubMed identifier (PMID), it is not necessary to supply any of the remaining publication fields.  It is sufficient to send a table with accession number and PMID only.</p>
+<p>**The class descriptor should only be used when the publication status has been changed. This descriptor has a controlled vocabulary and may only include one of the following three class values:</p>
+<ul>
+<li>unpublished</li>
+<li>in-press journal</li>
+<li>journal</li>
+</ul>
+<h3 id="nucleotide-sequence-update">Nucleotide Sequence Update</h3>
+<p>If you are updating the current nucleotide sequence send the complete new sequence(s) in fasta format:</p>
+<pre>&gt;AYxxxx02
+cggtaataatggaccttggaccccggcaaagcggagagac
+&gt;AYxxxx03
+ggaccttggaccccggcaaagcggagagaccggtaataat 
+</pre>
+
+<p>Please do not send a list of nucleotide changes. Do not include non-IUPAC characters within the sequence. Use n&apos;s for unknown nucleotides within the sequence.</p>
+<h3 id="update-features-on-record-without-annotation">Update features on record without annotation</h3>
+<p>If you are adding annotation to a record that has none, then send us the features as a tab-delimited 5-column <a href="http://www.ncbi.nlm.nih.gov/Sequin/table.html" target="_blank">Feature table.</a> For example:</p>
+<pre><code>&gt;Feature gb|EFxxxxxx|EFxxxxxx
+&lt;1      400     gene
+                        gene            ENO1
+&lt;1      30      CDS
+70      300
+                        product         enolase
+                        note            homodimer
+&lt;1      30      mRNA
+70      400
+                        product         enolase
+&lt;1      30      exon
+                        number          1
+70      400     exon
+                        number          2
+</code></pre><h3 id="update-features-on-record-with-annotation">Update features on record with annotation</h3>
+<p>If you are updating many features of a record, let us know, and we can send you a tab-delimited 5-column <a href="http://www.ncbi.nlm.nih.gov/Sequin/table.html" target="_blank">Feature table</a> with the current annotation for you to edit and return to us.</p>
+
+          
+
+        </div>
+      </div>
+    
+
+    <div id='shared-content-1' nid='1092'>
+      <div class='rightnav'>
+        <h2>GenBank Resources</h2>
+        <ul>
+          <li>
+            <a href="/~/">GenBank Home</a></li>
+          <li>
+            <a href="/~/submit_types">Submission Types</a></li>
+          <li>
+            <a href="/~/submit">Submission Tools</a></li>
+          <li>
+            <a href="http://www.ncbi.nlm.nih.gov/nuccore/">Search GenBank</a></li>
+          <li>
+            <a href="/~/update">Update GenBank Records</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
+

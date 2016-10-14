@@ -1,0 +1,543 @@
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GenBank Submission Tools</title>
+  </head>
+
+  <body>
+
+    
+      <div class='node clear-block'>
+        <div class='content'>
+
+          
+            <h1 id="adding-a-structured-comment-to-genbank-submissions">Adding a Structured Comment to GenBank Submissions</h1>
+<h2 id="introduction">Introduction</h2>
+<p>Public database sequence records consist primarily of nucleotide sequence data, source organism information, and sequence features. The organism and feature description are based on a controlled list of organism modifiers (such as isolate, strain, clone, and specimen voucher) and features (such as CDS, rRNA, and gene).</p>
+<p>However, many sequence submitters also have additional organism metadata that cannot easily fit into the controlled list but that is significant for the complete description of a sequences source and allows for comparisons of sequences isolated from similar locations.</p>
+<p>To collect and display such additional metadata in sequence records, GenBank has developed a Structured Comment. The comment consists of tag-value pairs that are contained within START and END tags that function as delimiters for easy parsing. These comments can be incorporated from a tab-delimited table into submission files using either Sequin or tbl2asn. An example of a GenBank record that includes a structured comment is <a href="nuccore/291609868">GU949562</a>.</p>
+<p>This guide explains how to include structured comments with your sequence submission.</p>
+<p>If you do not understand any of the instructions presented here or you have questions, please contact GenBank User Services at <a href="mailto:info@ncbi.nlm.nih.gov" target="_blank">info@ncbi.nlm.nih.gov</a> prior to creating your submission.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><p><a href="#IncludingStructuredCommentsWithinGenBankSubmissions">Including Structured Comments Within GenBank Submissions</a></p>
+</li>
+<li><p><a href="#SameStructuredComment">Adding the same structured comment to all sequences in your submission</a></p>
+</li>
+<li><p><a href="#UniqueStructuredComment">Adding a unique structured comment to each sequence in your submission</a></p>
+</li>
+<li><p><a href="#Specializedcomments">Specialized Structured Comments</a></p>
+</li>
+<li><p><a href="#MIGS">MIGS/MIMS/MIMARKS</a></p>
+</li>
+<li><a href="#Genome">Genome Submissions</a></li>
+<li><a href="#TSA">Transcriptome Shotgun Assembly Submissions</a></li>
+<li><a href="#GenBank">GenBank Assembly-Data</a></li>
+<li><p><a href="#HIV">HIV</a></p>
+</li>
+<li><p><a href="#Retrieval">Retrieval in Entrez</a></p>
+</li>
+</ol>
+<h3 id="including-structured-comments-within-genbank-submissions"><a name="IncludingStructuredCommentsWithinGenBankSubmissions"></a>Including Structured Comments Within GenBank Submissions</h3>
+<p>In order to include unique metadata within the structured comment, you need to create a tab-delimited table in one of two ways depending on how the data should be applied to the sequences in your submission. Any scientific unit of measurement (eg, deg C or km) should be included with the value.</p>
+<h4 id="1-adding-the-same-structured-comment-to-all-sequences-in-your-submission"><a name="SameStructuredComment"></a>[1] Adding the same structured comment to all sequences in your submission</h4>
+<p>This requires a single tab-delimited table that includes the tag-value pairs that are to be applied to all of the sequences in your submission, for example:</p>
+<table border="1">
+
+<tbody>
+
+<tr>
+
+<td>oxygen_content</td>
+
+<td>32 ppm</td>
+
+</tr>
+
+<tr>
+
+<td>habitat</td>
+
+<td>Black Lake</td>
+
+</tr>
+
+<tr>
+
+<td>temperature</td>
+
+<td>27 deg C</td>
+
+</tr>
+
+<tr>
+
+<td>sample size</td>
+
+<td>150 mL</td>
+
+</tr>
+
+<tr>
+
+<td>depth</td>
+
+<td>10 m</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<p>Once the metadata table is created and saved as plain text, the structured comment can be included using either Sequin or tbl2asn.</p>
+<ul>
+<li><p><strong>Sequin</strong></p>
+<p>From the Sequin Menu, choose annotate &gt; descriptors &gt; structured comment. This brings up a two-column table that can be completed manually - the first column is the tag and the second the value - or you can import a single-tab-delimited table using file &gt; import.</p>
+</li>
+<li><p><strong>tbl2asn</strong></p>
+<p>The tab-delimited table needs to be saved as a .cmt file and included in the same directory as your fasta and table file. The file name should include the same prefix as your fasta file (for example, fasta1.txt and fasta1.cmt).  Including the argument -X C within the tbl2asn commandline, will apply the tab-delimited table as a structured comment to all of the sequences in your file.  Alternatively, you can use any file name for the structured comment file and call it with the argument -w within the tbl2asn commandline.</p>
+</li>
+</ul>
+<h4 id="2-adding-a-unique-structured-comment-to-each-sequence-in-your-submission"><a name="UniqueStructuredComment"></a>[2] Adding a unique structured comment to each sequence in your submission</h4>
+<p>The format for this type of table is a tab-delimited, multi-column table, where the first column must be the Sequence Identifier used in the .fsa files. The first row in each column is the metadata tag that appears in the left side of the structured comment, for example:</p>
+<table border="1">
+
+<tbody>
+
+<tr>
+
+<td>SeqID</td>
+
+<td>investigation_type</td>
+
+<td>project_name</td>
+
+<td>collection_date</td>
+
+<td>depth</td>
+
+</tr>
+
+<tr>
+
+<td>A</td>
+
+<td>metagenome</td>
+
+<td>aquatic study</td>
+
+<td>2007-03-04</td>
+
+<td>10 m</td>
+
+</tr>
+
+<tr>
+
+<td>B</td>
+
+<td>metagenome</td>
+
+<td>aquatic study</td>
+
+<td>5 m</td>
+
+</tr>
+
+<tr>
+
+<td>C</td>
+
+<td>eukaryote</td>
+
+<td>Analysis of fish</td>
+
+<td>2008-08-09</td>
+
+<td>25 m</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<p>Each sequence in this submission will include a structured comment with unique tag-value pairs.  Once the metadata table is created and saved as plain text, the tag-value pairs can be included using either Sequin or tbl2asn.</p>
+<ul>
+<li><p><strong>Sequin</strong></p>
+<p>Within the Sequin Menu, the option Annotate &gt; advanced table readers &gt; load structured comments from table will upload the tab-delimited table as a structured comment.</p>
+</li>
+<li><p><strong>tbl2asn</strong></p>
+<p>The tab-delimited table needs to be saved as a .cmt file and included in the same directory as your fasta and table file. The file name should include the same prefix as your fasta file (for example, fasta1.txt and fasta1.cmt).  The .cmt file will be automatically included as a structured comment when using tbl2asn.</p>
+</li>
+</ul>
+<h3 id="specialized-structured-comments"><a name="Specializedcomments"></a>Specialized Structured Comments</h3>
+<h4 id="1-migsmimsmimarks"><strong><a name="MIGS"></a>[1] MIGS/MIMS/MIMARKS</strong></h4>
+<p>Minimum information checklists have been developed by the <a href="http://gensc.org/" target="_blank">Genomic Standards Consortium</a> (GSC) as a means of reporting core descriptive information about the environment from which an organism(s) was collected. Core descriptors include information about the origins of the nucleic acid sequence (genome), its environment (eg, latitude and longitude, date and time of sampling, habitat) and sequence processing (sequencing and assembly methods).</p>
+<p>Three different metadata lists have been developed to describe genomic, metagenomic, and marker sequences:</p>
+<ul>
+<li><strong>MIGS</strong> - Minimum Information About a Genome Sequence</li>
+<li><strong>MIMS</strong> - Minimum Information About a Metagenome Sequence</li>
+<li><strong>MIMARKS</strong> - Minimum Information About a Marker Sequence</li>
+</ul>
+<p>The tag-value pairs that are included for each submission type can be validated for compliance with the GSC recommended list. The recommended lists of core descriptors that should be included for each of these sequence types can be found <a href="http://wiki.gensc.org/index.php?title=MIxS" target="_blank">here</a>.</p>
+<p>Validation tools within Sequin and tbl2asn will report if structured comments include all of the GSC recommended compliant core descriptors. Submissions that include of all the compliant tags will have a Keyword included within the GenBank flatfile:</p>
+<p>KEYWORD GSC:MIMARKS:3.0</p>
+<p>Structured comments that are not compliant based on the GSC guidelines can still be included within GenBank submissions - they just will not include the keyword.</p>
+<p>In order for this validation to occur, you will need to include within the first column in your table a tag that defines the prefix and suffix for the start and end tags within the structured comment, for example:</p>
+<table border="1">
+
+<tbody>
+
+<tr>
+
+<td>StructuredCommentPrefix</td>
+
+<td>[one of the following - MIGS:3.0-Data / MIMS:3.0-Data / MIMARKS:3.0-Data]</td>
+
+</tr>
+
+<tr>
+
+<td>investigation_type</td>
+
+<td>[value determined by organism type as defined within [GSC spreadsheet](http://wiki.gensc.org/index.php?title=MIxS)]</td>
+
+</tr>
+
+<tr>
+
+<td>project_name</td>
+
+<td>Analysis of soil bacteria</td>
+
+</tr>
+
+<tr>
+
+<td>collection_date</td>
+
+<td>2008-08-09</td>
+
+</tr>
+
+<tr>
+
+<td>lat_lon</td>
+
+<td>35.64N 56E</td>
+
+</tr>
+
+<tr>
+
+<td>geo_loc_name</td>
+
+<td>France</td>
+
+</tr>
+
+<tr>
+
+<td>biome</td>
+
+<td>
+
+grassland
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>feature</td>
+
+<td>
+
+field
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>material</td>
+
+<td>
+
+soil
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>env_package</td>
+
+<td>
+
+[env_package types are listed within the [GSC spreadsheet](http://wiki.gensc.org/index.php?title=MIxS)] - can include the term &quot;missing&quot;
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>num_replicons</td>
+
+<td>14</td>
+
+</tr>
+
+<tr>
+
+<td>ref_biomaterial</td>
+
+<td>PMID</td>
+
+</tr>
+
+<tr>
+
+<td>biotic_relationship</td>
+
+<td>free living</td>
+
+</tr>
+
+<tr>
+
+<td>trophic_level</td>
+
+<td>autotroph</td>
+
+</tr>
+
+<tr>
+
+<td>rel_to_oxygen</td>
+
+<td>aerobe</td>
+
+</tr>
+
+<tr>
+
+<td>isol_growth_condt</td>
+
+<td>PMID</td>
+
+</tr>
+
+<tr>
+
+<td>seq_meth</td>
+
+<td>pyrosequencing</td>
+
+</tr>
+
+<tr>
+
+<td>assembly</td>
+
+<td>Velvet; error rate 1/45</td>
+
+</tr>
+
+<tr>
+
+<td>finishing_strategy</td>
+
+<td>complete; 4X coverage; 2500 contigs</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<p>An example of a sequence that includes a structured comment that meets GSC compliance is <a href="nuccore/291609867">GU949561</a>.</p>
+<h4 id="2-genome-submissions"><strong><a name="Genome"></a>[2] Genome Submissions</strong></h4>
+<p><a href="http://www.ncbi.nlm.nih.gov/genbank/wgs" target="_blank">WGS Genome submissions</a> require assembly information to be included within the Genome Assembly-Data structured comment.  This structured comment includes the following required metadata:</p>
+<pre><code>**Assembly Name**: a short name suitable for display eg, LoxAfr_3.0 for a Loxodonta africana assembly, version 3.0  
+**Assembly Method** (with version or date the program was run): eg, Newbler v. 2.3 OR Celera Assembly v. May 2010  
+**Genome Coverage**: eg, 12x  
+**Sequencing Technology**: eg, ABI 3730; 454 GS-FLX Titanium; Illumina GAIIx
+</code></pre><p>Note that the Assembly Name is optional, and that Assembly Method requires &apos;v. &apos; between the algorithm name and its version (or the month and year it was run).  If more than one sequencing technology was used, separate them with a semi-colon, e.g. &quot;Sanger; Illumina GAIIx&quot;.  Info-level warnings will report the goal and the current status are missing, but these can be ignored.</p>
+<p>When using the <a href="https://submit.ncbi.nlm.nih.gov/subs/wgs/" target="_blank">WGS Submission Portal</a> to submit a WGS project, you will be prompted for this information, which will then automatically be included within your submission.   You can also include this structured comment within your .sqn file using Sequin or tbl2asn as described above.  The prefix and suffix for the start and end tags are:</p>
+<ul>
+<li>StructuredCommentPrefix   GenomeAssembly-Data</li>
+<li>StructuredCommentSuffix   GenomeAssembly-Data</li>
+</ul>
+<p>An example of a genome with the required structured comment is <a href="http://www.ncbi.nlm.nih.gov/nuccore/amvs00000000.1" target="_blank">AMVS01000000</a>.</p>
+<h4 id="3-transcriptome-shotgun-assembly-submissions"><strong><a name="TSA"></a>[3] Transcriptome Shotgun Assembly Submissions</strong></h4>
+<p>An Assembly-Data structured comment is required for <a href="http://www.ncbi.nlm.nih.gov/genbank/tsa" target="_blank">Transcriptome Shotgun Assembly</a> (TSA) sequences.  Users will be prompted for this information when using the TSA Sequin Wizard.  If submitting using tbl2asn, this file can be made using the <a href="https://submit.ncbi.nlm.nih.gov/structcomment/nongenomes/" target="_blank">Structured Comment template</a> (non-genomes) page or as described above.</p>
+<p>The TSA structured comment includes the following required values:</p>
+<pre><code>**Assembly Method** (with version or date the program was run): eg, Velvet v.1.1.05, Oases v.0.1.22, Trinity r2012-01-25  
+**Sequencing Technology**: eg, ABI 3730; 454 GS-FLX Titanium; Illumina GAIIx
+</code></pre><p> Coverage and Assembly Name may be added but these are optional. </p>
+<pre><code>**Assembly Name**: a short name suitable for display eg, LoxAfr_3.0 for a Loxodonta africana assembly, version 3.0  
+**Coverage**: eg, 12x
+</code></pre><p>The prefix and suffix for the start and end tags to include within this structured comment are:</p>
+<ul>
+<li>StructuredCommentPrefix   Assembly-Data</li>
+<li>StructuredCommentSuffix   Assembly-Data</li>
+</ul>
+<p>An example of a TSA submission with the required structured comment is <a href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?cmd=Retrieve&amp;db=nucleotide&amp;list_uids=383446918&amp;dopt=GenBank" target="_blank">JU497302.</a></p>
+<h4 id="4-genbank-assembly-data"><strong><a name="GenBank"></a>[4] GenBank Assembly-Data</strong></h4>
+<p>Submission to <a href="http://www.ncbi.nlm.nih.gov/genbank/" target="_blank">GenBank</a> can include an Assembly-Data structured comment that is displayed within the GenBank flatfile and provides users with information regarding the sequencing and assembly details.</p>
+<p>This structured comment includes the following values:</p>
+<pre><code>**Assembly Method** (with version or date the program was run): eg, Newbler v. 2.3 OR Celera Assembly v. May 2010  
+**Coverage**: eg, 12x  
+**Sequencing Technology**: eg, ABI 3730; 454 GS-FLX Titanium; Illumina GAIIx (required)
+</code></pre><p>The prefix and suffix for the start and end tags to include within this structured comment are:</p>
+<ul>
+<li>StructuredCommentPrefix   Assembly-Data</li>
+<li>StructuredCommentSuffix   Assembly-Data</li>
+</ul>
+<p>An example of a GenBank record with an Assembly-Data structured comment is <a href="http://www.ncbi.nlm.nih.gov/nuccore/JQ307843.1" target="_blank">JQ307843</a>.</p>
+<h4 id="5-hiv"><strong><a name="HIV"></a>[5] HIV</strong></h4>
+<p>A specialized structured comment can be included with HIV sequence submissions to describe additional metadata that cannot be easily included within the source descriptor. This includes specific tags that provide more information regarding the source of the virus.</p>
+<p>For HIV-specific structured comments, you need to include two additional columns in your table that define the prefix and suffix for the start and end tags on either side of the structured comment:</p>
+<ul>
+<li>StructuredCommentPrefix   HIV-DataBaseData</li>
+<li>StructuredCommentSuffix   HIV-DataBaseData</li>
+</ul>
+<p>Example Table</p>
+<table border="1">
+
+<tbody>
+
+<tr>
+
+<td>SeqID</td>
+
+<td>sequence name</td>
+
+<td>Patient cohort</td>
+
+<td>Sample tissue</td>
+
+<td>viral load</td>
+
+<td>StructuredCommentPrefix</td>
+
+<td>StructuredCommentSuffix</td>
+
+</tr>
+
+<tr>
+
+<td>SeqA</td>
+
+<td>mysample_1</td>
+
+<td>CHAVI001</td>
+
+<td>plasma</td>
+
+<td>3565728</td>
+
+<td>HIV-DataBaseData</td>
+
+<td>HIV-DataBaseData</td>
+
+</tr>
+
+<tr>
+
+<td>SeqB</td>
+
+<td>mysample_2</td>
+
+<td>CHAVI002</td>
+
+<td>plasma</td>
+
+<td>3565730</td>
+
+<td>HIV-DataBaseData</td>
+
+<td>HIV-DataBaseData</td>
+
+</tr>
+
+<tr>
+
+<td>SeqC</td>
+
+<td>mysample_3</td>
+
+<td>CHAVI003</td>
+
+<td>plasma</td>
+
+<td>3565755</td>
+
+<td>HIV-DataBaseData</td>
+
+<td>HIV-DataBaseData</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<p>An example record that includes a properly formatted HIV structured comment is <a href="nuccore/238915380">EU579019.</a></p>
+<h2 id="retrieval-in-entrez"><a name="Retrieval"></a>Retrieval in Entrez</h2>
+<p>Sequences with structured comments can be retrieved in Entrez by specifying the tag-value pair in double quotes, eg, &#x201C;investigation_type bacteria_archaea&#x201D;. This search in Entrez retrieves GenBank records with this tag-value pair in the structured comment. You can also search for each tag as a property in Entrez (eg, depth[prop]) in order to retrieve all records that have this indexed within the structured comment.</p>
+<div id="shared-content-1" nid="1402">
+
+<div class="rightnav">
+
+<h2 id="metagenome-resources">Metagenome Resources</h2>
+<ul>
+<li><a href="http://www.ncbi.nlm.nih.gov/bioproject" target="_blank">BioProject</a></li>
+<li><a href="http://www.ncbi.nlm.nih.gov/biosample" target="_blank">BioSample</a></li>
+<li><a href="http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi" target="_blank">Sequence Read Archive</a></li>
+<li><a href="~/genomesubmit">Genomes</a></li>
+<li><a href="~/wgs">WGS</a></li>
+<li><a href="~/metagenome">Metagenome Submission Guide</a></li>
+<li><a href="~/structuredcomment">Structured Comment Guide</a></li>
+<li><a href="http://gensc.org/" target="_blank">Genomic Standards Consortium</a></li>
+</ul>
+</div></div>
+          
+
+        </div>
+      </div>
+    
+
+    <div id='shared-content-1' nid='1092'>
+      <div class='rightnav'>
+        <h2>GenBank Resources</h2>
+        <ul>
+          <li>
+            <a href="/~/">GenBank Home</a></li>
+          <li>
+            <a href="/~/submit_types">Submission Types</a></li>
+          <li>
+            <a href="/~/submit">Submission Tools</a></li>
+          <li>
+            <a href="http://www.ncbi.nlm.nih.gov/nuccore/">Search GenBank</a></li>
+          <li>
+            <a href="/~/update">Update GenBank Records</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
+

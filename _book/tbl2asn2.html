@@ -1,0 +1,320 @@
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GenBank Submission Tools</title>
+  </head>
+
+  <body>
+
+    
+      <div class='node clear-block'>
+        <div class='content'>
+
+          
+            <h1 id="what-is-tbl2asn">What is tbl2asn?</h1>
+<p>Tbl2asn is a command-line program that automates the creation of sequence records for submission to GenBank. It uses many of the same functions as Sequin but is driven generally by data files. Tbl2asn generates .sqn files for submission to GenBank. Additional manual editing is not required before submission.</p>
+<p>Tbl2asn is available by anonymous <a href="ftp://ftp.ncbi.nih.gov/toolbox/ncbi_tools/converters/by_program/tbl2asn/" target="_blank">FTP</a>. Copy the right version for your platform, then uncompress the file, rename it to &quot;tbl2asn&quot;, and set the permissions, as necessary for the platform.</p>
+<p>Additional details are provided in the GenBank Submission <a href="http://www.ncbi.nlm.nih.gov/books/NBK53709/#gbankquickstart.Submission_using_tbl2asn" target="_blank">Handbook</a></p>
+<h2 id="6-types-of-input-data-files">6 types of input data files</h2>
+<p><strong>REQUIRED:</strong></p>
+<ol>
+<li><a href="~/tbl2asn2#Template">Template file</a> containing a text ASN.1 Submit-block object (suffix .sbt).</li>
+<li><a href="#fsa">Nucleotide sequence data</a> in <a href="http://www.ncbi.nlm.nih.gov/Sequin/sequin.hlp.html#FASTAFormatforNucleotideSequences" target="_blank">FASTA</a> format (suffix .fsa).</li>
+<li><a href="#tbl">Feature Table</a> (suffix .tbl). [Required only if including annotation]</li>
+</ol>
+<p><strong>OPTIONAL:</strong></p>
+<ol>
+<li><a href="#QualityScores">Quality Scores</a> (suffix .qvl).</li>
+<li>Protein sequence (suffix .pep). (These are rarely needed).</li>
+<li>Source Table (suffix .src).</li>
+</ol>
+<h2 id="generating-the-sqn-file-for-submission">Generating the .sqn file for submission</h2>
+<ul>
+<li>The minimum requirements to generate a Sequin file using tbl2asn are one .sbt file and one or more .fsa files.</li>
+<li>The files are placed in a source directory and a series of command-line arguments are used to generate the .sqn files.</li>
+<li>Tbl2asn will generate a .sqn for every .fsa file in the directory, plus any of the corresponding optional files that may be present. The other files must have the same file name prefix as their corresponding .fsa. (for example helicase.fsa and helicase.tbl).</li>
+</ul>
+<p>Command Line Arguments</p>
+<p>Typing &quot;tbl2asn -&quot; will give the full list of command line arguments. Here is a partial list of commonly used arguments:</p>
+<table border="1" cellpadding="0" cellspacing="0"><caption>tbl2asn command line arguments</caption>
+
+<tbody>
+
+<tr>
+
+<td>-p</td>
+
+<td>Path to the directory. If files are in the current directory -p. should be used.</td>
+
+</tr>
+
+<tr>
+
+<td width="25">-r</td>
+
+<td>Path for the resulting .sqn file(s) (if the -r argument is not used, the .sqn files will be saved in the source directory).</td>
+
+</tr>
+
+<tr>
+
+<td>-t</td>
+
+<td>Specifies the template file (.sbt). If the .sbt file is in a different directory the full path must be specified.</td>
+
+</tr>
+
+<tr>
+
+<td>-i</td>
+
+<td>Creates single submission from indicated .fsa file in a directory of multiple .fsa files.</td>
+
+</tr>
+
+<tr>
+
+<td>-a</td>
+
+<td>Specifies the File type.
+
+Sample command line: -a s</td>
+
+</tr>
+
+<tr>
+
+<td>-j</td>
+
+<td>Allows the addition of [source qualifiers](http://www.ncbi.nlm.nih.gov/Sequin/modifiers.html) that will be the same for each submission. Example: -j &quot;[organism=Saccharomyces cerevisiae] [strain=S288C]&quot;.</td>
+
+</tr>
+
+<tr>
+
+<td>-V</td>
+
+<td>
+
+Verification (combine any of the following letters):
+
+*   v :Validates the data records. The output is saved to files with a .val suffix. <a name="command">A summary file named errorlog.val is also created with the number, severity and type of errors found in all the .val files.</a>
+*   b :Generates GenBank flatfiles with a .gbf suffix.
+*   r :Validates without Country Check
+
+Sample command line: -V vb
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>-k</td>
+
+<td>CDS Flags (combine any of the following letters):
+
+Sample command line: -k c</td>
+
+</tr>
+
+<tr>
+
+<td>-c</td>
+
+<td>Cleanup (combine any of the following letters):
+
+Sample command line: -c fx</td>
+
+</tr>
+
+<tr>
+
+<td>-y</td>
+
+<td>Adds a COMMENT to each submission. Example: -y &quot;Contigs larger than 2kb have been annotated, representing approx. 87% of the total genome&quot;.</td>
+
+</tr>
+
+<tr>
+
+<td>-Y</td>
+
+<td>Like -y, but adds a COMMENT to each submission from a file.</td>
+
+</tr>
+
+<tr>
+
+<td>-Z</td>
+
+<td>Runs the Discrepancy Report. Must supply an output file name. Recommended only for annotated genome submissions, complete or WGS. See the [Discrepancy Report page](/~/asndisc) for information about its output.</td>
+
+</tr>
+
+<tr>
+
+<td>-M</td>
+
+<td>Master Genome Flags (combine any of the following letters):
+
+Sample command line: -M n</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<p><strong>Example Command Lines:</strong></p>
+<ul>
+<li><p>Single submission: one sequence per .fsa file</p>
+<ul>
+<li>Batch submission: multiple sequences per .fsa file</li>
+<li>Single submission: one .fsa file in directory of multiple .fsa files</li>
+<li>Genome submission: one or more .fsa files in a directory, with one or more sequences per .fsa file</li>
+</ul>
+<p><strong>Before submitting your .sqn files to GenBank,</strong> review the .val files and correct any error-level errors. Taxonomy-related errors about missing lineages can generally be ignored. However, if there is annotation and the genetic code is not the standard code, then include the correct code in the .fsa definition line as shown in the <a href="#fsa">.fsa definition line</a>, or with the -j in the command line, to avoid errors.</p>
+<h2 id="creating-the-template-file-sbt">Creating the template file (.sbt)</h2>
+<ul>
+<li>Go to <a href="http://www.ncbi.nlm.nih.gov/WebSub/template.cgi" target="_blank">Create Submission Template</a> page</li>
+<li>Fill in the boxes</li>
+<li>Click on &quot;Create Template&quot;</li>
+<li>SAVE the file as template.sbt</li>
+</ul>
+<p>OR</p>
+<ul>
+<li>Choose start a new submission with <a href="http://www.ncbi.nlm.nih.gov/Sequin/" target="_blank">Sequin</a>.</li>
+<li>Enter manuscript title if desired.</li>
+<li>Enter contact, authors and affiliation information.</li>
+<li>Return to submission tab and use File-&gt;Export Submitter Info.</li>
+<li>Save as template.sbt.</li>
+</ul>
+<h2 id="nucleotide-sequence-and-fasta-defline-formats-fsa">Nucleotide sequence and FASTA defline formats (.fsa)</h2>
+<ul>
+<li>No size limit on nucleotide sequence.<em>   FASTA file should consist of a single definition line beginning with a &apos;&gt;&apos;.</em>   Minimum requirements for the <a href="http://www.ncbi.nlm.nih.gov/Sequin/sequin.hlp.html#FASTAFormatforNucleotidesequences" target="_blank">FASTA defline</a> are:</li>
+</ul>
+</li>
+<li><p>SeqID (sequence identifier) which is the text between the &apos;&gt;&apos; and the first space.</p>
+</li>
+<li><p>Organism and related information (unless organism information is included with -j at the <a href="Genbank/tbl2asn2#command">command line</a> or in a <a href="Genbank/tbl2asn2#src">.src file</a> )</p>
+</li>
+<li><p>Optional defline information is in this <a href="http://www.ncbi.nlm.nih.gov/Sequin/modifiers.html" target="_blank">list of source modifiers</a> and includes:</p>
+</li>
+</ul>
+<p><div style="margin-left: 2em">Biological</div></p>
+<ul>
+<li>strain [strain=S288C]</li>
+<li>isolate [isolate=CWS1]</li>
+<li>chromosome [chromosome=XVI]</li>
+</ul>
+<p><div style="margin-left: 2em">Other elements</div></p>
+<ul>
+<li>topology [topology=circular]</li>
+<li>location [location=mitochondrion]</li>
+<li>molecule [moltype=mRNA] (DNA is the default)</li>
+<li>technique [tech=wgs]</li>
+<li>protein name [protein=helicase] (if using -c)</li>
+<li>genetic code [gcode=4]</li>
+</ul>
+<p>Here is the <a href="http://www.ncbi.nlm.nih.gov/Sequin/modifiers.html" target="_blank">list of source modifiers</a> . See the <a href="Taxonomy/Utils/wprintgc.cgi">Tax Browser</a> for the genetic code values.</p>
+<p>Example FASTA:</p>
+<pre>&gt;Sc_16 [organism=Saccharomyces cerevisiae]
+tataggcgaatcgagtatattattttttctcaacatatgtat
+atgaacatgagaatatatttataggaatgtataaaattgtga
+cctctcctgctattttagttactgattttatgtatgtagggg
+gaataggggctgcctttcttaatgcagttttaattttttctt
+ttaattttttcttagtaaaattatttaaagtaaagattaatg
+gaataaccattgcgcttttttttacagtttttggtttttcat
+tttttggaaaaaatattttaaatattttacctttttatttag
+ggggtattttatatagtatctatacttcaacagatttttctg
+aacatatagttcctattgctttttcaagtgcattagcccctt
+ttgtaagcagtgttgctttttatggagaaatatcctatgaaa
+catcatatataaatgcaattttaattggtattttaattggtt
+ttatagtggttcctttgtctaaaagtctttatgactttcatg
+agggatatgatttatataatttaggttttacagcaggtt
+</pre>
+
+<h2 id="feature-table-format-tbl">Feature table format (.tbl)</h2>
+<p>Tbl2asn reads features from a five-column tab-delimited table called a <a href="http://www.ncbi.nlm.nih.gov/Sequin/table.html" target="_blank">Feature table</a> . The feature table specifies the location and type of each feature. Tbl2asn will process the feature intervals and translate any CDSs into proteins. The first line of the table should contain the following information:</p>
+<pre>&gt;Features SeqID table_name
+</pre>
+
+<p>The SeqID must match the nucleotide sequence SeqID in the corresponding .fsa file. Example Feature Table:</p>
+<pre>&gt;Feature Sc_16 Table1
+69      543    gene
+                        gene       sde3p
+69      543    CDS
+                        product SDE3P
+                        protein_id     WS1030
+
+</pre>
+
+<h2 id="quality-scores-table-format-qvl">Quality scores table format (.qvl)</h2>
+<ul>
+<li>Provides Phrap/Consed quality scores.</li>
+<li>Has a defline with the corresponding SeqID from the .fsa file.</li>
+<li>Generates Seq-graph data that will be included with the nucleotide sequence of the .fsa file in the final .sqn file.</li>
+<li>The quality scores appear below the sequence in the .sqn file, and are shown in the Quality format option when the .sqn file is viewed in Sequin.</li>
+</ul>
+<pre>&gt;Sc_16
+51 63 70 82 82 82 90 90 90 90 86 86  
+86 86 86 86 90 90 90 90 90 86 86 78...
+</pre>
+
+<h2 id="protein-sequence-format-pep">Protein sequence format (.pep)</h2>
+<ul>
+<li>This file is not usually needed because GenBank generally presents on the conceptual translation of the nucleotide sequence, which will be automatically generated by tbl2asn.</li>
+<li>This file will substitute the automatically translated products of the CDS features with the provided protein sequences, so is only needed in unusual cases.</li>
+<li>It is FASTA file of the protein sequence, where the SeqID must match protein_id in the .tbl file</li>
+</ul>
+<p>Example FASTA:</p>
+<pre>&gt;WS1030 [gene=sde3p] [protein=SDE3P]
+MYKIVTSPAILVTDFMYVGGIGAAFLNAVLIFSFNFFL
+VKLFKVKINGITIAAFFTVFGFSFFGKNILNILPFYLG
+GILYSIYTSTDFSEHIVPIAFSSALAPFVSSVAFYGEI
+SYETSYINAILIGILIGFIVVPLSKSLYDFHEGYDLYN
+LGFTAG
+</pre>
+
+<h2 id="source-table-format-src">Source table format (.src)</h2>
+<p>For sets of sequences, especially those with different sources, a tab-delimited <a href="http://www.ncbi.nlm.nih.gov/WebSub/html/help/genbank-source-table.html" target="_blank">source modifier table</a> file can be created, with a name that has a .src extension. The first column in the file must be the SeqIDs of the sequences. The first row gives the names of the source qualifiers being added, separated by tabs. Any additional rows list the SeqID and source qualifiers for each sequence in the corresponding .fsa file.</p>
+<pre>SeqID     organism     strain     isolate
+Sc_16     Zea mays     A69Y       JH90.6-2x12
+</pre>
+
+<h2 id="tbl2asn-update-notification">Tbl2asn Update Notification</h2>
+<p>To receive email notification about updates to tbl2asn, as well as a description of what is included in the update follow these <a href="~/tbl2asn_announce">directions</a> .</p>
+
+          
+
+        </div>
+      </div>
+    
+
+    <div id='shared-content-1' nid='1092'>
+      <div class='rightnav'>
+        <h2>GenBank Resources</h2>
+        <ul>
+          <li>
+            <a href="/~/">GenBank Home</a></li>
+          <li>
+            <a href="/~/submit_types">Submission Types</a></li>
+          <li>
+            <a href="/~/submit">Submission Tools</a></li>
+          <li>
+            <a href="http://www.ncbi.nlm.nih.gov/nuccore/">Search GenBank</a></li>
+          <li>
+            <a href="/~/update">Update GenBank Records</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
+

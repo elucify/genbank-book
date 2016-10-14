@@ -1,0 +1,58 @@
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GenBank Submission Tools</title>
+  </head>
+
+  <body>
+
+    
+      <div class='node clear-block'>
+        <div class='content'>
+
+          
+            <h1 id="submitting-htg-sequences">Submitting HTG Sequences</h1>
+<p>The submission <a href="../~/htgs/processing">process</a> for HTGs is quite different from that for other direct <a href="../~">submissions</a>. The goal of the process is to make new and updated sequences available to the public in a timely fashion. Thus, NCBI will perform only very basic validation checks of HTGs, and submitters must check their records carefully before submission. Furthermore, because sequences will be released to the public as soon as processing is finished, it is presently not the standard procedure to indicate a &quot;hold until published&quot; (HUP) date on which they should be released. If a HUP date is necessary, the submitter should please <a href="mailto:htgs-admin@ncbi.nlm.nih.gov" target="_blank">contact</a> the database staff about submitting through an alternate route.</p>
+<p>Sequencing centers that will be submitting HTGs to NCBI should email <a href="mailto:htgs-admin@ncbi.nlm.nih.gov" target="_blank">htgs-admin@ncbi.nlm.nih.gov</a> to establish an <a href="../~/htgs/ftp">FTP account</a>. Prepared records should be transferred to this site, where they will be retrieved daily by the NCBI staff. These records should not be emailed to the NCBI. Submitted HTG sequences must be written in ASN.1 format.</p>
+<h2 id="submission-tools">Submission Tools</h2>
+<p>There are currently two ways to create HTG records:</p>
+<ol>
+<li><a href="../~/htgs/sequininfo">The Sequin program</a><br>Sequin contains a setting that allows genome centers to prepare HTG submissions. Sequin reads in a FASTA sequence file (or an Ace Contig file with Phrap sequence quality values) and a Sequin submission template file (to get contact and citation information). Users then enter additional information into a Sequin form, the same information that they would enter at the command line in fa2htgs (see below). Sequin generates the ASN.1 file for submission.</li>
+<li><a href="../~/htgs/tbl2asninfo">The tbl2asn tool</a><br>tbl2asn is a command-line program that has replaced the deprecated program fa2htgs. tbl2asn reads in a FASTA sequence file (or an Ace Contig file with Phrap sequence quality values), a Sequin submission template file (to get contact and citation information), and a series of command-line arguments (to get additional information). tbl2asn then generates the ASN.1 file for submission. tbl2asn can be incorporated into scripts to facilitate expedient processing of records.</li>
+</ol>
+<div id="shared-content-1" nid="1331">
+
+<div class="rightnav">
+</div></div>
+          
+
+        </div>
+      </div>
+    
+
+    <div id='shared-content-1' nid='1092'>
+      <div class='rightnav'>
+        <h2>GenBank Resources</h2>
+        <ul>
+          <li>
+            <a href="/~/">GenBank Home</a></li>
+          <li>
+            <a href="/~/submit_types">Submission Types</a></li>
+          <li>
+            <a href="/~/submit">Submission Tools</a></li>
+          <li>
+            <a href="http://www.ncbi.nlm.nih.gov/nuccore/">Search GenBank</a></li>
+          <li>
+            <a href="/~/update">Update GenBank Records</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
+
