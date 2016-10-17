@@ -17,11 +17,11 @@ if [ "$FORM" == "gitbook" ]; then
   OUTDIR=out/gitbook
 elif [ "$FORM" == "portal" ]; then
   OUTDIR=genbank
-elif [ "$FORM" == static ]; then
+elif [ "$FORM" == "static" ]; then
   OUTDIR=out/static
 fi
 
-gitbook build . "out/$FORM"
+gitbook build . "$OUTDIR"
 
 
 if [ "$FORM" == "portal" ]; then
