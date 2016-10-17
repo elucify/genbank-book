@@ -27,13 +27,14 @@ gitbook build . "out/$FORM"
 if [ "$FORM" == "portal" ]; then
 
   # Rename all .html files -> .xml
-  cd genbank
+  CURDIR=`pwd`
+  cd $OUTDIR
     for FILE in *.html
     do
       NAME=`echo "$FILE" | cut -d'.' -f1`
       EXT=`echo "$FILE" | cut -d'.' -f2`
-      mv $FILE $NAME.xml
+      mv "$FILE" $NAME.xml
     done
-  cd ..
+  cd "$CURDIR"
 
 fi

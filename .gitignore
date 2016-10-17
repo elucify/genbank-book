@@ -1,6 +1,7 @@
 /genbank/
 /_layouts
 /node_modules/
+/out/
 *.epub
 *.mobi
 *.pdfmaster.zip
