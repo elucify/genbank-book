@@ -2,7 +2,7 @@
 
 <div id="hook"/><!-- LEAVE THIS ALONE -->
 
-Who is running the asylum?
+Who is running the asylum? The inmates.
 
 Let's make sure we have the exact same commit; *this one*.
 
