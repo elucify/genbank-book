@@ -2,10 +2,6 @@
 
 <div id="hook"/><!-- LEAVE THIS ALONE -->
 
-Who is running the asylum? The inmates.
-
-Let's make sure we have the exact same commit; *this one*.
-
 GenBank <sup>®</sup> is the NIH genetic sequence database, an
 annotated collection of all publicly available DNA sequences
 ([_Nucleic Acids Research_, 2013
@@ -14,8 +10,6 @@ Jan;41(D1):D36-42](/pubmed/23193287)). GenBank is part of the
 Collaboration](/genbank/collab) , which comprises the DNA DataBank of
 Japan (DDBJ), the European Molecular Biology Laboratory (EMBL), and
 GenBank at NCBI. These three organizations exchange data daily.
-
-* Test prose.io editing in GitHub.
 
 The complete [release notes](ftp://ftp.ncbi.nih.gov/genbank/gbrel.txt)
 for the current version of GenBank are available on the NCBI ftp site.
