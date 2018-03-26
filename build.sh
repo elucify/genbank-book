@@ -2,7 +2,7 @@
 set -o errexit
 set -o pipefail
 
-FORM="$1"
+FORM="${1:-static}"
 if [ x"$FORM" == "x" ]; then
   echo 'Usage: ./build.sh {gitbook|portal|static}'
   exit 1
