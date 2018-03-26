@@ -8,7 +8,7 @@ if [ x"$FORM" == "x" ]; then
   exit 1
 fi
 
-rm -f _layouts
+rm -fr _layouts
 ln -s layouts/$FORM _layouts
 
 mkdir -p out
